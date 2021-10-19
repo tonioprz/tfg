@@ -9,6 +9,8 @@ LiquidCrystal_I2C lcd(0x27,16,2);  //
 #define BUTTON_UP 30
 #define BUTTON_DOWN 31
 
+
+
 bool up;
 bool down;
 bool up_ant = 0;
