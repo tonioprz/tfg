@@ -6,7 +6,10 @@
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
 LiquidCrystal_I2C lcd(0x27,16,2);  //
 
-#define ENB 3
+#define faseA 2
+#define faseB 3
+
+#define ENB 5
 #define IN3 27
 #define IN4 26
 #define BUTTON_ESC 22
@@ -25,6 +28,8 @@ int cont = 0;
 int cont_ant = 0;
 char state = 'i';
 
+void cambiofaseA(void);
+void cambiofaseB(void);
 int boton(bool up, bool down, bool up_ant, bool down_ant, int cont);
 
 void setup() {
@@ -32,6 +37,12 @@ void setup() {
   pinMode(BUTTON_UP, INPUT_PULLUP);
   pinMode(BUTTON_ENTER, INPUT_PULLUP);
   pinMode(BUTTON_ESC, INPUT_PULLUP);
+
+  pinMode(faseA, INPUT_PULLUP);
+  pinMode(faseB, INPUT_PULLUP);
+
+  attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
+  attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
 
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
@@ -53,8 +64,7 @@ void loop() {
    // Escribimos el número de segundos trascurridos
   up = digitalRead(BUTTON_UP);
   down = digitalRead(BUTTON_DOWN);
-  enter = digitalRead(BUTTON_ENTER);  
-  cont = boton(up,down,up_ant,down_ant,cont);
+  enter = digitalRead(BUTTON_ENTER);
 
   switch(state){
     case 'i':
@@ -72,22 +82,10 @@ void loop() {
       lcd.print("ABAJO  ");
       break;
   }
-
-  if(cont > cont_ant){
-    state = 'u';
-    lcd.setCursor(0, 1);
-    lcd.print("Modo up          ");
-    lcd.setCursor(14, 1);
-    lcd.print(cont);
-  }
-
-  if(cont < cont_ant){
-    state = 'd';
-    lcd.setCursor(0, 1);
-    lcd.print("Modo down          ");
-    lcd.setCursor(14, 1);
-    lcd.print(cont);
-  }
+  lcd.setCursor(10, 1);
+  lcd.print("      ");
+  lcd.setCursor(10, 1);
+  lcd.print(cont);
   
   if(!enter){
     state = 'e';
@@ -109,4 +107,42 @@ int boton(bool up, bool down, bool up_ant, bool down_ant, int cont){
     cont++;
   }
   return cont;
+}
+
+void cambiofaseA(void){
+  bool fA = digitalRead(faseA);
+  bool fB = digitalRead(faseB);
+
+  if(fA){
+    if(fB){
+      cont++;
+    } else{
+      cont--;
+    }
+  } else{
+    if(fB){
+      cont--;
+    } else{
+      cont++;
+    }
+  }
+}
+
+void cambiofaseB(void){
+  bool fA = digitalRead(faseA);
+  bool fB = digitalRead(faseB);
+
+  if(fB){
+    if(fA){
+      cont--;
+    } else{
+      cont++;
+    }
+  } else{
+    if(fA){
+      cont++;
+    } else{
+      cont--;
+    }
+  }  
 }
