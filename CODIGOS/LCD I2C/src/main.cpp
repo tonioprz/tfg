@@ -6,9 +6,13 @@
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
 LiquidCrystal_I2C lcd(0x27,16,2);  //
 
-#define BUTTON_ENTER 29
-#define BUTTON_UP 30
-#define BUTTON_DOWN 31
+#define ENB 3
+#define IN3 27
+#define IN4 26
+#define BUTTON_ESC 22
+#define BUTTON_ENTER 23
+#define BUTTON_UP 24
+#define BUTTON_DOWN 25
 
 bool enter;
 bool up;
@@ -27,6 +31,11 @@ void setup() {
   pinMode(BUTTON_DOWN, INPUT_PULLUP);
   pinMode(BUTTON_UP, INPUT_PULLUP);
   pinMode(BUTTON_ENTER, INPUT_PULLUP);
+  pinMode(BUTTON_ESC, INPUT_PULLUP);
+
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pinMode(ENB, OUTPUT);
 
   // Inicializar el LCD
   lcd.init();
