@@ -6,13 +6,14 @@
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
 LiquidCrystal_I2C lcd(0x27,16,2);  //
 
+#define BUTTON_ENTER 29
 #define BUTTON_UP 30
 #define BUTTON_DOWN 31
 
-
-
+bool enter;
 bool up;
 bool down;
+bool enter_ant = 0;
 bool up_ant = 0;
 bool down_ant = 0;
 
@@ -25,6 +26,8 @@ int boton(bool up, bool down, bool up_ant, bool down_ant, int cont);
 void setup() {
   pinMode(BUTTON_DOWN, INPUT_PULLUP);
   pinMode(BUTTON_UP, INPUT_PULLUP);
+  pinMode(BUTTON_ENTER, INPUT_PULLUP);
+
   // Inicializar el LCD
   lcd.init();
   
@@ -41,6 +44,7 @@ void loop() {
    // Escribimos el número de segundos trascurridos
   up = digitalRead(BUTTON_UP);
   down = digitalRead(BUTTON_DOWN);
+  enter = digitalRead(BUTTON_ENTER);  
   cont = boton(up,down,up_ant,down_ant,cont);
 
   switch(state){
@@ -75,7 +79,12 @@ void loop() {
     lcd.setCursor(14, 1);
     lcd.print(cont);
   }
-
+  
+  if(!enter){
+    state = 'e';
+    lcd.setCursor(0, 1);
+    lcd.print("Enter       ");
+  }
   cont_ant = cont;
   up_ant = up;
   down_ant = down;
