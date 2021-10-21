@@ -18,19 +18,20 @@ LiquidCrystal_I2C lcd(0x27,16,2);  //
 #define BUTTON_DOWN 25
 
 bool enter;
+bool esc;
 bool up;
 bool down;
+bool esc_ant = 0;
 bool enter_ant = 0;
 bool up_ant = 0;
 bool down_ant = 0;
 
-int cont = 0;
-int cont_ant = 0;
+long cont = 0;
 char state = 'i';
+bool discreto = 0;
 
 void cambiofaseA(void);
 void cambiofaseB(void);
-int boton(bool up, bool down, bool up_ant, bool down_ant, int cont);
 
 void setup() {
   pinMode(BUTTON_DOWN, INPUT_PULLUP);
@@ -55,7 +56,7 @@ void setup() {
   lcd.backlight();
   
   // Escribimos el Mensaje en el LCD.
-  lcd.print("PRUEBAS");
+  lcd.print("BIENVENIDO");
 }
 
 void loop() {
@@ -65,84 +66,73 @@ void loop() {
   up = digitalRead(BUTTON_UP);
   down = digitalRead(BUTTON_DOWN);
   enter = digitalRead(BUTTON_ENTER);
+  esc = digitalRead(BUTTON_ESC);
 
+  // Máquina de estados
   switch(state){
     case 'i':
+      lcd.setCursor(0, 0);
+      lcd.print("BIENVENIDO      ");
       lcd.setCursor(0, 1);
-      lcd.print("INICIO");
+      lcd.print("PULSE ENTER     ");
       break;
     
-    case 'u':
+    case 's':
       lcd.setCursor(0, 0);
-      lcd.print("ARRIBA  ");
+      lcd.print("SELECCIONE MOV. ");
+      if(discreto){
+        lcd.setCursor(0, 1);
+        lcd.print("AVANCE DISCRETO ");
+      } else{
+        lcd.setCursor(0, 1);
+        lcd.print("AVANCE ABSOLUTO ");
+      }
+  }
+  // Transiciones entre estados
+  switch(state){
+    case 'i':
+      if(!enter && enter_ant){
+        state = 's';
+      }
       break;
+    case 's':
+      if(!enter && enter_ant){
+        state = 'd';
+      }
+      if(!esc && esc_ant){
+        state = 'i';
+      }
+      if((!up && up_ant) || (!down && down_ant)){
+        discreto = !discreto;
+      }
+  }
 
-    case 'd':
-      lcd.setCursor(0, 0);
-      lcd.print("ABAJO  ");
-      break;
-  }
-  lcd.setCursor(10, 1);
-  lcd.print("      ");
-  lcd.setCursor(10, 1);
-  lcd.print(cont);
-  
-  if(!enter){
-    state = 'e';
-    lcd.setCursor(0, 1);
-    lcd.print("Enter       ");
-  }
-  cont_ant = cont;
+
+
+  esc_ant = esc;
+  enter_ant = enter;
   up_ant = up;
   down_ant = down;
   
-  delay(100);
+  delay(10);
 }
 
-int boton(bool up, bool down, bool up_ant, bool down_ant, int cont){
-  if(!down && down_ant){
-    cont--;
-  }
-  if(!up && up_ant){
-    cont++;
-  }
-  return cont;
-}
 
 void cambiofaseA(void){
-  bool fA = digitalRead(faseA);
   bool fB = digitalRead(faseB);
-
-  if(fA){
-    if(fB){
-      cont++;
-    } else{
-      cont--;
-    }
+  if(fB){
+    cont++;
   } else{
-    if(fB){
-      cont--;
-    } else{
-      cont++;
-    }
+    cont--;
+  
   }
 }
 
 void cambiofaseB(void){
   bool fA = digitalRead(faseA);
-  bool fB = digitalRead(faseB);
-
-  if(fB){
-    if(fA){
-      cont--;
-    } else{
-      cont++;
-    }
+  if(fA){
+    cont--;
   } else{
-    if(fA){
-      cont++;
-    } else{
-      cont--;
-    }
-  }  
+    cont++;
+  }
 }
