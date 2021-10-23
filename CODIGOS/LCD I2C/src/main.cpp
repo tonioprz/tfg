@@ -26,9 +26,14 @@ bool enter_ant = 0;
 bool up_ant = 0;
 bool down_ant = 0;
 
-long cont = 0;
+long posicion = 0;
 char state = 'i';
 bool discreto = 0;
+long desplazamiento = 2000;
+long objetivo = 0;
+
+double kp = 1;
+double Ti = 1;
 
 void cambiofaseA(void);
 void cambiofaseB(void);
@@ -87,17 +92,82 @@ void loop() {
         lcd.setCursor(0, 1);
         lcd.print("AVANCE ABSOLUTO ");
       }
+      break;
+
+    case 'd':
+      lcd.setCursor(0, 0);
+      if(discreto){
+        lcd.print("SEL. A. DISCRETO");
+      } else{
+        lcd.print("SEL. A. ABSOLUTO");
+      }
+      break;
+
+    case 'm':
+      lcd.setCursor(0, 0);
+      lcd.print("MOVIENDO...     ");
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      lcd.setCursor(0, 1);
+      lcd.print(posicion);
+      lcd.print("/");
+      lcd.print(objetivo);
+      int u = 0;
+      while((posicion < objetivo - 100) || (posicion > objetivo + 100)){
+        lcd.setCursor(0, 1);
+        lcd.print("                ");
+        lcd.setCursor(0, 1);
+        lcd.print(posicion);
+        lcd.print("/");
+        lcd.print(objetivo);        
+        u = (objetivo - posicion) * kp;
+        if(u >= 0){
+          digitalWrite(IN3, LOW);
+          digitalWrite(IN4, HIGH);
+        } else{
+          digitalWrite(IN3, HIGH);
+          digitalWrite(IN4, LOW);
+          u = -u;
+        }
+        if(u > 255){
+          u = 255;
+        }
+        analogWrite(ENB, u);
+        delay(1);
+      }
+
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENB, 255);
+      lcd.setCursor(0, 0);
+      lcd.print("POSICION FINAL  ");
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      lcd.setCursor(0, 1);
+      lcd.print(posicion);
+      
+      
+      delay(2000);
+      state = 'i';
+      break;
   }
   // Transiciones entre estados
   switch(state){
+
     case 'i':
       if(!enter && enter_ant){
         state = 's';
       }
       break;
+
     case 's':
       if(!enter && enter_ant){
         state = 'd';
+        lcd.setCursor(0, 1);
+        lcd.print("                ");
+        lcd.setCursor(0, 1);
+        lcd.print(desplazamiento);
+        lcd.print(" pulsos");                
       }
       if(!esc && esc_ant){
         state = 'i';
@@ -105,6 +175,37 @@ void loop() {
       if((!up && up_ant) || (!down && down_ant)){
         discreto = !discreto;
       }
+      break;
+
+    case 'd':
+      if(!enter && enter_ant){
+        state = 'm';
+        if(discreto){
+          objetivo = posicion + desplazamiento;
+        } else{
+          objetivo = desplazamiento;
+        }
+      }
+      if(!esc && esc_ant){
+        state = 's';
+      }
+      if(!up && up_ant){
+        desplazamiento = desplazamiento + 1000;
+        lcd.setCursor(0, 1);
+        lcd.print("                ");
+        lcd.setCursor(0, 1);
+        lcd.print(desplazamiento);
+        lcd.print(" pulsos");        
+      }
+      if(!down && down_ant){
+        desplazamiento = desplazamiento - 1000;
+        lcd.setCursor(0, 1);
+        lcd.print("                ");
+        lcd.setCursor(0, 1);
+        lcd.print(desplazamiento);
+        lcd.print(" pulsos");        
+      }
+      break;
   }
 
 
@@ -121,18 +222,17 @@ void loop() {
 void cambiofaseA(void){
   bool fB = digitalRead(faseB);
   if(fB){
-    cont++;
+    posicion++;
   } else{
-    cont--;
-  
+    posicion--;
   }
 }
 
 void cambiofaseB(void){
   bool fA = digitalRead(faseA);
   if(fA){
-    cont--;
+    posicion--;
   } else{
-    cont++;
+    posicion++;
   }
 }
