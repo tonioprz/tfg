@@ -1,21 +1,13 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
-
+#include <motor.h>
+#include <main.h>
 
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
-LiquidCrystal_I2C lcd(0x27,16,2);  //
+LiquidCrystal_I2C lcd(0x27,16,2);
 
-#define faseA 2
-#define faseB 3
-
-#define ENB 5
-#define IN3 27
-#define IN4 26
-#define BUTTON_ESC 22
-#define BUTTON_ENTER 23
-#define BUTTON_UP 24
-#define BUTTON_DOWN 25
+Motor mot(IN3, IN4, ENB);
 
 bool enter;
 bool esc;
@@ -27,13 +19,12 @@ bool up_ant = 0;
 bool down_ant = 0;
 
 long posicion = 0;
+long * pposicion = &posicion;
+
 char state = 'i';
 bool discreto = 0;
-long desplazamiento = 2000;
+long desplazamiento = 10000;
 long objetivo = 0;
-
-double kp = 1;
-double Ti = 1;
 
 void cambiofaseA(void);
 void cambiofaseB(void);
@@ -80,6 +71,9 @@ void loop() {
       lcd.print("BIENVENIDO      ");
       lcd.setCursor(0, 1);
       lcd.print("PULSE ENTER     ");
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENB, 255);
       break;
     
     case 's':
@@ -104,48 +98,15 @@ void loop() {
       break;
 
     case 'm':
-      lcd.setCursor(0, 0);
-      lcd.print("MOVIENDO...     ");
-      lcd.setCursor(0, 1);
-      lcd.print("                ");
-      lcd.setCursor(0, 1);
-      lcd.print(posicion);
-      lcd.print("/");
-      lcd.print(objetivo);
-      int u = 0;
-      while((posicion < objetivo - 100) || (posicion > objetivo + 100)){
-        lcd.setCursor(0, 1);
-        lcd.print("                ");
-        lcd.setCursor(0, 1);
-        lcd.print(posicion);
-        lcd.print("/");
-        lcd.print(objetivo);        
-        u = (objetivo - posicion) * kp;
-        if(u >= 0){
-          digitalWrite(IN3, LOW);
-          digitalWrite(IN4, HIGH);
-        } else{
-          digitalWrite(IN3, HIGH);
-          digitalWrite(IN4, LOW);
-          u = -u;
-        }
-        if(u > 255){
-          u = 255;
-        }
-        analogWrite(ENB, u);
-        delay(1);
-      }
 
-      digitalWrite(IN3, LOW);
-      digitalWrite(IN4, LOW);
-      analogWrite(ENB, 255);
+      mot.movimientoMotor(objetivo, pposicion, lcd);
+      
       lcd.setCursor(0, 0);
       lcd.print("POSICION FINAL  ");
       lcd.setCursor(0, 1);
       lcd.print("                ");
       lcd.setCursor(0, 1);
       lcd.print(posicion);
-      
       
       delay(2000);
       state = 'i';
