@@ -7,6 +7,8 @@
 #define BUTTON_UP 24
 #define BUTTON_DOWN 25
 
+#define BUTTON_EMERGENCIA 18
+
 #define ENB 5
 #define IN3 27
 #define IN4 26
