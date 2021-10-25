@@ -21,9 +21,7 @@ void Motor::moverMotor(int u){
       digitalWrite(IN4, LOW);
       u = -u;
     }
-    if(u < 55){ // A menos de 55 el motor no responde
-        u = 0;
-    }
+
     if(u > 255){
         u = 255; // La salida máxima es de 255
     }

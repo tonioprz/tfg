@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Wire.h>
+#include <Ethernet.h>
 #include <LiquidCrystal_I2C.h>
 #include <motor.h>
 #include <main.h>
@@ -12,21 +13,19 @@ Motor mot(IN3, IN4, ENB);
 
 void cambiofaseA(void);
 void cambiofaseB(void);
-void emergencia(void);
 
 void setup() {
   pinMode(faseA, INPUT_PULLUP);
   pinMode(faseB, INPUT_PULLUP);
+  pinMode(BUTTON_EMERGENCIA, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
   attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
+  attachInterrupt(digitalPinToInterrupt(BUTTON_EMERGENCIA), emergencia, RISING);
 
   pinMode(BUTTON_DOWN, INPUT_PULLUP);
   pinMode(BUTTON_UP, INPUT_PULLUP);
   pinMode(BUTTON_ENTER, INPUT_PULLUP);
   pinMode(BUTTON_ESC, INPUT_PULLUP);
-
-  //pinMode(BUTTON_EMERGENCIA, INPUT_PULLUP);
-  //attachInterrupt(digitalPinToInterrupt(BUTTON_EMERGENCIA), emergencia, FALLING);
 
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
@@ -179,18 +178,4 @@ void cambiofaseB(void){
   } else{
     posicion++;
   }
-}
-
-void emergencia(void){
-  lcd.setCursor(0,0);
-  lcd.print("EMERGENCIA      ");
-  lcd.setCursor(0,1);
-  lcd.print("                ");
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, HIGH);
-  digitalWrite(ENB, 0);
-  
-  //while(!digitalRead(BUTTON_EMERGENCIA)){
-    delay(2000);
-  //}
 }
