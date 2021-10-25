@@ -1,9 +1,10 @@
 #include <motor.h>
 
-Motor::Motor(int pinIN3, int pinIN4, int pinENB){
+Motor::Motor(int pinIN3, int pinIN4, int pinENB, int pinEMERGENCIA){
     IN3 = pinIN3;
     IN4 = pinIN4;
     ENB = pinENB;
+    EMERGENCIA = pinEMERGENCIA;
 }
 
 void Motor::pararMotor(){
@@ -47,6 +48,13 @@ void Motor::movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd
   int aux = 0;
   while((*posicion < objetivo - 10) || (*posicion > objetivo + 10) || (u > 55)){
     
+    if(!digitalRead(EMERGENCIA)){
+      pararMotor();
+      lcd.clear();
+      lcd.print("EMERGENCIA");
+      break;
+    }
+
     // Se actualiza la posición actual en el LCD cada 120 ms
     aux++;
     if(aux > 3){

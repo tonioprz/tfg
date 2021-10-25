@@ -9,7 +9,7 @@
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
 LiquidCrystal_I2C lcd(0x27,16,2);
 
-Motor mot(IN3, IN4, ENB);
+Motor mot(IN3, IN4, ENB, BUTTON_EMERGENCIA);
 
 void cambiofaseA(void);
 void cambiofaseB(void);
@@ -17,15 +17,16 @@ void cambiofaseB(void);
 void setup() {
   pinMode(faseA, INPUT_PULLUP);
   pinMode(faseB, INPUT_PULLUP);
-  pinMode(BUTTON_EMERGENCIA, INPUT_PULLUP);
+
   attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
   attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
-  attachInterrupt(digitalPinToInterrupt(BUTTON_EMERGENCIA), emergencia, RISING);
 
   pinMode(BUTTON_DOWN, INPUT_PULLUP);
   pinMode(BUTTON_UP, INPUT_PULLUP);
   pinMode(BUTTON_ENTER, INPUT_PULLUP);
   pinMode(BUTTON_ESC, INPUT_PULLUP);
+
+  pinMode(BUTTON_EMERGENCIA, INPUT_PULLUP);
 
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
