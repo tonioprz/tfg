@@ -27,5 +27,5 @@ long * pposicion = &posicion;
 
 char state = 'i';
 bool discreto = 0;
-long desplazamiento = 10000;
+long desplazamiento = 1000;
 long objetivo = 0;

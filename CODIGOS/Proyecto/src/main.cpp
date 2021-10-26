@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <Wire.h>
 #include <Ethernet.h>
 #include <LiquidCrystal_I2C.h>
 #include <motor.h>
@@ -13,6 +12,7 @@ Motor mot(IN3, IN4, ENB, BUTTON_EMERGENCIA);
 
 void cambiofaseA(void);
 void cambiofaseB(void);
+float medidaCalibre(void);
 
 void setup() {
   pinMode(faseA, INPUT_PULLUP);
@@ -163,6 +163,7 @@ void loop() {
 }
 
 
+
 void cambiofaseA(void){
   bool fB = digitalRead(faseB);
   if(fB){
@@ -179,4 +180,8 @@ void cambiofaseB(void){
   } else{
     posicion++;
   }
+}
+
+float medidaCalibre(void){
+  return 0; 
 }

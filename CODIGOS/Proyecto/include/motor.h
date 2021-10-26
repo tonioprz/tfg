@@ -7,10 +7,10 @@ class Motor
     int IN4;
     int ENB;
     int EMERGENCIA;
-    float kp = 1;
+    float kp = 0.5;
     float Ti = 2;
-    float Td = 0.3;
-    float T = 0.03;
+    float Td = 0.1;
+    float T = 0.01;
     
     public:
         Motor(int pinIN3, int pinIN4, int pinENB, int pinEMERGENCIA);
