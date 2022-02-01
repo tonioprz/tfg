@@ -15,6 +15,12 @@ void cambiofaseB(void);
 float medidaCalibre(void);
 
 void setup() {
+  // Inicializar el LCD
+  lcd.init();
+  
+  //Encender la luz de fondo.
+  lcd.backlight();
+    
   pinMode(faseA, INPUT_PULLUP);
   pinMode(faseB, INPUT_PULLUP);
 
@@ -26,20 +32,25 @@ void setup() {
   pinMode(BUTTON_ENTER, INPUT_PULLUP);
   pinMode(BUTTON_ESC, INPUT_PULLUP);
 
-  pinMode(BUTTON_EMERGENCIA, INPUT_PULLUP);
+  pinMode(BUTTON_EMERGENCIA, INPUT);
+  pinMode(BUTTON_LOCAL, INPUT);
+  pinMode(BUTTON_MICRO, INPUT);
 
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
-  pinMode(ENB, OUTPUT);
-
-  // Inicializar el LCD
-  lcd.init();
-  
-  //Encender la luz de fondo.
-  lcd.backlight();
-  
-  // Escribimos el Mensaje en el LCD.
-  lcd.print("BIENVENIDO      ");
+  if(!digitalRead(BUTTON_MICRO)){
+    pinMode(IN3, OUTPUT);
+    pinMode(IN4, OUTPUT);
+    pinMode(ENB, OUTPUT);
+    if(!digitalRead(BUTTON_EMERGENCIA)){
+      state = 'i';
+    } else{
+      state = 'e';
+    }
+  } else{
+    pinMode(IN3, INPUT);
+    pinMode(IN4, INPUT);
+    pinMode(ENB, INPUT);
+    state = 'f';
+  }
 }
 
 void loop() {
@@ -49,6 +60,20 @@ void loop() {
   down = digitalRead(BUTTON_DOWN);
   enter = digitalRead(BUTTON_ENTER);
   esc = digitalRead(BUTTON_ESC);
+
+  // Se lee el estado de la configuración
+  emergencia = digitalRead(BUTTON_EMERGENCIA);
+  local = digitalRead(BUTTON_LOCAL);
+  micro = digitalRead(BUTTON_MICRO);
+
+  if(micro && (state != 'f') && (state != 'e')){
+    setup();
+  }
+
+  if(emergencia && (state != 'e')){
+    state = 'e';
+    lcd.clear();
+  }
 
   // Máquina de estados
   switch(state){
@@ -95,6 +120,16 @@ void loop() {
       
       delay(2000);
       state = 'i';
+      break;
+
+    case 'f':
+      lcd.setCursor(0, 0);
+      lcd.print("SIN MICRO");
+      break;
+    
+    case 'e':
+      lcd.setCursor(0, 0);
+      lcd.print("EMERGENCIA");
       break;
   }
   // Transiciones entre estados
@@ -152,6 +187,18 @@ void loop() {
         lcd.print(" pulsos");        
       }
       break;
+    
+    case 'f':
+      if(!micro){
+        setup();
+      }
+      break;
+
+    case 'e':
+      if(!emergencia){
+        state = 'i';
+      }
+      break;
   }
 
   esc_ant = esc;
@@ -159,6 +206,10 @@ void loop() {
   up_ant = up;
   down_ant = down;
   
+  emergencia_ant = emergencia;
+  local_ant = local;
+  micro_ant = micro;
+    
   delay(10);
 }
 

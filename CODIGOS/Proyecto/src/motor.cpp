@@ -23,8 +23,8 @@ void Motor::moverMotor(int u){
       u = -u;
     }
 
-    if(u > 255){
-        u = 255; // La salida máxima es de 255
+    if(u > 200){
+        u = 200; // La salida máxima es de 255
     }
 
     analogWrite(ENB, u);
@@ -46,14 +46,10 @@ void Motor::movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd
   int ik = 0;
   int D = 0;
   int aux = 0;
-  while((*posicion < objetivo - 5) || (*posicion > objetivo + 5) || (u > 55)){
+  bool emer = 0;
+  while(((*posicion < objetivo - 10) || (*posicion > objetivo + 10) || (u > 55)) && !emer){
     
-    if(!digitalRead(EMERGENCIA)){
-      pararMotor();
-      lcd.clear();
-      lcd.print("EMERGENCIA");
-      break;
-    }
+    emer = digitalRead(EMERGENCIA);
 
     // Se actualiza la posición actual en el LCD cada 120 ms
     aux++;
@@ -78,10 +74,17 @@ void Motor::movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd
     if((abs(u) > 255) && (abs(ek) > 200)){
       ik = 0;
     }
-
-    moverMotor(u);
-    delay(1000 * T);
+    if(!emer){
+      moverMotor(u);
+      delay(1000 * T);
+    }
   }
-
+  
   pararMotor();
+  
+  if(emer){
+    lcd.clear();
+    lcd.print("EMERGENCIA");
+    delay(1000*T);
+  }
 }
