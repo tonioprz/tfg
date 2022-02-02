@@ -234,5 +234,5 @@ void cambiofaseB(void){
 }
 
 float medidaCalibre(void){
-  return 0; 
+  return 0;
 }

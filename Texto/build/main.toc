@@ -9,8 +9,8 @@
 \contentsline {chapter}{\numberline {2}Arquitectura de la plataforma}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funcionalidad}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Bidireccionalidad}{3}{subsection.2.1.1}%
-\contentsline {subsubsection}{Bidireccionalidad en la interfaz con los servicios del cliente}{3}{subsubsection*.3}%
-\contentsline {subsubsection}{Bidireccionalidad en la interfaz con los dispositivos}{4}{subsubsection*.4}%
+\contentsline {subsubsection}{Bidireccionalidad en la interfaz con los servicios del cliente}{3}{subsubsection*.4}%
+\contentsline {subsubsection}{Bidireccionalidad en la interfaz con los dispositivos}{4}{subsubsection*.5}%
 \contentsline {subsection}{\numberline {2.1.2}Tiempo real}{4}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Persistencia}{4}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Tenencia múltiple}{5}{subsection.2.1.4}%
@@ -32,12 +32,12 @@
 \contentsline {subsection}{\numberline {3.3.1}Brokers}{11}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}El modelo AQMP}{11}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}\emph {Exchanges}}{12}{subsection.3.3.3}%
-\contentsline {subsubsection}{\emph {Direct Exchange}}{12}{subsubsection*.9}%
-\contentsline {subsubsection}{\emph {Fanout Exchange}}{13}{subsubsection*.11}%
-\contentsline {subsubsection}{\emph {Topic Exchange}}{14}{subsubsection*.13}%
-\contentsline {subsubsection}{\emph {Header Exchange}}{14}{subsubsection*.14}%
+\contentsline {subsubsection}{\emph {Direct Exchange}}{12}{subsubsection*.10}%
+\contentsline {subsubsection}{\emph {Fanout Exchange}}{13}{subsubsection*.12}%
+\contentsline {subsubsection}{\emph {Topic Exchange}}{14}{subsubsection*.14}%
+\contentsline {subsubsection}{\emph {Header Exchange}}{14}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {3.3.4}Colas}{14}{subsection.3.3.4}%
-\contentsline {subsubsection}{Colas durables}{14}{subsubsection*.15}%
+\contentsline {subsubsection}{Colas durables}{14}{subsubsection*.16}%
 \contentsline {subsection}{\numberline {3.3.5}\emph {Bindings}}{14}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}Mensages}{14}{subsection.3.3.6}%
 \contentsline {section}{\numberline {3.4}STOMP vs. MQTT vs. AMQP}{15}{section.3.4}%
@@ -85,7 +85,7 @@
 \contentsline {section}{\numberline {7.3}Conexión al broker}{26}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Lógica de negocio}{27}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{29}{section*.16}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{31}{section*.18}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{33}{section*.20}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{29}{section*.17}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{31}{section*.19}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{33}{section*.21}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

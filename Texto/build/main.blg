@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: 00-agradecimientos/agradecimientos.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: 01-introduccion/introduccion.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
@@ -24,7 +26,7 @@ I found no \citation commands---while reading file main.aux
 Database file #1: bibliografiaLibroETSI.bib
 You've used 0 entries,
             2213 wiz_defined-function locations,
-            507 strings with 4175 characters,
+            508 strings with 4213 characters,
 and the built_in function-call counts, 32 in all, are:
 = -- 0
 > -- 0

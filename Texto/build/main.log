@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.14)  2 FEB 2022 01:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1809,7 +1809,7 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (c:\tfg\Texto\build\01-introduccion/introduccion.aux) (c:\tfg\Texto\build\02-arquitectura/contenido.aux) (c:\tfg\Texto\build\03-mqtt_stomp_amqp/contenido.aux
+ (c:\tfg\Texto\build\00-agradecimientos/agradecimientos.aux) (c:\tfg\Texto\build\01-introduccion/introduccion.aux) (c:\tfg\Texto\build\02-arquitectura/contenido.aux) (c:\tfg\Texto\build\03-mqtt_stomp_amqp/contenido.aux
 
 LaTeX Warning: Label `fig:figura1' multiply defined.
 
@@ -2031,43 +2031,39 @@ Package crop Info: detected driver: `pdftex' on input line 92.
 Package crop Info: using `pdftex' graphics driver on input line 92.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 119.
+(hyperref)                removing `\<def>-command' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\elnombretrabajo' on input line 119.
+(hyperref)                removing `\elnombretrabajo' on input line 120.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 119.
+(hyperref)                removing `\\' on input line 120.
 
 \pgf@layerbox@foreground=\box170
 \pgf@layerboxsaved@foreground=\box171
 <figuras/edificio01.pdf, id=30, 310.16478pt x 472.67862pt>
 File: figuras/edificio01.pdf Graphic file (type pdf)
 <use figuras/edificio01.pdf>
-Package pdftex.def Info: figuras/edificio01.pdf  used on input line 121.
+Package pdftex.def Info: figuras/edificio01.pdf  used on input line 122.
 (pdftex.def)             Requested size: 99.58604pt x 159.33101pt.
 <figuras/etsi.pdf, id=31, 65.81078pt x 82.84642pt>
 File: figuras/etsi.pdf Graphic file (type pdf)
 <use figuras/etsi.pdf>
-Package pdftex.def Info: figuras/etsi.pdf  used on input line 121.
+Package pdftex.def Info: figuras/etsi.pdf  used on input line 122.
 (pdftex.def)             Requested size: 67.80794pt x 85.35826pt.
 <figuras/LogoUS.pdf, id=32, 305.02626pt x 269.87737pt>
 File: figuras/LogoUS.pdf Graphic file (type pdf)
 <use figuras/LogoUS.pdf>
-Package pdftex.def Info: figuras/LogoUS.pdf  used on input line 121.
+Package pdftex.def Info: figuras/LogoUS.pdf  used on input line 122.
 (pdftex.def)             Requested size: 71.13188pt x 62.93526pt.
 <figuras/dit.pdf, id=33, 63.16724pt x 66.60901pt>
 File: figuras/dit.pdf Graphic file (type pdf)
 <use figuras/dit.pdf>
-Package pdftex.def Info: figuras/dit.pdf  used on input line 121.
+Package pdftex.def Info: figuras/dit.pdf  used on input line 122.
 (pdftex.def)             Requested size: 67.46295pt x 71.13188pt.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 121.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 122.
 (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -2075,15 +2071,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 121.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 122.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 121.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 122.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 121.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 122.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
@@ -2091,17 +2087,17 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 121.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 122.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 122.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -2109,44 +2105,47 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {C:/Users/Antonio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figuras/edificio01.pdf> <./figuras/etsi.pdf> <./figuras/LogoUS.pdf> <./figuras/dit.pdf>] [2] [3
 
 ] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
  []
 
 [5
 
 ] [6]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 133.
+\openout2 = `00-agradecimientos/agradecimientos.aux'.
+
+ (00-agradecimientos/agradecimientos.tex
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 1.
  (C:\Users\Antonio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
@@ -2154,7 +2153,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 133.
+) [1
+
+
+
+
+
+] [2
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 138.
  (c:\tfg\Texto\build\main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2164,12 +2174,7 @@ LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [1
-
-
-
-
-]
+ [3]
 LaTeX Font Info:    Font shape `T1/phv/c/it' in size <10> not available
 (Font)              Font shape `T1/phv/c/sl' tried instead on input line 34.
 LaTeX Info: Redefining \. on input line 49.
@@ -2220,11 +2225,11 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8.99994> not available
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
- [2]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [4]
 \openout2 = `01-introduccion/introduccion.aux'.
 
  (01-introduccion/introduccion.tex
@@ -2256,15 +2261,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.141 \include{01-introduccion/introduccion}
+l.146 \include{01-introduccion/introduccion}
                                              [2]
 \openout2 = `02-arquitectura/contenido.aux'.
 
@@ -2299,12 +2304,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
                    \relax 
 l.114 Q
        uery: El cliente puede decidir realizar una consulta a la API cuando ... [4]
-<02-arquitectura/figuras/fig001.pdf, id=319, 925.4575pt x 171.64125pt>
+<02-arquitectura/figuras/fig001.pdf, id=329, 925.4575pt x 171.64125pt>
 File: 02-arquitectura/figuras/fig001.pdf Graphic file (type pdf)
 <use 02-arquitectura/figuras/fig001.pdf>
 Package pdftex.def Info: 02-arquitectura/figuras/fig001.pdf  used on input line 137.
 (pdftex.def)             Requested size: 426.79134pt x 79.15497pt.
-<02-arquitectura/figuras/fig002.pdf, id=322, 687.56876pt x 827.09pt>
+<02-arquitectura/figuras/fig002.pdf, id=332, 687.56876pt x 827.09pt>
 File: 02-arquitectura/figuras/fig002.pdf Graphic file (type pdf)
 <use 02-arquitectura/figuras/fig002.pdf>
 Package pdftex.def Info: 02-arquitectura/figuras/fig002.pdf  used on input line 165.
@@ -2331,10 +2336,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has b
                    \relax 
 l.193 C
        omo \emph{broker} se ha usado \textbf{RabbitMQ} ya que es uno de los ... [6 <./02-arquitectura/figuras/fig002.pdf>])
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
  [7]
 \openout2 = `03-mqtt_stomp_amqp/contenido.aux'.
 
@@ -2345,7 +2350,7 @@ LaTeX Info: Redefining \% on input line 142.
 
 ]
 chapter 3.
-<03-mqtt_stomp_amqp/figuras/fig001.png, id=351, 642.4pt x 212.795pt>
+<03-mqtt_stomp_amqp/figuras/fig001.png, id=360, 642.4pt x 212.795pt>
 File: 03-mqtt_stomp_amqp/figuras/fig001.png Graphic file (type png)
 <use 03-mqtt_stomp_amqp/figuras/fig001.png>
 Package pdftex.def Info: 03-mqtt_stomp_amqp/figuras/fig001.png  used on input line 24.
@@ -2363,7 +2368,7 @@ LaTeX Info: Redefining \% on input line 108.
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
  [10]
-<03-mqtt_stomp_amqp/figuras/fig002.png, id=362, 702.625pt x 329.23pt>
+<03-mqtt_stomp_amqp/figuras/fig002.png, id=372, 702.625pt x 329.23pt>
 File: 03-mqtt_stomp_amqp/figuras/fig002.png Graphic file (type png)
 <use 03-mqtt_stomp_amqp/figuras/fig002.png>
 Package pdftex.def Info: 03-mqtt_stomp_amqp/figuras/fig002.png  used on input line 155.
@@ -2375,7 +2380,7 @@ LaTeX Info: Redefining \% on input line 177.
  [11]
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 181.
-<03-mqtt_stomp_amqp/figuras/fig003.png, id=369, 700.6175pt x 527.9725pt>
+<03-mqtt_stomp_amqp/figuras/fig003.png, id=378, 700.6175pt x 527.9725pt>
 File: 03-mqtt_stomp_amqp/figuras/fig003.png Graphic file (type png)
 <use 03-mqtt_stomp_amqp/figuras/fig003.png>
 Package pdftex.def Info: 03-mqtt_stomp_amqp/figuras/fig003.png  used on input line 224.
@@ -2385,7 +2390,7 @@ LaTeX Info: Redefining \% on input line 227.
 LaTeX Info: Redefining \. on input line 227.
 LaTeX Info: Redefining \% on input line 227.
  [12 <./03-mqtt_stomp_amqp/figuras/fig002.png>]
-<03-mqtt_stomp_amqp/figuras/fig004.png, id=376, 700.6175pt x 464.73625pt>
+<03-mqtt_stomp_amqp/figuras/fig004.png, id=385, 700.6175pt x 464.73625pt>
 File: 03-mqtt_stomp_amqp/figuras/fig004.png Graphic file (type png)
 <use 03-mqtt_stomp_amqp/figuras/fig004.png>
 Package pdftex.def Info: 03-mqtt_stomp_amqp/figuras/fig004.png  used on input line 240.
@@ -2400,10 +2405,10 @@ LaTeX Info: Redefining \% on input line 311.
 LaTeX Info: Redefining \. on input line 311.
 LaTeX Info: Redefining \% on input line 311.
  [14])
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
  [15]
 \openout2 = `04-broker_y_autorizacion/contenido.aux'.
 
@@ -2415,10 +2420,10 @@ LaTeX Info: Redefining \% on input line 143.
 ]
 chapter 4.
 )
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
  [17]
 \openout2 = `05-api/contenido.aux'.
 
@@ -2524,10 +2529,10 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 129--137
  []
 
 )
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
  [21]
 \openout2 = `06-bases_de_datos/contenido.aux'.
 
@@ -2539,10 +2544,10 @@ LaTeX Info: Redefining \% on input line 145.
 ]
 chapter 6.
 )
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
  [23]
 \openout2 = `07-dispositivos_y_modulos/contenido.aux'.
 
@@ -2561,20 +2566,20 @@ LaTeX Info: Redefining \% on input line 55.
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
  [25])
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
  [26]
 \openout2 = `08-logica_de_negocio/contenido.aux'.
 
  (08-logica_de_negocio/contenido.tex
 chapter 8.
 )
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
  [27
 
 
@@ -2586,7 +2591,7 @@ LaTeX Info: Redefining \% on input line 148.
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 170.
+Package tocbasic Info: character protrusion at lof deactivated on input line 175.
  (c:\tfg\Texto\build\main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2638,17 +2643,17 @@ LaTeX Info: Redefining \% on input line 41.
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
  [29
 
 
 ] [30
 
 ]
-Package tocbasic Info: character protrusion at lol deactivated on input line 177.
+Package tocbasic Info: character protrusion at lol deactivated on input line 182.
  (c:\tfg\Texto\build\main.lol
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2705,10 +2710,10 @@ LaTeX Info: Redefining \% on input line 42.
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
  [31
 
 ] [32
@@ -2719,10 +2724,10 @@ LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 10.
 
 )
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
  [33
 
 ]
@@ -2738,7 +2743,7 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (c:\tfg\Texto\build\01-introduccion/introduccion.aux) (c:\tfg\Texto\build\02-arquitectura/contenido.aux) (c:\tfg\Texto\build\03-mqtt_stomp_amqp/contenido.aux) (c:\tfg\Texto\build\04-broker_y_autorizacion/contenido.aux) (c:\tfg\Texto\build\05-api/contenido.aux
+ (c:\tfg\Texto\build\00-agradecimientos/agradecimientos.aux) (c:\tfg\Texto\build\01-introduccion/introduccion.aux) (c:\tfg\Texto\build\02-arquitectura/contenido.aux) (c:\tfg\Texto\build\03-mqtt_stomp_amqp/contenido.aux) (c:\tfg\Texto\build\04-broker_y_autorizacion/contenido.aux) (c:\tfg\Texto\build\05-api/contenido.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 LaTeX Info: Redefining \. on input line 14.
@@ -2791,17 +2796,17 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \ifx on line 7 was incomplete) 
 Here is how much of TeX's memory you used:
- 66424 strings out of 478659
- 1543578 string characters out of 2844972
- 2260289 words of memory out of 3000000
- 82694 multiletter control sequences out of 15000+600000
+ 66458 strings out of 478659
+ 1545218 string characters out of 2844972
+ 2260598 words of memory out of 3000000
+ 82715 multiletter control sequences out of 15000+600000
  491430 words of font info for 213 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  140i,8n,136p,10612b,2337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <C:\Users\Antonio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8ac.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8ac.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Antonio/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8ac.pfb>
-Output written on c:\tfg\Texto\build\main.pdf (41 pages, 1244755 bytes).
+Output written on c:\tfg\Texto\build\main.pdf (43 pages, 1245702 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 878 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  73351 words of extra memory for PDF output out of 74296 (max. 10000000)
 
