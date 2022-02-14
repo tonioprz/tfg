@@ -13,6 +13,8 @@ Motor mot(IN3, IN4, ENB, BUTTON_EMERGENCIA);
 void cambiofaseA(void);
 void cambiofaseB(void);
 float medidaCalibre(void);
+bool comprobarRobot(void);
+bool enviarRobot(String cadena);
 void ethconex(void);
 
 void setup() {
@@ -55,6 +57,8 @@ void setup() {
     pinMode(ENB, INPUT);
     state = 'f';
   }
+
+  posy = medidaCalibre();
 
   // Se inicia la comunicación Ethernet y la serie para depuración
   Serial.begin(9600);
@@ -100,6 +104,9 @@ void loop() {
       digitalWrite(IN3, LOW);
       digitalWrite(IN4, LOW);
       analogWrite(ENB, 255);
+      if(comprobarRobot()){
+        enviarRobot("e");
+      }
       break;
     
     case 's':
@@ -112,13 +119,25 @@ void loop() {
         lcd.setCursor(0, 1);
         lcd.print("AVANCE ABSOLUTO ");
       }
+      if(comprobarRobot()){
+        enviarRobot("e");
+      }
       break;
 
     case 'd':
+      if(comprobarRobot()){
+        enviarRobot("e");
+      }
       break;
 
     case 'm':
+      if(comprobarRobot()){
+        enviarRobot("m");
+      }
       mot.movimientoMotor(objetivo, pposicion, lcd);
+      if(comprobarRobot()){
+        enviarRobot("f");
+      }
       posy = medidaCalibre();
       lcd.setCursor(0, 0);
       lcd.print("POSICION FINAL  ");
@@ -326,47 +345,35 @@ float medidaCalibre(void){
   return medida;
 }
 
-
-void ethconex(void){
+bool comprobarRobot(void){
   EthernetClient cliente = servidor.available();
   if (cliente) {
-    Serial.println("\nNuevo Cliente");
-    boolean currentLineIsBlank = true; //Una petición HTTP acaba con una línea en blanco
-    String cadena=""; //Creamos una cadena de caracteres vacía
+    //Serial.print("CONECTADO");
+    //cliente.stop();
+    return 1;
+  } else{
+    cliente.stop();
+    return 0;
+  }
+}
+
+bool enviarRobot(String cadena){
+  EthernetClient cliente = servidor.available();
+  String recepcion;
+  if (cliente) {
     while (cliente.connected()) {
       if (cliente.available()) {
-        char c = cliente.read();//Leemos la petición HTTP carácter por carácter
-        Serial.write(c);//Visualizamos la petición HTTP por el Monitor Serial
-        cliente.println("HOLITA ROBOTITO");
-        if(cadena.length()<50)
-        {
-                  cadena.concat(c);//concatenmos el String 'cadena' con la petición HTTP (c). De esta manera convertimos la petición HTTP a un String          
-                  //Ya que hemos convertido la petición HTTP a una cadena de caracteres, ahora podremos buscar partes del texto.                          
-        }
-        //Cuando reciba una línea en blanco, quiere decir que la petición HTTP ha acabado y el servidor Web está listo para enviar una respuesta
-        if (c == 'n' && currentLineIsBlank) {
- 
-            // Enviamos al cliente una respuesta HTTP
-            cliente.println("HTTP/1.1 200 OK");
-            cliente.println("Content-Type: text/html");
-            cliente.println();
-
-            cliente.println("<html>"); 
-            cliente.println("HOLI WORLD");
-            cliente.println("</html>");
-            break;
-        }
-        if (c == 'n') {
-          currentLineIsBlank = true;
-        }
-        else if (c != 'r') {
-          currentLineIsBlank = false;
+        recepcion = cliente.readString();
+        if(recepcion == "STATUS"){
+          cliente.println(cadena);
+          cliente.println(posicion);
+          cliente.println(posy);
+          Serial.println(recepcion);
+          cliente.stop();
         }
       }
     }
-    //Dar tiempo al navegador para recibir los datos
-    delay(1);
-    cliente.stop();// Cierra la conexión
+    cliente.stop();
   }
-
+  return 0;
 }
