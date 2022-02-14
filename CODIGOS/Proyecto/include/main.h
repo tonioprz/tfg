@@ -1,15 +1,21 @@
 #define faseA 2
 #define faseB 3
 
+byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
+IPAddress IP(192,168,50,200); // IP estática del dispositivo
+EthernetServer servidor(4012); // Puerto donde se transmite la información
 
 #define BUTTON_ESC 22
 #define BUTTON_ENTER 23
 #define BUTTON_UP 24
 #define BUTTON_DOWN 25
 
-#define BUTTON_EMERGENCIA 32
+#define BUTTON_EMERGENCIA 30
 #define BUTTON_LOCAL 28
 #define BUTTON_MICRO 29
+
+#define CAL_CLK 32
+#define CAL_DATA 33
 
 #define ENB 5
 #define IN3 40
@@ -35,6 +41,8 @@ bool micro_ant;
 
 long posicion = 0;
 long * pposicion = &posicion;
+
+float posy = 0;
 
 char state = 'i';
 bool discreto = 0;

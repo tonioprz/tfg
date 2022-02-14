@@ -13,6 +13,7 @@ Motor mot(IN3, IN4, ENB, BUTTON_EMERGENCIA);
 void cambiofaseA(void);
 void cambiofaseB(void);
 float medidaCalibre(void);
+void ethconex(void);
 
 void setup() {
   // Inicializar el LCD
@@ -45,12 +46,22 @@ void setup() {
     } else{
       state = 'e';
     }
+    if(digitalRead(BUTTON_LOCAL)){
+      state = 'r';
+    }
   } else{
     pinMode(IN3, INPUT);
     pinMode(IN4, INPUT);
     pinMode(ENB, INPUT);
     state = 'f';
   }
+
+  // Se inicia la comunicación Ethernet y la serie para depuración
+  Serial.begin(9600);
+  Ethernet.begin(MAC, IP);
+
+  Serial.print("Servidor en IP ");
+  Serial.println(Ethernet.localIP());
 }
 
 void loop() {
@@ -70,6 +81,10 @@ void loop() {
     setup();
   }
 
+  if(local != local_ant){
+    setup();
+  }
+
   if(emergencia && (state != 'e')){
     state = 'e';
     lcd.clear();
@@ -79,7 +94,7 @@ void loop() {
   switch(state){
     case 'i':
       lcd.setCursor(0, 0);
-      lcd.print("BIENVENIDO      ");
+      lcd.print("MODO LOCAL      ");
       lcd.setCursor(0, 1);
       lcd.print("PULSE ENTER     ");
       digitalWrite(IN3, LOW);
@@ -100,24 +115,20 @@ void loop() {
       break;
 
     case 'd':
-      lcd.setCursor(0, 0);
-      if(discreto){
-        lcd.print("SEL. A. DISCRETO");
-      } else{
-        lcd.print("SEL. A. ABSOLUTO");
-      }
       break;
 
     case 'm':
       mot.movimientoMotor(objetivo, pposicion, lcd);
-      
+      posy = medidaCalibre();
       lcd.setCursor(0, 0);
       lcd.print("POSICION FINAL  ");
       lcd.setCursor(0, 1);
       lcd.print("                ");
       lcd.setCursor(0, 1);
+      lcd.print("X=");
       lcd.print(posicion);
-      
+      lcd.print(" Y=");
+      lcd.print(posy);
       delay(2000);
       state = 'i';
       break;
@@ -144,9 +155,22 @@ void loop() {
     case 's':
       if(!enter && enter_ant){
         state = 'd';
-        lcd.setCursor(0, 1);
+        
+        posy = medidaCalibre();
+        lcd.setCursor(0, 0);
         lcd.print("                ");
         lcd.setCursor(0, 1);
+        lcd.print("                ");
+        lcd.setCursor(0, 0);
+        lcd.print("X=");
+        lcd.print(posicion);
+        lcd.print(" Y=");
+        lcd.print(posy);
+
+        lcd.setCursor(0, 1);
+        if(desplazamiento > 0){
+          lcd.print("+");
+        }
         lcd.print(desplazamiento);
         lcd.print(" pulsos");                
       }
@@ -175,6 +199,9 @@ void loop() {
         lcd.setCursor(0, 1);
         lcd.print("                ");
         lcd.setCursor(0, 1);
+        if(desplazamiento > 0){
+          lcd.print("+");
+        }
         lcd.print(desplazamiento);
         lcd.print(" pulsos");        
       }
@@ -183,11 +210,24 @@ void loop() {
         lcd.setCursor(0, 1);
         lcd.print("                ");
         lcd.setCursor(0, 1);
+        if(desplazamiento > 0){
+          lcd.print("+");
+        }
         lcd.print(desplazamiento);
         lcd.print(" pulsos");        
       }
       break;
     
+    case 'r':
+      lcd.setCursor(0, 0);
+      lcd.print("MODO REMOTO     ");
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENB, 255);
+      break;
+
     case 'f':
       if(!micro){
         setup();
@@ -196,7 +236,7 @@ void loop() {
 
     case 'e':
       if(!emergencia){
-        state = 'i';
+        setup();
       }
       break;
   }
@@ -234,5 +274,99 @@ void cambiofaseB(void){
 }
 
 float medidaCalibre(void){
-  return 0;
+  bool data;
+  float medida;
+  int value = 0;
+  int signo = 0;
+
+  unsigned long tempmicros;
+  unsigned long tempmicros2;
+
+  for(int j=0; j<10 && (value == 0); j++){
+    tempmicros = micros();
+
+    while (digitalRead(CAL_CLK)==HIGH) {
+      delayMicroseconds(1);
+      
+    }
+
+    tempmicros2 = micros();
+
+    if ((tempmicros2-tempmicros)>10000) {
+      for (int i=0; i<24; i++) {
+        while (digitalRead(CAL_CLK)==LOW) {
+          delayMicroseconds(1);
+        }
+
+        data = digitalRead(CAL_DATA);
+
+        if(i<16){
+          value |= data << i;
+        }else{
+          signo |= (data << (i-16));
+        }
+
+        while (digitalRead(CAL_CLK)==HIGH) {
+          delayMicroseconds(1);
+        }
+      }
+        
+      
+      if(signo & 0x80){
+        medida = 25.4*float(value)/(2*1000);
+      } else{
+        medida = float(value)/100;
+      } 
+
+      if(signo & 0x10){
+        medida = -medida;
+      }
+    }
+  }
+  return medida;
+}
+
+
+void ethconex(void){
+  EthernetClient cliente = servidor.available();
+  if (cliente) {
+    Serial.println("\nNuevo Cliente");
+    boolean currentLineIsBlank = true; //Una petición HTTP acaba con una línea en blanco
+    String cadena=""; //Creamos una cadena de caracteres vacía
+    while (cliente.connected()) {
+      if (cliente.available()) {
+        char c = cliente.read();//Leemos la petición HTTP carácter por carácter
+        Serial.write(c);//Visualizamos la petición HTTP por el Monitor Serial
+        cliente.println("HOLITA ROBOTITO");
+        if(cadena.length()<50)
+        {
+                  cadena.concat(c);//concatenmos el String 'cadena' con la petición HTTP (c). De esta manera convertimos la petición HTTP a un String          
+                  //Ya que hemos convertido la petición HTTP a una cadena de caracteres, ahora podremos buscar partes del texto.                          
+        }
+        //Cuando reciba una línea en blanco, quiere decir que la petición HTTP ha acabado y el servidor Web está listo para enviar una respuesta
+        if (c == 'n' && currentLineIsBlank) {
+ 
+            // Enviamos al cliente una respuesta HTTP
+            cliente.println("HTTP/1.1 200 OK");
+            cliente.println("Content-Type: text/html");
+            cliente.println();
+
+            cliente.println("<html>"); 
+            cliente.println("HOLI WORLD");
+            cliente.println("</html>");
+            break;
+        }
+        if (c == 'n') {
+          currentLineIsBlank = true;
+        }
+        else if (c != 'r') {
+          currentLineIsBlank = false;
+        }
+      }
+    }
+    //Dar tiempo al navegador para recibir los datos
+    delay(1);
+    cliente.stop();// Cierra la conexión
+  }
+
 }
