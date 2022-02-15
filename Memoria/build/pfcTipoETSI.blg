@@ -9,6 +9,20 @@ Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: 0c-notacion/notacion.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: 01-introduccion/introduccion.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: 02-hardware/hardware.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: 03-caja/caja.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: 04-placa/placa.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: 05-arduino/arduino.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: 06-robotstudio/robotstudio.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: 07-resultados/resultados.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: 08-conclusiones/conclusiones.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: amsplain.bst
 Reallocating 'name_of_file' (item size: 1) to 22 items.
@@ -19,7 +33,7 @@ Warning--entry type for "moser" isn't style-file defined
 --line 109 of file bibliografiaLibroETSI.bib
 You've used 3 entries,
             2213 wiz_defined-function locations,
-            516 strings with 4259 characters,
+            523 strings with 4429 characters,
 and the built_in function-call counts, 670 in all, are:
 = -- 49
 > -- 21
