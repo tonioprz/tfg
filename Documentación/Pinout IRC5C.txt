@@ -1,5 +1,4 @@
-Conector arduino - controladora IRB120
-
-10 - GND
-24 - GND 
-25 - VCC 24V
+Pin Nombre
+10  GND
+24  GND 
+25  VCC-24V
