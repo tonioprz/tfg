@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: pfcTipoETSI.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: agradecimientos/agradecimientos.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: resumen/resumen.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: notacion/notacion.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: cubierta/cubierta.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: introduccion/introduccion.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: estructura/estructura.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: CapituloEstilo/estilolibroetsi.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: apendices/apendices.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: amsplain.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Database file #1: bibliografiaLibroETSI.bib
+Warning--entry type for "koma" isn't style-file defined
+--line 12 of file bibliografiaLibroETSI.bib
+Warning--entry type for "moser" isn't style-file defined
+--line 109 of file bibliografiaLibroETSI.bib
+You've used 3 entries,
+            2213 wiz_defined-function locations,
+            520 strings with 4350 characters,
+and the built_in function-call counts, 670 in all, are:
+= -- 49
+> -- 21
+< -- 0
++ -- 10
+- -- 6
+* -- 37
+:= -- 110
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 34
+empty$ -- 73
+format.name$ -- 6
+if$ -- 138
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 5
+newline$ -- 19
+num.names$ -- 6
+pop$ -- 29
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 16
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 6
+width$ -- 4
+write$ -- 32
+(There were 2 warnings)

@@ -2,7 +2,10 @@
 
 %:BLOQUE 00 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{libroETSI}[2014/03/16 Manejando los estilos de la ETSI]
+\ProvidesPackage{libroETSI}[2017/04/17 Manejando los estilos de la ETSI]
+
+%:Necesario únicamente para LuaLaTeX pero no hace daño para LaTeX. Es un parche a la espera que muchos paquetes se adapten a la nueva versión de LuaLaTeX. DEBE ESTAR AL PRINCIPIO DE TODO.
+\usepackage{luatex85}
 
 %:Para establecer opciones del paquete
 \RequirePackage{kvoptions}
@@ -394,6 +397,7 @@
 \newcommand{\rhfont}{\fontsize{\lnormal}{\lbnormal}\titular}					%Cabeceras de páginas
 \newcommand{\rhpagefont}{\fontsize{\lnueve}{\lbnueve}\titular}				%Números de páginas
 
+\newcommand{\tocpart}{\fontsize{\ldoce}{\lbdoce}\titulartocb}					% Para el TOC
 \newcommand{\tocchap}{\fontsize{\lonce}{\lbonce}\titulartocb}				% Para el TOC
 \newcommand{\tocschap}{\fontsize{\lonce}{\lbonce}\titulartocb}
 \newcommand{\tocsecc}{\fontsize{\lnormal}{\lbnormal}\titulartoc}
@@ -421,14 +425,27 @@
 \renewcommand{\@tocrmarg}{4em}			% Para despegar el final de la línea del número
 \makeatother
 
+% FJPS 17/04/2017 Modificaciones para incorporar partes en el toc, con un tratamiento específico
+%:Para definir cómo aparecen las partes en el TOC
+\makeatletter			
+\ifdtsc@MyCap
+	\renewcommand*\l@part[2]
+		{
+		\addpenalty{-\@highpenalty}%
+		\vskip 1.5em \@plus\p@
+		\@dottedtocline{0}{0em}{1.5em}{\tocpart \partname\; #1}{\tocpart #2}
+		}
+\fi
+\makeatother		
+
 %:Para definir cómo aparecen los capítulos en el TOC
 \makeatletter
 \ifdtsc@MyCap
 	\renewcommand*\l@chapter[2]
 		{
 		\addpenalty{-\@highpenalty}%
-		\vskip 0.5em \@plus\p@
-		\@dottedtocline{0}{0em}{1em}{\tocchap #1}{\tocchap #2}
+		\vskip 1em \@plus\p@
+		\@dottedtocline{0}{0em}{1.5em}{\tocchap #1}{\tocchap #2}
 		}
 \fi
 \makeatother
@@ -440,7 +457,7 @@
 		{
 		\addpenalty{-\@highpenalty}%
 		\vskip 0.5em \@plus\p@
-		\@dottedtocline{1}{1em}{2em}{\tocschap #1}{\tocschap #2}
+		\@dottedtocline{1}{1.5em}{2em}{\tocschap #1}{\tocschap #2}
 		}
 \makeatother
 
@@ -450,7 +467,7 @@
 	{
     \addpenalty{-\@highpenalty}%
     \vskip 0.1em \@plus\p@
-	\@dottedtocline{1}{1em}{2.5em}{\tocsecc #1}{\tocsecc #2}
+	\@dottedtocline{1}{1.5em}{2.5em}{\tocsecc #1}{\tocsecc #2}
 	}
 \makeatother
 
@@ -470,7 +487,7 @@
 	{
     \addpenalty{-\@highpenalty}%
     \vskip 0.05em \@plus\p@
-	\@dottedtocline{2}{3.5em}{3em}{\tocsubsecc #1}{\tocsubsecc #2}
+	\@dottedtocline{2}{4em}{3em}{\tocsubsecc #1}{\tocsubsecc #2}
 	}
 \makeatother
 
@@ -796,10 +813,10 @@
 \usepackage{csquotes}
 
 %:Para incluir acentos especiales
-\usepackage{ipa}
+%\usepackage{ipa}
 
-%:Para utilizar algunos logos
-\usepackage{dtklogos}
+%%:Para utilizar algunos logos
+%\usepackage{dtklogos}
 
 %:Para que no haya guiones en algunas cosas
 \usepackage{hyphenat}
@@ -813,23 +830,24 @@
 %:Para que se numeren hasta las subsecciones
 \setcounter{secnumdepth}{4}
 
+% FJPS Modificación para la nueva versión de LuaTeX
 %:Control de índices y superíndices
 \ifluatex
 	% control de índices y superíndices para las ecuaciones en línea
-	\everymath=\expandafter{\the\everymath\luatexUmathsubshiftdown\textstyle=2.5pt}
-	\everymath=\expandafter{\the\everymath\luatexUmathsubshiftdrop\textstyle=2.5pt}
-	\everymath=\expandafter{\the\everymath\luatexUmathsubsupshiftdown\textstyle=2.5pt}
-	\everymath=\expandafter{\the\everymath\luatexUmathsupshiftup\textstyle=4pt}
-	\everymath=\expandafter{\the\everymath\luatexUmathsupshiftdrop\textstyle=2.5pt}
+	\everymath=\expandafter{\the\everymath\Umathsubshiftdown\textstyle=2.5pt}
+	\everymath=\expandafter{\the\everymath\Umathsubshiftdrop\textstyle=2.5pt}
+	\everymath=\expandafter{\the\everymath\Umathsubsupshiftdown\textstyle=2.5pt}
+	\everymath=\expandafter{\the\everymath\Umathsupshiftup\textstyle=4pt}
+	\everymath=\expandafter{\the\everymath\Umathsupshiftdrop\textstyle=2.5pt}
 
 	% control de índices y superíndices para las ecuaciones display
-	\everydisplay=\expandafter{\the\everydisplay\luatexUmathsubshiftdown\displaystyle=2.5pt}
-	\everydisplay=\expandafter{\the\everydisplay\luatexUmathsubshiftdrop\displaystyle=2.5pt}
-	\everydisplay=\expandafter{\the\everydisplay\luatexUmathsubsupshiftdown\displaystyle=2.5pt}
-	\everydisplay=\expandafter{\the\everydisplay\luatexUmathsupshiftup\displaystyle=4pt}
-	\everydisplay=\expandafter{\the\everydisplay\luatexUmathsupshiftdrop\displaystyle=2.5pt}
+	\everydisplay=\expandafter{\the\everydisplay\Umathsubshiftdown\displaystyle=2.5pt}
+	\everydisplay=\expandafter{\the\everydisplay\Umathsubshiftdrop\displaystyle=2.5pt}
+	\everydisplay=\expandafter{\the\everydisplay\Umathsubsupshiftdown\displaystyle=2.5pt}
+	\everydisplay=\expandafter{\the\everydisplay\Umathsupshiftup\displaystyle=4pt}
+	\everydisplay=\expandafter{\the\everydisplay\Umathsupshiftdrop\displaystyle=2.5pt}
 	
-	%Una redefinición del comando \sb para utilizar, por ejemplo, en g\sb{I_{n}} y que quede mejor. 
+	%Una redefinición del comando \xb para utilizar, por ejemplo, en g\xb{I_{n}} y que quede mejor. La utilización de \sb en lugar de \xb provocaba problemas con el comando \url de las nuevas versiones
 	\makeatletter
 	\newcommand{\raisemath}[1]{\mathpalette{\raisem@th{#1}}}
 	\newcommand{\raisem@th}[3]{\raisebox{#1}{$#2#3$}}
