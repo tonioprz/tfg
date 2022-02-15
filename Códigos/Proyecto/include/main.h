@@ -10,9 +10,11 @@ EthernetServer servidor(4012); // Puerto donde se transmite la información
 #define BUTTON_UP 24
 #define BUTTON_DOWN 25
 
-#define BUTTON_EMERGENCIA 30
 #define BUTTON_LOCAL 28
 #define BUTTON_MICRO 29
+#define BUTTON_EMERGENCIA 30
+
+#define SENSOR_FOTO 31
 
 #define CAL_CLK 32
 #define CAL_DATA 33

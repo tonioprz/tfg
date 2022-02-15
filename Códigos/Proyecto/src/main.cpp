@@ -39,6 +39,8 @@ void setup() {
   pinMode(BUTTON_LOCAL, INPUT);
   pinMode(BUTTON_MICRO, INPUT);
 
+  pinMode(SENSOR_FOTO, INPUT);
+
   if(!digitalRead(BUTTON_MICRO)){
     pinMode(IN3, OUTPUT);
     pinMode(IN4, OUTPUT);
@@ -365,11 +367,13 @@ bool enviarRobot(String cadena){
       if (cliente.available()) {
         recepcion = cliente.readString();
         if(recepcion == "STATUS"){
-          cliente.println(cadena);
-          cliente.println(posicion);
-          cliente.println(posy);
+          String envio = cadena + " X=" + (String) posicion + " Y=" +(String) posy;
+          cliente.println(envio);
+          //cliente.println(cadena);
+          //cliente.println(posicion);
+          //cliente.println(posy);
           Serial.println(recepcion);
-          cliente.stop();
+          //cliente.stop();
         }
       }
     }
