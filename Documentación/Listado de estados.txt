@@ -1,0 +1,8 @@
+Carácter    Estado  
+'i'         Estado inicial en modo local
+'s'         Modo selección absoluto/discreto en modo local
+'d'         Selección de distancia a recorrer
+'m'         Motor en movimiento
+'f'         Modo sin microcontrolador
+'e'         Estado emergencia
+'r'         Estado de espera en modo remoto

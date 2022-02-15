@@ -14,7 +14,7 @@ void cambiofaseA(void);
 void cambiofaseB(void);
 float medidaCalibre(void);
 bool comprobarRobot(void);
-bool enviarRobot(String cadena);
+bool enviarRobot(char dato);
 void ethconex(void);
 
 void setup() {
@@ -46,18 +46,18 @@ void setup() {
     pinMode(IN4, OUTPUT);
     pinMode(ENB, OUTPUT);
     if(!digitalRead(BUTTON_EMERGENCIA)){
-      state = 'i';
+      estado = 'i';
     } else{
-      state = 'e';
+      estado = 'e';
     }
     if(digitalRead(BUTTON_LOCAL)){
-      state = 'r';
+      estado = 'r';
     }
   } else{
     pinMode(IN3, INPUT);
     pinMode(IN4, INPUT);
     pinMode(ENB, INPUT);
-    state = 'f';
+    estado = 'f';
   }
 
   posy = medidaCalibre();
@@ -83,7 +83,7 @@ void loop() {
   local = digitalRead(BUTTON_LOCAL);
   micro = digitalRead(BUTTON_MICRO);
 
-  if(micro && (state != 'f') && (state != 'e')){
+  if(micro && (estado != 'f') && (estado != 'e')){
     setup();
   }
 
@@ -91,13 +91,13 @@ void loop() {
     setup();
   }
 
-  if(emergencia && (state != 'e')){
-    state = 'e';
+  if(emergencia && (estado != 'e')){
+    estado = 'e';
     lcd.clear();
   }
 
   // Máquina de estados
-  switch(state){
+  switch(estado){
     case 'i':
       lcd.setCursor(0, 0);
       lcd.print("MODO LOCAL      ");
@@ -107,7 +107,7 @@ void loop() {
       digitalWrite(IN4, LOW);
       analogWrite(ENB, 255);
       if(comprobarRobot()){
-        enviarRobot("e");
+        enviarRobot(estado);
       }
       break;
     
@@ -122,23 +122,23 @@ void loop() {
         lcd.print("AVANCE ABSOLUTO ");
       }
       if(comprobarRobot()){
-        enviarRobot("e");
+        enviarRobot(estado);
       }
       break;
 
     case 'd':
       if(comprobarRobot()){
-        enviarRobot("e");
+        enviarRobot(estado);
       }
       break;
 
     case 'm':
       if(comprobarRobot()){
-        enviarRobot("m");
+        enviarRobot(estado);
       }
       mot.movimientoMotor(objetivo, pposicion, lcd);
       if(comprobarRobot()){
-        enviarRobot("f");
+        enviarRobot(estado);
       }
       posy = medidaCalibre();
       lcd.setCursor(0, 0);
@@ -151,7 +151,7 @@ void loop() {
       lcd.print(" Y=");
       lcd.print(posy);
       delay(2000);
-      state = 'i';
+      estado = 'i';
       break;
 
     case 'f':
@@ -165,17 +165,17 @@ void loop() {
       break;
   }
   // Transiciones entre estados
-  switch(state){
+  switch(estado){
 
     case 'i':
       if(!enter && enter_ant){
-        state = 's';
+        estado = 's';
       }
       break;
 
     case 's':
       if(!enter && enter_ant){
-        state = 'd';
+        estado = 'd';
         
         posy = medidaCalibre();
         lcd.setCursor(0, 0);
@@ -196,7 +196,7 @@ void loop() {
         lcd.print(" pulsos");                
       }
       if(!esc && esc_ant){
-        state = 'i';
+        estado = 'i';
       }
       if((!up && up_ant) || (!down && down_ant)){
         discreto = !discreto;
@@ -205,7 +205,7 @@ void loop() {
 
     case 'd':
       if(!enter && enter_ant){
-        state = 'm';
+        estado = 'm';
         if(discreto){
           objetivo = posicion + desplazamiento;
         } else{
@@ -213,7 +213,7 @@ void loop() {
         }
       }
       if(!esc && esc_ant){
-        state = 's';
+        estado = 's';
       }
       if(!up && up_ant){
         desplazamiento = desplazamiento + 1000;
@@ -359,7 +359,7 @@ bool comprobarRobot(void){
   }
 }
 
-bool enviarRobot(String cadena){
+bool enviarRobot(char dato){
   EthernetClient cliente = servidor.available();
   String recepcion;
   if (cliente) {
@@ -367,7 +367,7 @@ bool enviarRobot(String cadena){
       if (cliente.available()) {
         recepcion = cliente.readString();
         if(recepcion == "STATUS"){
-          String envio = cadena + " X=" + (String) posicion + " Y=" +(String) posy;
+          String envio = dato + " X=" + (String) posicion + " Y=" +(String) posy;
           cliente.println(envio);
           //cliente.println(cadena);
           //cliente.println(posicion);

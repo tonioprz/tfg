@@ -1,0 +1,18 @@
+Pin Nombre              Descripción
+2   faseA               Fase A del encoder
+3   faseB               Fase B del encoder
+5   ENB                 Pin de control de velocidad del módulo L298N
+20  SDA                 Pin I2C de datos del LCD
+21  SCL                 Pin I2C de reloj del LCD
+22  BUTTON_ESC          Botón de retroceso en menús
+23  BUTTON_ENTER        Botón de avance en menús
+24  BUTTON_UP           Botón de arriba
+25  BUTTON_DOWN         Botón de abajo
+28  BUTTON_LOCAL        Botón de modo local
+29  BUTTON_MICRO        Botón de activación de modo microcontrolador
+30  BUTTON_EMERGENCIA   Botón de emergencia
+31  SENSOR_FOTO         Pin normalmente abierto del sensor fotoeléctrico
+32  CAL_CLK             Pin de señal de reloj del calibre
+33  CAL_DATA            Pin de señal de datos del calibre
+40  IN3                 Pin de control de sentido del módulo L298N
+41  IN4                 Pin de control de sentido del módulo L298N

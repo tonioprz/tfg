@@ -46,7 +46,7 @@ long * pposicion = &posicion;
 
 float posy = 0;
 
-char state = 'i';
+char estado = 'i';
 bool discreto = 0;
 long desplazamiento = 1000;
 long objetivo = 0;
