@@ -1,22 +1,14 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: pfcTipoETSI.aux
-Reallocating 'name_of_file' (item size: 1) to 36 items.
-A level-1 auxiliary file: agradecimientos/agradecimientos.aux
-Reallocating 'name_of_file' (item size: 1) to 20 items.
-A level-1 auxiliary file: resumen/resumen.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: notacion/notacion.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: cubierta/cubierta.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: introduccion/introduccion.aux
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: estructura/estructura.aux
-Reallocating 'name_of_file' (item size: 1) to 35 items.
-A level-1 auxiliary file: CapituloEstilo/estilolibroetsi.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: apendices/apendices.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: 0a-agradecimientos/agradecimientos.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: 0b-resumen/resumen.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: 0c-notacion/notacion.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: 01-introduccion/introduccion.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: amsplain.bst
 Reallocating 'name_of_file' (item size: 1) to 22 items.
@@ -27,7 +19,7 @@ Warning--entry type for "moser" isn't style-file defined
 --line 109 of file bibliografiaLibroETSI.bib
 You've used 3 entries,
             2213 wiz_defined-function locations,
-            520 strings with 4350 characters,
+            516 strings with 4259 characters,
 and the built_in function-call counts, 670 in all, are:
 = -- 49
 > -- 21

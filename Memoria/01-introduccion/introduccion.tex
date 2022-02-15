@@ -1,21 +1,48 @@
-
+% !TEX root =../LibroTipoETSI.tex
+%El anterior comando permite compilar este documento llamando al documento raíz
 \chapter{Guía de Uso}\label{chp-01}
 
 
 %\lettrine[lraise=0.7, lines=1, loversize=-0.25]{E}{n}
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{E}{n} este capítulo vamos a describir las partes de las que consta un documento tipo, cómo deben interpretarse los diferentes comandos que se han definido para su confección, los \indexit{paquetes} (conjunto de sentencias de \LaTeX\ escritas y desarrolladas por diversos autores) que se han cargados y el porqué de los mismos, elecciones realizadas en cuanto a la edición, el porqué de determinadas fuentes, etc. 
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{E}{n} este capítulo vamos a describir las partes 
+de las que consta un documento tipo, cómo deben interpretarse los diferentes comandos que se han 
+definido para su confección, los \indexit{paquetes} (conjunto de sentencias de \LaTeX\ escritas y 
+desarrolladas por diversos autores) que se han cargados y el porqué de los mismos, elecciones 
+realizadas en cuanto a la edición, el porqué de determinadas fuentes, etc. Probando
 
-Hay mucho de elección personal en lo que sigue y únicamente se justifica desde el gusto personal de quienes escribimos esto. No pretendemos por ello sentar precedentes, obligaciones ni restricciones a quien desee utilizar este documento. En cualquier caso, esperamos que su lectura sea provechosa para la confección y edición de libros, apuntes de clase, proyectos, etc.
+Nuevo párrafo
 
-\LaTeX se ha convertido de hecho en el procesador de texto estándar para la edición de documentos científicos. Este libro está escrito precisamente en \LaTeX, haciendo uso de la plantilla que hemos diseñado y al escribir un libro sobre cómo escribir un libro en \LaTeX\  y cómo hacer uso de esta plantilla, estamos entrando muchas veces en una redundancia evidente.
+Hay mucho de elección personal en lo que sigue y únicamente se justifica desde el gusto personal de 
+quienes escribimos esto. No pretendemos por ello sentar precedentes, obligaciones ni restricciones 
+a quien desee utilizar este documento. En cualquier caso, esperamos que su lectura sea provechosa 
+para la confección y edición de libros, apuntes de clase, proyectos, etc.
 
-Estas páginas no constituyen un manual de \LaTeX,  ni lo pretendemos, ya que existen incontables y buenas referencias sobre este tema. El objetivo es describir los aspectos formales que deseamos se puedan incorporar a cualquier texto producido en la Escuela.  También, como la mayoría de nuestra producción científica utiliza ampliamente las fórmulas matemáticas, incluimos algunos consejos sobre la escritura de las mismas, para lo que hemos utilizado las notas preparadas en \cite{moser}. Asimismo resulta muy interesante el libro \cite{gratzer}.
+\LaTeX se ha convertido de hecho en el procesador de texto estándar para la edición de documentos 
+científicos. Este libro está escrito precisamente en \LaTeX, haciendo uso de la plantilla que hemos 
+diseñado y al escribir un libro sobre cómo escribir un libro en \LaTeX\  y cómo hacer uso de esta 
+plantilla, estamos entrando muchas veces en una redundancia evidente.
 
-Por último, puesto que los ficheros fuentes de este documento están disponibles, esperamos que los mismos faciliten la utilización de los distintos elementos de edición.
+Estas páginas no constituyen un manual de \LaTeX,  ni lo pretendemos, ya que existen incontables y 
+buenas referencias sobre este tema. El objetivo es describir los aspectos formales que deseamos se 
+puedan incorporar a cualquier texto producido en la Escuela.  También, como la mayoría de nuestra 
+producción científica utiliza ampliamente las fórmulas matemáticas, incluimos algunos consejos sobre 
+la escritura de las mismas, para lo que hemos utilizado las notas preparadas en \cite{moser}. Asimismo 
+resulta muy interesante el libro \cite{gratzer}.
+
+Por último, puesto que los ficheros fuentes de este documento están disponibles, esperamos que los 
+mismos faciliten la utilización de los distintos elementos de edición.
 
 \section{Cómo usar los  estilos de documento de la ETSI}\label{sec-00}
 
-Una de las bondades del \LaTeX\ es que una vez definido el estilo, formado por un conjunto de paquetes y adaptaciones de los mismos, la escritura de un texto se reduce a dominar una serie de comandos. En nuestro caso, se presenta este documento como ejemplo de uso de estos comandos. En este capítulo encontrará detalles técnicos sobre la estructura del documento y una breve introducción sobre algunos de los elementos del estilo diseñado, puesto que en el Capítulo \ref{chap:estilo} se estudian detalladamente todos sus componentes. También encontrará instrucciones de cómo compilar el documento. Para usar esta hoja de estilo, se recomienda leer el Capítulo \ref{chap:CAPEJ} y Capítulo \ref{chap:CAPPB} como ejemplos de capítulos donde se incluyen la mayoría de los comandos que pueden ser de utilidad en la redacción de un texto técnico. 
+Una de las bondades del \LaTeX\ es que una vez definido el estilo, formado por un conjunto de paquetes 
+y adaptaciones de los mismos, la escritura de un texto se reduce a dominar una serie de comandos. En 
+nuestro caso, se presenta este documento como ejemplo de uso de estos comandos. En este capítulo 
+encontrará detalles técnicos sobre la estructura del documento y una breve introducción sobre algunos 
+de los elementos del estilo diseñado, puesto que en el Capítulo \ref{chap:estilo} se estudian 
+detalladamente todos sus componentes. También encontrará instrucciones de cómo compilar el documento. 
+Para usar esta hoja de estilo, se recomienda leer el Capítulo \ref{chap:CAPEJ} y Capítulo \ref{chap:CAPPB} 
+como ejemplos de capítulos donde se incluyen la mayoría de los comandos que pueden ser de utilidad en 
+la redacción de un texto técnico. 
 
 El archivo \ttcolor{libroTipoETSI.tex} es el archivo principal, que tiene una serie de comandos para incluir las distintas partes que se necesiten. Muchas de estas partes se han incluido separadamente en carpetas, por comodidad. Este archivo lo hemos modificado levemente para utilizarlo como formato para proyecto fin de carrera/grado/máster. El resultado se incluye en un fichero con nombre \ttcolor{pfcTipoETSI.tex}. Y también se incluye un formato para tesis \ttcolor{tesisTipoETSI.tex}
 
@@ -113,16 +140,8 @@ La inclusión de las figuras se realiza mediante un conjunto de instrucciones qu
 \end{lstlisting}
 %\end{micuadro}
 
-Y el resultado se muestra en la \autoref{fig01-01}.
+Y el resultado se muestra en la
 
-%
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\linewidth]{introduccion/figuras/fig01-01.pdf}
-\caption{Modelo de un sistema de Comunicación Digital I}
-\label{fig01-01}
-\end{figure}
-%
 
 Para incluir una tabla utilizamos las instrucciones siguientes:
 %\nopagebreak 

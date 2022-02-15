@@ -101,16 +101,16 @@ twoside}
 %ver edicionPFC.sty para modificaciones
 
 %:Para crear la portada y la portada interior (pagina titular)
-\titulo{Formato de Publicación de la Escuela \mbox{Técnica} Superior de Ingeniería} %\mbox evita que se divida una palabra al cambiar de línea
-\autor{F. Javier Payán Somet}
-\director{Juan José Murillo Fuentes}
-\titulodirector{Profesor Titular}
+\titulo{Integración de robot manipulador con \mbox{posicionador} basado en arduino} %\mbox evita que se divida una palabra al cambiar de línea
+\autor{Antonio Pérez García}
+\director{Luis Fernando Castaño Castaño}
+\titulodirector{Profesor Contratado Doctor}
 
-\departamento{Dpto. Ingeniería Eléctrica}
+\departamento{Dpto. Ingeniería de Sistemas y Automática}
 \centro{Escuela Técnica Superior de Ingeniería}
 \universidad{Universidad de Sevilla}
-\titulacion{Grado en...}
-\fecha{2018}
+\titulacion{Grado en Ingeniería en Tecnologías Industriales}
+\fecha{2022}
 \nombretrabajo{Trabajo Fin de Grado} %Proyecto fin de Máster,....
 
 \hypersetup
@@ -130,10 +130,10 @@ twoside}
 \pagenumbering{Roman} %Pone la numeración en mayúscula (En español parece que es obligatorio)
 
 %\include{dedicatoria/dedicatoria}%¿Comentar para proyectos/tesis?
-\include{agradecimientos/agradecimientos}
+\include{0a-agradecimientos/agradecimientos}
 
 %PFC/PFM/TESIS
-\include{resumen/resumen} 
+\include{0b-resumen/resumen}
 
 % Índice abreviado 
 % El índice abreviado se incluye también en algunos libros, con menor detalle que el completo. Descomentar las siguientes líneas.
@@ -149,7 +149,7 @@ twoside}
 \pagestyle{especial}
 \tableofcontents
 
-\include{notacion/notacion} %No incluir si no se quiere, comentándolo
+\include{0c-notacion/notacion} %No incluir si no se quiere, comentándolo
 
 %:Empieza el contenido del libro
 \mainmatter
@@ -159,22 +159,17 @@ twoside}
 
 %:Los diferentes capítulos, en carpetas separadas
 %
-\include{cubierta/cubierta}
+\include{01-introduccion/introduccion}%Guia uso
 %
-\include{introduccion/introduccion}%Guia uso
-%
-\include{estructura/estructura}
-%
-\include{CapituloEstilo/estilolibroetsi}
 % 
 %
 %%:Empezamos con los apéndices, que irían en uno o más ficheros. Es necesario incluir estos ficheros entre el entorno \begin{appendices}....\end{appendices} debido a que se ha deseado utilizar un formato diferente para el título de los apéndices, incluyendo la palabra apéndice, para la numeración de los apéndices, alfabético, y para las cabeceras de las páginas.
 %
-\begin{appendices}
+%\begin{appendices}
 %
-\include{apendices/apendices} 
+%\include{apendices/apendices} 
 %
-\end{appendices}
+%\end{appendices}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,19 +217,19 @@ twoside}
 % - Mendeley (con licencia de la US)
 
 %:Índice alfabético de palabras
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{listasb}{\indexname}
-\chaptermark{\indexname}
-\printindex
+%\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{listasb}{\indexname}
+%\chaptermark{\indexname}
+%\printindex
 
 
 %:Acrónimos
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{listasb}{\glossaryname}
-\chaptermark{\glossaryname}
-\printglossaries
+%\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{listasb}{\glossaryname}
+%\chaptermark{\glossaryname}
+%\printglossaries
 
 
 \end{document}
