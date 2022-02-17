@@ -40,14 +40,14 @@ void Motor::movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd
   lcd.print("/");
   lcd.print(objetivo);
 
-  int u = 0;
-  int ek = 0;
-  int ek1 = 0;
-  int ik = 0;
-  int D = 0;
+  long u = 0;
+  long ek = 0;
+  long ek1 = 0;
+  long ik = 0;
+  long D = 0;
   int aux = 0;
   bool emer = 0;
-  while(((*posicion < objetivo - 10) || (*posicion > objetivo + 10) || (u > 55)) && !emer){
+  while(((*posicion < objetivo - 50) || (*posicion > objetivo + 50) || (u > 55)) && !emer){
     
     emer = digitalRead(EMERGENCIA);
 
@@ -70,10 +70,20 @@ void Motor::movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd
     D = ek - ek1;
     //Cálculo de la señal de control
     u = kp * (ek + (T/Ti) * ik + (Td/T) * D);
+    
+    
 
     if((abs(u) > 255) && (abs(ek) > 200)){
       ik = 0;
     }
+
+    if(u > 255){
+      u = 255;
+    }
+    if(u < -255){
+      u = -255;
+    }
+    
     if(!emer){
       moverMotor(u);
       delay(1000 * T);

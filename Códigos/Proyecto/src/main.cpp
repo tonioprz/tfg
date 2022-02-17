@@ -152,6 +152,9 @@ void loop() {
       lcd.print(posy);
       delay(2000);
       estado = 'i';
+      if(digitalRead(BUTTON_LOCAL)){
+        estado ='r';
+      }
       break;
 
     case 'f':
@@ -163,7 +166,22 @@ void loop() {
       lcd.setCursor(0, 0);
       lcd.print("EMERGENCIA");
       break;
+
+    case 'r':
+      lcd.setCursor(0, 0);
+      lcd.print("MODO REMOTO     ");
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+      analogWrite(ENB, 255);
+      if(comprobarRobot()){
+        enviarRobot(estado);
+      }
+      break;
   }
+
+
   // Transiciones entre estados
   switch(estado){
 
@@ -237,16 +255,6 @@ void loop() {
         lcd.print(desplazamiento);
         lcd.print(" pulsos");        
       }
-      break;
-    
-    case 'r':
-      lcd.setCursor(0, 0);
-      lcd.print("MODO REMOTO     ");
-      lcd.setCursor(0, 1);
-      lcd.print("                ");
-      digitalWrite(IN3, LOW);
-      digitalWrite(IN4, LOW);
-      analogWrite(ENB, 255);
       break;
 
     case 'f':
@@ -366,14 +374,37 @@ bool enviarRobot(char dato){
     while (cliente.connected()) {
       if (cliente.available()) {
         recepcion = cliente.readString();
+        Serial.println(recepcion);
         if(recepcion == "STATUS"){
-          String envio = dato + " X=" + (String) posicion + " Y=" +(String) posy;
+          String envio = (String) dato + ";X=" + String(posicion, 2) + ";Y=" + String(posy, 2);
+          String fotoele = ";F=" + String(digitalRead(SENSOR_FOTO));
+          envio = envio + fotoele;
           cliente.println(envio);
-          //cliente.println(cadena);
-          //cliente.println(posicion);
-          //cliente.println(posy);
           Serial.println(recepcion);
-          //cliente.stop();
+        }
+        if(recepcion.indexOf('M') > -1){
+          //int longitud = recepcion.length();
+          Serial.println(recepcion.indexOf('M'));
+          int igual_pos = recepcion.indexOf("=");
+          int fin_pos = recepcion.indexOf(";",igual_pos);
+          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
+          objetivo = movimiento.toInt();
+          estado = 'm';
+        }
+        if(recepcion.indexOf('M') > -1){
+          int igual_pos = recepcion.indexOf("=");
+          int fin_pos = recepcion.indexOf(";",igual_pos);
+          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
+          objetivo = movimiento.toInt();
+          estado = 'm';
+        }
+        if(recepcion.indexOf('R') > -1){
+          //int longitud = recepcion.length();
+          int igual_pos = recepcion.indexOf("=");
+          int fin_pos = recepcion.indexOf(";",igual_pos);
+          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
+          objetivo = movimiento.toInt() + posicion;
+          estado = 'm';
         }
       }
     }
