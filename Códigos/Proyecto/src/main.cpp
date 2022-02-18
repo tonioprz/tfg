@@ -314,7 +314,8 @@ float medidaCalibre(void){
   for(int j=0; j<10 && (value == 0); j++){
     tempmicros = micros();
 
-    while (digitalRead(CAL_CLK)==HIGH) {
+    //while (digitalRead(CAL_CLK)==HIGH) {
+    while (digitalRead(CAL_CLK)==LOW) {
       delayMicroseconds(1);
       
     }
@@ -323,11 +324,12 @@ float medidaCalibre(void){
 
     if ((tempmicros2-tempmicros)>10000) {
       for (int i=0; i<24; i++) {
-        while (digitalRead(CAL_CLK)==LOW) {
+        //while (digitalRead(CAL_CLK)==LOW) {
+        while (digitalRead(CAL_CLK)==HIGH) {
           delayMicroseconds(1);
         }
 
-        data = digitalRead(CAL_DATA);
+        data = !digitalRead(CAL_DATA);
 
         if(i<16){
           value |= data << i;
@@ -335,12 +337,12 @@ float medidaCalibre(void){
           signo |= (data << (i-16));
         }
 
-        while (digitalRead(CAL_CLK)==HIGH) {
+        //while (digitalRead(CAL_CLK)==HIGH) {
+        while (digitalRead(CAL_CLK)==LOW) {
           delayMicroseconds(1);
         }
       }
         
-      
       if(signo & 0x80){
         medida = 25.4*float(value)/(2*1000);
       } else{
