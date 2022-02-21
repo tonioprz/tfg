@@ -30,10 +30,14 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
   attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
 
-  pinMode(BUTTON_DOWN, INPUT_PULLUP);
-  pinMode(BUTTON_UP, INPUT_PULLUP);
-  pinMode(BUTTON_ENTER, INPUT_PULLUP);
-  pinMode(BUTTON_ESC, INPUT_PULLUP);
+  pinMode(BUTTON_DOWN, INPUT);
+  digitalWrite(BUTTON_DOWN, HIGH);
+  pinMode(BUTTON_UP, INPUT);
+  digitalWrite(BUTTON_UP, HIGH);
+  pinMode(BUTTON_ENTER, INPUT);
+  digitalWrite(BUTTON_ENTER, HIGH);
+  pinMode(BUTTON_ESC, INPUT);
+  digitalWrite(BUTTON_ESC, HIGH);
 
   pinMode(BUTTON_EMERGENCIA, INPUT);
   pinMode(BUTTON_LOCAL, INPUT);
@@ -78,6 +82,8 @@ void loop() {
   enter = digitalRead(BUTTON_ENTER);
   esc = digitalRead(BUTTON_ESC);
 
+  Serial.println(enter);
+  Serial.println(esc);
   // Se lee el estado de la configuración
   emergencia = digitalRead(BUTTON_EMERGENCIA);
   local = digitalRead(BUTTON_LOCAL);

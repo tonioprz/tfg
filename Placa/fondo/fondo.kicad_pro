@@ -369,7 +369,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "fondo.dsn",
       "step": "",
       "vrml": ""
     },
