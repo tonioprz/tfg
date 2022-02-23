@@ -391,15 +391,6 @@ bool enviarRobot(char dato){
           Serial.println(recepcion);
         }
         if(recepcion.indexOf('M') > -1){
-          //int longitud = recepcion.length();
-          Serial.println(recepcion.indexOf('M'));
-          int igual_pos = recepcion.indexOf("=");
-          int fin_pos = recepcion.indexOf(";",igual_pos);
-          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
-          objetivo = movimiento.toInt();
-          estado = 'm';
-        }
-        if(recepcion.indexOf('M') > -1){
           int igual_pos = recepcion.indexOf("=");
           int fin_pos = recepcion.indexOf(";",igual_pos);
           String movimiento = recepcion.substring(igual_pos+1, fin_pos);
@@ -407,7 +398,6 @@ bool enviarRobot(char dato){
           estado = 'm';
         }
         if(recepcion.indexOf('R') > -1){
-          //int longitud = recepcion.length();
           int igual_pos = recepcion.indexOf("=");
           int fin_pos = recepcion.indexOf(";",igual_pos);
           String movimiento = recepcion.substring(igual_pos+1, fin_pos);
