@@ -1,197 +1,575 @@
-46050832231049
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 19963, 2 pins, pitch 3.5mm, size 7.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/19963.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 19963 pitch 3.5mm size 7.7x7mm^2 drill 1.2mm pad 2.4mm
-0
-2
-2
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x02_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10693, vertical (cable from top), 2 pins, pitch 3.5mm, size 8x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10693.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10693 vertical pitch 3.5mm size 8x8.3mm^2 drill 1.3mm pad 2.6mm
-0
-2
-2
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 20193, 3 pins, pitch 3.5mm, size 11.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/20193.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 20193 pitch 3.5mm size 11.2x7mm^2 drill 1.2mm pad 2.4mm
-0
-3
-3
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x03_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10694, vertical (cable from top), 3 pins, pitch 3.5mm, size 11.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10694.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10694 vertical pitch 3.5mm size 11.5x8.3mm^2 drill 1.3mm pad 2.6mm
-0
-3
-3
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 20001, 4 pins, pitch 3.5mm, size 14.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/20001.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 20001 pitch 3.5mm size 14.7x7mm^2 drill 1.2mm pad 2.4mm
+134863150132416
+LED_THT
+LED_BL-FL7680RGB
+'Piranha' RGB LED, through hole, common anode, 7.62x7.62mm, BGRA pin order, https://cdn-shop.adafruit.com/datasheets/BL-FL7680RGB.pdf
+RGB LED Piranha Super-Flux BetLux
 0
 4
 4
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x04_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10695, vertical (cable from top), 4 pins, pitch 3.5mm, size 15x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10695.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10695 vertical pitch 3.5mm size 15x8.3mm^2 drill 1.3mm pad 2.6mm
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O1.27mm_Z1.6mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O1.27mm_Z4.9mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O1.27mm_Z8.2mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O3.81mm_Z1.6mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O3.81mm_Z4.9mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O3.81mm_Z8.2mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O6.35mm_Z1.6mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O6.35mm_Z4.9mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O6.35mm_Z8.2mm
+LED, ,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins,  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm, 2 pins
+LED   diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 1.6mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 4.9mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins  diameter 1.8mm size 1.8x2.4mm^2 z-position of LED center 8.2mm 2 pins
+0
+2
+2
+LED_THT
+LED_D1.8mm_W3.3mm_H2.4mm
+LED, Round,  Rectangular size 3.3x2.4mm^2 diameter 1.8mm, 2 pins
+LED Round  Rectangular size 3.3x2.4mm^2 diameter 1.8mm 2 pins
+0
+2
+2
+LED_THT
+LED_D2.0mm_W4.0mm_H2.8mm_FlatTop
+LED, Round, FlatTop,  Rectangular size 4.0x2.8mm^2 diameter 2.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-1034IDT(Ver.9A).pdf
+LED Round FlatTop  Rectangular size 4.0x2.8mm^2 diameter 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D2.0mm_W4.8mm_H2.5mm_FlatTop
+LED, Round, FlatTop,  Rectangular size 4.8x2.5mm^2 diameter 2.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-13GD(Ver.11B).pdf
+LED Round FlatTop  Rectangular size 4.8x2.5mm^2 diameter 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm-3
+LED, diameter 3.0mm, 2 pins, diameter 3.0mm, 3 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-3VSURKCGKC(Ver.8A).pdf
+LED diameter 3.0mm 2 pins diameter 3.0mm 3 pins
+0
+3
+3
+LED_THT
+LED_D3.0mm_Clear
+IR-LED, diameter 3.0mm, 2 pins, color: clear
+IR infrared LED diameter 3.0mm 2 pins clear
+0
+2
+2
+LED_THT
+LED_D3.0mm_FlatTop
+LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf
+LED Round FlatTop diameter 3.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_Clear
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_IRBlack
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_IRGrey
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z6.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O1.27mm_Z10.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O3.81mm_Z6.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O3.81mm_Z10.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O6.35mm_Z2.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O6.35mm_Z6.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_Horizontal_O6.35mm_Z10.0mm
+LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 6.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins, diameter 3.0mm z-position of LED center 10.0mm, 2 pins
+LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 6.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins diameter 3.0mm z-position of LED center 10.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D3.0mm_IRBlack
+IR-ED, diameter 3.0mm, 2 pins, color: black
+IR infrared LED diameter 3.0mm 2 pins black
+0
+2
+2
+LED_THT
+LED_D3.0mm_IRGrey
+IR-LED, diameter 3.0mm, 2 pins, color: grey
+IR infrared LED diameter 3.0mm 2 pins grey
+0
+2
+2
+LED_THT
+LED_D4.0mm
+LED, diameter 4.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-43GD(Ver.12B).pdf
+LED diameter 4.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D5.0mm
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_D5.0mm-3
+LED, diameter 5.0mm, 2 pins, diameter 5.0mm, 3 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-59EGC(Ver.17A).pdf
+LED diameter 5.0mm 2 pins diameter 5.0mm 3 pins
+0
+3
+3
+LED_THT
+LED_D5.0mm-3_Horizontal_O3.81mm_Z3.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 3 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 3 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins
+0
+3
+3
+LED_THT
+LED_D5.0mm-4_RGB
+LED, diameter 5.0mm, 4 pins, WP154A4, https://www.kingbright.com/attachments/file/psearch/000/00/00/L-154A4SUREQBFZGEW(Ver.11A).pdf
+LED diameter 5.0mm 2 pins diameter 5.0mm 3 pins diameter 5.0mm 4 pins RGB RGBLED
 0
 4
 4
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x05_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 20223, 5 pins, pitch 3.5mm, size 18.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/20223.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 20223 pitch 3.5mm size 18.2x7mm^2 drill 1.2mm pad 2.4mm
+LED_THT
+LED_D5.0mm-4_RGB_Staggered_Pins
+LED, diameter 5.0mm, 4 pins, WP154A4, https://www.kingbright.com/attachments/file/psearch/000/00/00/L-154A4SUREQBFZGEW(Ver.11A).pdf
+rgb led
 0
-5
-5
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x05_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10696, vertical (cable from top), 5 pins, pitch 3.5mm, size 18.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10696.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10696 vertical pitch 3.5mm size 18.5x8.3mm^2 drill 1.3mm pad 2.6mm
+4
+4
+LED_THT
+LED_D5.0mm-4_RGB_Wide_Pins
+LED, diameter 5.0mm, 4 pins, WP154A4, https://www.kingbright.com/attachments/file/psearch/000/00/00/L-154A4SUREQBFZGEW(Ver.11A).pdf
+LED diameter 5.0mm 2 pins diameter 5.0mm 3 pins diameter 5.0mm 4 pins RGB RGBLED
 0
-5
-5
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x06_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 19964, 6 pins, pitch 3.5mm, size 21.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/19964.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 19964 pitch 3.5mm size 21.7x7mm^2 drill 1.2mm pad 2.4mm
+4
+4
+LED_THT
+LED_D5.0mm_Clear
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
 0
-6
-6
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x06_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10697, vertical (cable from top), 6 pins, pitch 3.5mm, size 22x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10697.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10697 vertical pitch 3.5mm size 22x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_FlatTop
+LED, Round, FlatTop, diameter 5.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-483GDT(Ver.15B).pdf
+LED Round FlatTop diameter 5.0mm 2 pins
 0
-6
-6
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x07_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10684, 7 pins, pitch 3.5mm, size 25.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10684.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10684 pitch 3.5mm size 25.2x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-7
-7
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x07_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10698, vertical (cable from top), 7 pins, pitch 3.5mm, size 25.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10698.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10698 vertical pitch 3.5mm size 25.5x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-7
-7
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 19965, 8 pins, pitch 3.5mm, size 28.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/19965.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 19965 pitch 3.5mm size 28.7x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-8
-8
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x08_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10699, vertical (cable from top), 8 pins, pitch 3.5mm, size 29x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10699.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10699 vertical pitch 3.5mm size 29x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRGrey
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-8
-8
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x09_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10686, 9 pins, pitch 3.5mm, size 32.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10686.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10686 pitch 3.5mm size 32.2x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z9.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins
 0
-9
-9
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x09_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10700, vertical (cable from top), 9 pins, pitch 3.5mm, size 32.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10700.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10700 vertical pitch 3.5mm size 32.5x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O1.27mm_Z15.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins
 0
-9
-9
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x10_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10687, 10 pins, pitch 3.5mm, size 35.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10687.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10687 pitch 3.5mm size 35.7x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-10
-10
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x10_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10701, vertical (cable from top), 10 pins, pitch 3.5mm, size 36x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10701.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10701 vertical pitch 3.5mm size 36x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins
 0
-10
-10
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x11_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10688, 11 pins, pitch 3.5mm, size 39.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10688.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10688 pitch 3.5mm size 39.2x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O3.81mm_Z15.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins
 0
-11
-11
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x11_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10702, vertical (cable from top), 11 pins, pitch 3.5mm, size 39.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10702.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10702 vertical pitch 3.5mm size 39.5x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O6.35mm_Z3.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins
 0
-11
-11
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x12_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10689, 12 pins, pitch 3.5mm, size 42.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10689.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10689 pitch 3.5mm size 42.7x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O6.35mm_Z9.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins
 0
-12
-12
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x12_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10703, vertical (cable from top), 12 pins, pitch 3.5mm, size 43x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10703.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10703 vertical pitch 3.5mm size 43x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_Horizontal_O6.35mm_Z15.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 3.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 9.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins, diameter 5.0mm z-position of LED center 15.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 3.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 9.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins diameter 5.0mm z-position of LED center 15.0mm 2 pins
 0
-12
-12
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x13_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10690, 13 pins, pitch 3.5mm, size 46.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10690.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10690 pitch 3.5mm size 46.2x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D5.0mm_IRBlack
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
 0
-13
-13
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x13_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10704, vertical (cable from top), 13 pins, pitch 3.5mm, size 46.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10704.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10704 vertical pitch 3.5mm size 46.5x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D5.0mm_IRGrey
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
 0
-13
-13
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x14_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10691, 14 pins, pitch 3.5mm, size 49.7x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10691.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10691 pitch 3.5mm size 49.7x7mm^2 drill 1.2mm pad 2.4mm
+2
+2
+LED_THT
+LED_D8.0mm
+LED, diameter 8.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LED8MMGE_LED8MMGN_LED8MMRT%23KIN.pdf
+LED diameter 8.0mm 2 pins
 0
-14
-14
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x14_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10705, vertical (cable from top), 14 pins, pitch 3.5mm, size 50x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10705.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10705 vertical pitch 3.5mm size 50x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D8.0mm-3
+LED, diameter 8.0mm, 2 pins, diameter 8.0mm, 3 pins
+LED diameter 8.0mm 2 pins diameter 8.0mm 3 pins
 0
-14
-14
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x15_P3.50mm_Horizontal
-Terminal Block 4Ucon ItemNo. 10692, 15 pins, pitch 3.5mm, size 53.2x7mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see http://www.4uconnector.com/online/object/4udrawing/10692.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10692 pitch 3.5mm size 53.2x7mm^2 drill 1.2mm pad 2.4mm
+3
+3
+LED_THT
+LED_D10.0mm
+LED, diameter 10.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LED10-4500RT%23KIN.pdf
+LED diameter 10.0mm 2 pins
 0
-15
-15
-TerminalBlock_4Ucon
-TerminalBlock_4Ucon_1x15_P3.50mm_Vertical
-Terminal Block 4Ucon ItemNo. 10706, vertical (cable from top), 15 pins, pitch 3.5mm, size 53.5x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10706.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon
-THT Terminal Block 4Ucon ItemNo. 10706 vertical pitch 3.5mm size 53.5x8.3mm^2 drill 1.3mm pad 2.6mm
+2
+2
+LED_THT
+LED_D10.0mm-3
+LED, diameter 10.0mm, 2 pins, diameter 10.0mm, 3 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-819EGW(Ver.14A).pdf
+LED diameter 10.0mm 2 pins diameter 10.0mm 3 pins
 0
-15
-15
+3
+3
+LED_THT
+LED_D20.0mm
+LED, diameter 20.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/DLC2-6GD%28V6%29.pdf
+LED diameter 20.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Oval_W5.2mm_H3.8mm
+LED_Oval, Oval,  Oval size 5.2x3.8mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-5603QBC-D(Ver.12B).pdf
+LED_Oval Oval  Oval size 5.2x3.8mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W3.0mm_H2.0mm
+LED_Rectangular, Rectangular,  Rectangular size 3.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf
+LED_Rectangular Rectangular  Rectangular size 3.0x2.0mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W3.9mm_H1.8mm
+LED_Rectangular, Rectangular,  Rectangular size 3.9x1.8mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-2774GD(Ver.7B).pdf
+LED_Rectangular Rectangular  Rectangular size 3.9x1.8mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W3.9mm_H1.8mm_FlatTop
+LED_Rectangular, Rectangular,  Rectangular size 3.9x1.8mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-2774GD(Ver.7B).pdf
+LED_Rectangular Rectangular  Rectangular size 3.9x1.8mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W3.9mm_H1.9mm
+LED_Rectangular, Rectangular,  Rectangular size 3.9x1.9mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-144GDT(Ver.14B).pdf
+LED_Rectangular Rectangular  Rectangular size 3.9x1.9mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm-3Pins
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 3 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 3 pins
+0
+3
+3
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O1.27mm_Z1.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O1.27mm_Z3.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O1.27mm_Z5.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O3.81mm_Z1.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O3.81mm_Z3.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O3.81mm_Z5.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O6.35mm_Z1.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O6.35mm_Z3.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H2.0mm_Horizontal_O6.35mm_Z5.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W5.0mm_H5.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x5.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf
+LED_Rectangular Rectangular  Rectangular size 5.0x5.0mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_Rectangular_W7.62mm_H4.55mm_P5.08mm_R3
+Datasheet can be found at https://www.gme.cz/data/attachments/dsh.511-795.1.pdf
+LED automotive super flux 7.62mm
+0
+4
+2
+LED_THT
+LED_SideEmitter_Rectangular_W4.5mm_H1.6mm
+LED_SideEmitter_Rectangular, Rectangular, SideEmitter,  Rectangular size 4.5x1.6mm^2, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LED15MMGE_LED15MMGN%23KIN.pdf
+LED_SideEmitter_Rectangular Rectangular SideEmitter  Rectangular size 4.5x1.6mm^2 2 pins
+0
+2
+2
+LED_THT
+LED_VCCLite_5381H1_6.35x6.35mm
+Red 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
+Red 5381 Series LED
+0
+2
+2
+LED_THT
+LED_VCCLite_5381H3_6.35x6.35mm
+Amber 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
+Amber 5381 Series LED
+0
+2
+2
+LED_THT
+LED_VCCLite_5381H5_6.35x6.35mm
+Green 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
+Green 5381 Series LED
+0
+2
+2
+LED_THT
+LED_VCCLite_5381H7_6.35x6.35mm
+Yellow 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
+Yellow 5381 Series LED
+0
+2
+2
