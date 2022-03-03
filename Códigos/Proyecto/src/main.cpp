@@ -82,8 +82,6 @@ void loop() {
   enter = digitalRead(BUTTON_ENTER);
   esc = digitalRead(BUTTON_ESC);
 
-  Serial.println(enter);
-  Serial.println(esc);
   // Se lee el estado de la configuración
   emergencia = digitalRead(BUTTON_EMERGENCIA);
   local = digitalRead(BUTTON_LOCAL);
@@ -391,18 +389,22 @@ bool enviarRobot(char dato){
           Serial.println(recepcion);
         }
         if(recepcion.indexOf('M') > -1){
-          int igual_pos = recepcion.indexOf("=");
-          int fin_pos = recepcion.indexOf(";",igual_pos);
-          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
-          objetivo = movimiento.toInt();
-          estado = 'm';
+          if(estado == 'r'){
+            int igual_pos = recepcion.indexOf("=");
+            int fin_pos = recepcion.indexOf(";",igual_pos);
+            String movimiento = recepcion.substring(igual_pos+1, fin_pos);
+            objetivo = movimiento.toInt();
+            estado = 'm';
+          }
         }
         if(recepcion.indexOf('R') > -1){
-          int igual_pos = recepcion.indexOf("=");
-          int fin_pos = recepcion.indexOf(";",igual_pos);
-          String movimiento = recepcion.substring(igual_pos+1, fin_pos);
-          objetivo = movimiento.toInt() + posicion;
-          estado = 'm';
+          if(estado == 'r'){
+            int igual_pos = recepcion.indexOf("=");
+            int fin_pos = recepcion.indexOf(";",igual_pos);
+            String movimiento = recepcion.substring(igual_pos+1, fin_pos);
+            objetivo = movimiento.toInt() + posicion;
+            estado = 'm';
+          }
         }
       }
     }
