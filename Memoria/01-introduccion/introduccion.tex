@@ -1,4 +1,4 @@
-!TEX root =../LibroTipoETSI.tex
+%!TEX root =../LibroTipoETSI.tex
 \chapter{Introducción}\label{chp-01}
 
 
@@ -30,6 +30,51 @@ El sistema cuenta con las siguientes características:
 
 \section{Modos de funcionamiento}\label{sec-00}
 
+Todas las funciones especificadas no pueden cumplirse al mismo tiempo ya que existirían conflictos
+entre las mismas, por lo que el sistema debe tener ciertos modos de funcionamiento en los que
+se activen o desactiven dichas características. 
 
+La primera consideración es determinar el dispositivo que gobierna el sistema o \textit{máster}.
+Por ello, se puede diferenciar cuando el máster es la controladora del robot (o RobotStudio durante
+una simulación) o el sistema caja (Arduino o la propia electrónica interna). Respectivamente serán
+los modos remoto y local.
+
+Por otro lado, como el microcontrolador presente en el Arduino puede estar funcionando o no, se
+deben añadir las dos posibilidades. Se tiene el modo con microcontrolador y sin microcontrolador.
+
+En total, se cuenta con cuatro modos de funcionamiento que se describen a continuación.
+
+\subsection{Modo local con microcontrolador}\label{subsec-01}
+
+Las órdenes del sistema están proporcionadas por los periféricos de entrada presentes en la caja y
+el microcontrolador es el encargado de gestionar el posicionamiento y mover el motor cuando
+le sea indicado.
+
+En caso de que esté disponible la conexión con la controladora del robot, el Arduino comunica 
+mediante conexión TCP/IP la posición de la pieza en los ejes X e Y además del estado
+del sensor fotoeléctrico y del sistema.
+
+\subsection{Modo remoto con microcontrolador}\label{subsec-02}
+
+El gobierno del sistema pasa a ser parte de la controladora del robot, convirtiendo al microcontrolador
+en esclavo. El microcontrolador sigue encargándose del posicionamiento y movimiento del motor, pero las
+órdenes pasan a ser recibidas mediante conexión TCP/IP.
+
+Como en el caso anterior, se envía la posición, estado del sistema y del sensor fotoeléctrico mediante
+conexión TCP/IP a la controladora.
+
+\subsection{Modo local sin microcontrolador}\label{subsec-03}
+
+Al no tener el microcontrolador operativo, el posicionamiento deja de funcionar y las funciones del
+sistema pasan a ser más básicas. El movimiento del motor queda a cargo de la electrónica interna del
+sistema. Para interactuar con el motor y moverlo se realizará mediante los pulsadores de avance y 
+retroceso.
+
+El robot queda no comunicado y solo recibe la señal digital del sensor fotoeléctrico.
+
+\subsection{Modo remoto sin microcontrolador}\label{subsec-04}
+
+Es un modo similar al anterior, en la cual la interacción con el sistema se produce mediante señales
+digitales enviadas por el robot.
 
 %\subsection{Compilación}
