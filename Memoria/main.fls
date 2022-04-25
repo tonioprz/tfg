@@ -2753,6 +2753,9 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvr8tn.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvr8rn.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc
@@ -2790,9 +2793,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/zptmcm7v.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -2817,6 +2817,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
+INPUT ./01-introduccion/botonera.jpg
+INPUT ./01-introduccion/botonera.jpg
+INPUT 01-introduccion/botonera.jpg
+INPUT ./01-introduccion/botonera.jpg
+INPUT ./01-introduccion/botonera.jpg
 INPUT ./02-hardware/hardware.tex
 OUTPUT 02-hardware/hardware.aux
 INPUT ./02-hardware/hardware.tex

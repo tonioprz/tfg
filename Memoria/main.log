@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  19 APR 2022 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  25 APR 2022 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2095,23 +2095,32 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.85492> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
-)
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
  [7
 
-] [8
-
-]
+])
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+ [8]
 Package tocbasic Info: character protrusion at toc deactivated on input line 151.
  (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-)
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [9
+
+
+])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -2119,20 +2128,18 @@ LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
- [9
-
-]
+ [10]
 \openout2 = `0c-notacion/notacion.aux'.
 
- (./0c-notacion/notacion.tex [10
+ (./0c-notacion/notacion.tex
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [11
 
 
 ]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
- [11]
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
 LaTeX Info: Redefining \. on input line 106.
@@ -2168,7 +2175,13 @@ l.47 \subsection{Modo local con microcontrolador}
 
 
 
-])
+]
+<01-introduccion/botonera.jpg, id=359, 595.86615pt x 301.72725pt>
+File: 01-introduccion/botonera.jpg Graphic file (type jpg)
+<use 01-introduccion/botonera.jpg>
+Package pdftex.def Info: 01-introduccion/botonera.jpg  used on input line 82.
+(pdftex.def)             Requested size: 426.79134pt x 216.12007pt.
+)
 LaTeX Info: Redefining \. on input line 163.
 LaTeX Info: Redefining \% on input line 163.
 LaTeX Info: Redefining \. on input line 163.
@@ -2179,59 +2192,75 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
                    \relax 
 l.163 \include{01-introduccion/introduccion}
                                             %Introducción [2]
-\openout2 = `02-hardware/hardware.aux'.
-
- (./02-hardware/hardware.tex
-chapter 2.
-)
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.165 \include{02-hardware/hardware.tex}
-                                         [3
+l.163 \include{01-introduccion/introduccion}
+                                            %Introducción [3 <./01-introduccion/botonera.jpg>]
+\openout2 = `02-hardware/hardware.aux'.
 
-
-
-
-]
-\openout2 = `03-placa/placa.aux'.
-
- (./03-placa/placa.tex
+ (./02-hardware/hardware.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Desarrollo de placa de conexiones}\label{chp-03} [4
+            {Descripción del hardware}\label{chp-02} [4
 
 
 
 
 ]
+chapter 2.
+Package lettrine.sty Info: Targeted height = 18.58224pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.29866pt (U) loversize=0.2;
+(lettrine.sty)             reported on input line 3.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \include{02-hardware/hardware.tex}
+                                         [5]
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \include{02-hardware/hardware.tex}
+                                         [6]
+\openout2 = `03-placa/placa.aux'.
+
+ (./03-placa/placa.tex
 chapter 3.
 )
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
+ [7
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.167 \include{03-placa/placa.tex}
-                                   [5]
+
+
+
+]
 \openout2 = `04-caja/caja.aux'.
 
- (./04-caja/caja.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Planificación de caja}\label{chp-04} [6
+ (./04-caja/caja.tex [8
 
 
 
@@ -2243,10 +2272,10 @@ LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
- [7]
+ [9]
 \openout2 = `05-arduino/arduino.aux'.
 
- (./05-arduino/arduino.tex [8
+ (./05-arduino/arduino.tex [10
 
 
 
@@ -2258,10 +2287,10 @@ LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
- [9]
+ [11]
 \openout2 = `06-robotstudio/robotstudio.aux'.
 
- (./06-robotstudio/robotstudio.tex [10
+ (./06-robotstudio/robotstudio.tex [12
 
 
 
@@ -2273,10 +2302,10 @@ LaTeX Info: Redefining \. on input line 173.
 LaTeX Info: Redefining \% on input line 173.
 LaTeX Info: Redefining \. on input line 173.
 LaTeX Info: Redefining \% on input line 173.
- [11]
+ [13]
 \openout2 = `07-resultados/resultados.aux'.
 
- (./07-resultados/resultados.tex [12
+ (./07-resultados/resultados.tex [14
 
 
 
@@ -2288,10 +2317,10 @@ LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
- [13]
+ [15]
 \openout2 = `08-conclusiones/conclusiones.aux'.
 
- (./08-conclusiones/conclusiones.tex [14
+ (./08-conclusiones/conclusiones.tex [16
 
 
 
@@ -2303,7 +2332,7 @@ LaTeX Info: Redefining \. on input line 177.
 LaTeX Info: Redefining \% on input line 177.
 LaTeX Info: Redefining \. on input line 177.
 LaTeX Info: Redefining \% on input line 177.
- [15] [16
+ [17] [18
 
 
 
@@ -2323,10 +2352,10 @@ LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
- [17
+ [19
 
 
-] [18
+] [20
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 207.
@@ -2343,9 +2372,9 @@ LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
 LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
- [19
+ [21
 
-] [20
+] [22
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 214.
@@ -2362,16 +2391,16 @@ LaTeX Info: Redefining \. on input line 217.
 LaTeX Info: Redefining \% on input line 217.
 LaTeX Info: Redefining \. on input line 217.
 LaTeX Info: Redefining \% on input line 217.
- [21
+ [23
 
-] [22
+] [24
 
 ] (./main.bbl)
 LaTeX Info: Redefining \. on input line 248.
 LaTeX Info: Redefining \% on input line 248.
 LaTeX Info: Redefining \. on input line 248.
 LaTeX Info: Redefining \% on input line 248.
- [23
+ [25
 
 ]
 
@@ -2398,18 +2427,18 @@ LaTeX Info: Redefining \% on input line 33.
  (./0a-agradecimientos/agradecimientos.aux) (./0b-resumen/resumen.aux) (./0c-notacion/notacion.aux) (./01-introduccion/introduccion.aux) (./02-hardware/hardware.aux) (./03-placa/placa.aux) (./04-caja/caja.aux) (./05-arduino/arduino.aux) (./06-robotstudio/robotstudio.aux) (./07-resultados/resultados.aux) (./08-conclusiones/conclusiones.aux)) )
 (\end occurred when \ifx on line 13 was incomplete) 
 Here is how much of TeX's memory you used:
- 64465 strings out of 478238
- 1503866 string characters out of 5843947
- 2213375 words of memory out of 5000000
- 81031 multiletter control sequences out of 15000+600000
+ 64515 strings out of 478238
+ 1504549 string characters out of 5843947
+ 2213461 words of memory out of 5000000
+ 81060 multiletter control sequences out of 15000+600000
  567852 words of font info for 191 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
- 140i,17n,136p,10625b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 140i,17n,136p,10625b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (41 pages, 843040 bytes).
+Output written on main.pdf (43 pages, 1251266 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 72 named destinations out of 1000 (max. 500000)
- 72500 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 72633 words of extra memory for PDF output out of 74296 (max. 10000000)
 
