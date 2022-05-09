@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: 0a-agradecimientos/agradecimientos.aux
@@ -17,7 +17,7 @@ Database file #1: bibliografiaLibroETSI.bib
 Warning--entry type for "tapia" isn't style-file defined
 --line 1 of file bibliografiaLibroETSI.bib
 Warning--entry type for "rea" isn't style-file defined
---line 9 of file bibliografiaLibroETSI.bib
+--line 17 of file bibliografiaLibroETSI.bib
 You've used 2 entries,
             2213 wiz_defined-function locations,
             518 strings with 4597 characters,
