@@ -95,17 +95,93 @@ entre ambos. Esto permite tanto programar la placa mediante el IDE de Arduino co
 
 \section{Ethernet Shield de Arduino}
 
+El Ethernet Shield de Arduino se trata de una placa que añade
+la funcionalidad de conectar una placa de Arduino a una red 
+mediante conexión Ethernet. Se trata de una placa basada en
+el chip Wiznet W5100 que provee de una pila de red IP capaz de
+soportar protocolos TCP y UDP. Usa la librería Ethernet para leer y 
+escribir flujos de datos.
 
+La placa cuenta con varios LED que proporcionan información:
+\begin{itemize}
+    \item ON. Indica que la placa está alimentada.
+    \item LINK. Indica presencia de enlace de red.
+    \item 100M. Indica la existencia de conexión de red de 100 Mb/s.
+    \item RX. Indica que se reciben datos cuando parpadea.
+    \item TX. Indica que se transmiten datos cuando parpadea.
+\end{itemize}
+
+Unos puntos importantes del Ethernet Shield son:
+\begin{itemize}
+    \item Funciona a 5V.
+    \item Tiene un microcontrolador W5100 con 16k de buffer y 
+    es independiente de la memoria del ATmega2560.
+    \item Se comunica con el ATmega2560 mediante SPI.
+    \item Soporta 4 conexiones simultáneas.
+    \item Utiliza la librería Ethernet.
+    \item Dispone de lector de tarjetas microSD para guardar ficheros.
+    \item Utiliza los pones 10, 11, 12 y 13 para comunicarse con el
+    W5100 mediante SPI.
+\end{itemize}
 
 \section{Motor DC y Driver L298N}
 
+El principal actuador de este proyecto es un motor de corriente
+continua que es el que mueve la cinta transportadora, permitiéndola
+avanzar, retroceder o pararse. Este motor funciona a 24V y tiene 
+infinidad de uso, ya que son sencillos de operar y tienen un bajo coste.
+
+Para controlar dicho motor se utiliza un Driver L298N, que está basada
+en un puente H. Dicho módulo es capaz de controlar dos motores de 
+corriente continua o un motor paso a paso bipolar de hasta 2A.
+
+La principal funcionalidad del módulo es separar la parte asociada
+a la potencia (que funciona a 24V en este caso) de la parte asociada
+al control (que funciona a 5V).
+
 \subsection{Conexionado del módulo L298N}
+
+El módulo cuenta con un circuito integrado LM7805 que proporciona 5V
+que puede ser activado o desactivado mediante un jumper.
+
+Mientras el jumper esté activo, la placa admite tensiones de 
+alimentación de entre 6 y 12V. Así, la conexión de 5V será una salida.
+
+Por otra parte, si el jumper está desactivado la placa admite tensiones
+de alimentación de entre 12 y 35V. En este caso se deberá proporcionar
+5V de referencia a la placa para el funcionamiento de la parte lógica.
 
 \section{Encoder Rotativo Incremental}
 
+Para posicionar correctamente las piezas a lo largo de la cinta es
+necesario contabilizar el movimiento de la misma. Para ello, se cuenta
+con un encoder rotativo incremental de serie LPD3806-600BM el cual
+cuenta con una gran precisión.
+
+Éste tiene dos salidas de onda cuadrada con un desfase de 90 grados
+entre ellas. 
+
+
 \subsection{Especificaciones técnicas}
 
+El encoder rotativo de serie LPD3806-600BM cuenta con las
+siguientes especificaciones:
+\begin{itemize}
+    \item 600 pulsos/revolución por cada fase. Por lo tanto, con las
+    fases combinadas se cuenta con 2400 pulsos/revolución.
+    \item Velocidad máxima: 5000 revoluciones/minuto.
+    \item Respuesta de frecuencia: 0-30KHz
+\end{itemize}
+
 \subsection{Conexionado del Encoder}
+
+El encoder cuenta con cuatro cuables de conexión:
+\begin{itemize}
+    \item Rojo. Alimentación 5-24V.
+    \item Negro. GND.
+    \item Verde. Fase A.
+    \item Blanco. Fase B.
+\end{itemize}
 
 \section{Calibrador digital}
 
