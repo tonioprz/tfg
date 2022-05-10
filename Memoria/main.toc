@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {2.4}Encoder Rotativo Incremental}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Especificaciones técnicas}{8}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Conexionado del Encoder}{8}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Calibrador digital}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Calibre digital}{9}{section.2.5}%
 \contentsline {section}{\numberline {2.6}LCD}{9}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Sensor fotoeléctrico OMRON}{9}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Banda transportadora con elementos integrados}{9}{section.2.8}%

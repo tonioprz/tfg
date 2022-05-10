@@ -159,8 +159,10 @@ con un encoder rotativo incremental de serie LPD3806-600BM el cual
 cuenta con una gran precisión.
 
 Éste tiene dos salidas de onda cuadrada con un desfase de 90 grados
-entre ellas. 
-
+entre ellas. Siempre que se produzca un flanco en A, será leída la 
+señal B. Si B se encuentra en HIGH, el encoder se encontrará girando
+en sentido horario. Por el contrario, si B se encuentra en LOW, el 
+encoder se encontrará girando en sentido antihorario. 
 
 \subsection{Especificaciones técnicas}
 
@@ -183,11 +185,49 @@ El encoder cuenta con cuatro cuables de conexión:
     \item Blanco. Fase B.
 \end{itemize}
 
-\section{Calibrador digital}
+\section{Calibre digital}
+
+Para tomar la medida de la posición a lo ancho de la cinta se utiliza
+un calibre digital. Este instrumento se encuentra integrado en las
+cintas transportadoras del laboratorio. Cuentan con un LCD en el que
+se muestra la información de la medición y, además, cuenta con una tapa 
+desmontable a la que se acceden cuatro pines que permiten comuncaciones
+con el Arduino. Estos pines son: alimentación a 1.5V, GND, señal de 
+reloj y señal de datos. Todas las señales utilizan un nivel lógico de 
+tensión de 1.5V, por lo que deben ser amplificadas a 5V para que el 
+Arduino pueda comprender dichas señales.
+
+Mientras el calibre cuente con alimentación estará enviando tramas de
+datos con la medida de cada momento, por lo que es recomendable no 
+utilizar pilas ya que siempre está funcionando. Algunas características 
+importantes son:
+
+\begin{itemize}
+    \item Cada trama cuenta con 24 bits, de los cuales 21 corresponden
+    a la medición, uno para el signo, uno para la unidad (mm o in) y otro
+    bit de acarreo.
+    \item Los datos se transmiten por una señal de reloj (CLK) y una señal
+    de datos (DATA).
+    \item La línea de datos debe leerse en cada flanco de bajada de 
+    la señal de reloj.
+    \item Los bits de la trama se inician por el menos significativo (LSB)
+    \item El valor de la medida en mm debe ser multiplicado por 100.
+\end{itemize}
 
 \section{LCD}
 
+Para realizar visualizaciones de información e interactuar con el 
+sistema se utiliza un LCD 16x2. Este LCD cuenta con un módulo basado
+en microcontrolador que permite controlar la información mostrada mediante
+comunicación I2C, lo que permite reducir en gran cantidad los pines utilizados. 
+
+La conexión se realiza mediante cuatro pines: alimentación 5V, GND, SCL y SDA.
+Además, la placa de adaptación cuenta con un potenciómetro que permite regular
+el brillo del LCD.
+
 \section{Sensor fotoeléctrico OMRON}
+
+
 
 \section{Banda transportadora con elementos integrados}
 
