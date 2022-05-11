@@ -1,10 +1,22 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Estructura de un aplicación que use la plataforma\relax }}{3}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Distribución de elementos en la tapa\relax }}{3}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Distribución de conexiones digitales\relax }}{3}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega 2560\relax }}{5}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega 2560\relax }}{5}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Arduino Ethernet Shield\relax }}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Driver L298N\relax }}{8}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Tipos de conexiones del Driver L298N\relax }}{9}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Señales encoder rotativo\relax }}{9}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Calibre digital y cables usados\relax }}{10}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces LCD 16x2\relax }}{11}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Módulo de control de LCD por I2C\relax }}{11}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Sensor fotoeléctrico OMRON E3JK-R4M\relax }}{12}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cinta transportadora con elementos integrados\relax }}{12}{figure.caption.25}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Logo de KiCAD\relax }}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo de optoacoplador\relax }}{16}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

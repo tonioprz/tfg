@@ -16,7 +16,7 @@ pines ICSP de programación y botón de reinicio.
 	\centering
 	\includegraphics[scale=0.5]{02-hardware/01-arduino-mega-2560.jpg}
 	\caption{Arduino Mega 2560}
-	\label{fig:figura2}
+	\label{fig:figura21}
 	\end{figure}
 
 
@@ -102,6 +102,13 @@ el chip Wiznet W5100 que provee de una pila de red IP capaz de
 soportar protocolos TCP y UDP. Usa la librería Ethernet para leer y 
 escribir flujos de datos.
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=1]{02-hardware/02-shield-ethernet-w5100.jpg}
+	\caption{Arduino Ethernet Shield}
+	\label{fig:figura22}
+	\end{figure}
+
 La placa cuenta con varios LED que proporcionan información:
 \begin{itemize}
     \item ON. Indica que la placa está alimentada.
@@ -135,6 +142,13 @@ Para controlar dicho motor se utiliza un Driver L298N, que está basada
 en un puente H. Dicho módulo es capaz de controlar dos motores de 
 corriente continua o un motor paso a paso bipolar de hasta 2A.
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=0.25]{02-hardware/03-l298n.png}
+	\caption{Driver L298N}
+	\label{fig:figura23}
+	\end{figure}
+
 La principal funcionalidad del módulo es separar la parte asociada
 a la potencia (que funciona a 24V en este caso) de la parte asociada
 al control (que funciona a 5V).
@@ -151,6 +165,13 @@ Por otra parte, si el jumper está desactivado la placa admite tensiones
 de alimentación de entre 12 y 35V. En este caso se deberá proporcionar
 5V de referencia a la placa para el funcionamiento de la parte lógica.
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=0.3]{02-hardware/04-l298n-alimentacion.png}
+	\caption{Tipos de conexiones del Driver L298N}
+	\label{fig:figura24}
+	\end{figure}
+
 \section{Encoder Rotativo Incremental}
 
 Para posicionar correctamente las piezas a lo largo de la cinta es
@@ -163,6 +184,13 @@ entre ellas. Siempre que se produzca un flanco en A, será leída la
 señal B. Si B se encuentra en HIGH, el encoder se encontrará girando
 en sentido horario. Por el contrario, si B se encuentra en LOW, el 
 encoder se encontrará girando en sentido antihorario. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=\textwidth]{02-hardware/05-encoder.jpg}
+	\caption{Señales encoder rotativo}
+	\label{fig:figura25}
+	\end{figure}
 
 \subsection{Especificaciones técnicas}
 
@@ -197,6 +225,14 @@ reloj y señal de datos. Todas las señales utilizan un nivel lógico de
 tensión de 1.5V, por lo que deben ser amplificadas a 5V para que el 
 Arduino pueda comprender dichas señales.
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=\textwidth]{02-hardware/06-calibrador.png}
+	\caption{Calibre digital y cables usados}
+	\label{fig:figura26}
+	\end{figure}
+
+
 Mientras el calibre cuente con alimentación estará enviando tramas de
 datos con la medida de cada momento, por lo que es recomendable no 
 utilizar pilas ya que siempre está funcionando. Algunas características 
@@ -221,14 +257,80 @@ sistema se utiliza un LCD 16x2. Este LCD cuenta con un módulo basado
 en microcontrolador que permite controlar la información mostrada mediante
 comunicación I2C, lo que permite reducir en gran cantidad los pines utilizados. 
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=0.25]{02-hardware/07-lcd162.png}
+	\caption{LCD 16x2}
+	\label{fig:figura27}
+	\end{figure}
+
 La conexión se realiza mediante cuatro pines: alimentación 5V, GND, SCL y SDA.
 Además, la placa de adaptación cuenta con un potenciómetro que permite regular
 el brillo del LCD.
 
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1]{02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg}
+    \caption{Módulo de control de LCD por I2C}
+    \label{fig:figura28}
+    \end{figure}
+
 \section{Sensor fotoeléctrico OMRON}
 
+Se utiliza un sensor fotoeléctrico para detectar que la pieza ha llegado a cierta posición arbitraria.
+Para ello se utiliza el sensor E3JK-R4M de la marca OMRON. Este sensor se encuentra incorporado en la cinta
+transportadora del laboratorio. Tiene dimensiones reducidas y tiene una alta capacidad de conmutación. El 
+sensor es de tipo retroreflectivo polarizado, lo que permite detectar cuerpos brillantes. Además, posee un
+LED de color rojo que se encinede al detectar un objeto.
 
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=0.5]{02-hardware/09-omron.png}
+    \caption{Sensor fotoeléctrico OMRON E3JK-R4M}
+    \label{fig:figura29}
+    \end{figure}
 
-\section{Banda transportadora con elementos integrados}
+\subsection{Conexiones del sensor fotoeléctrico}
 
-\section{Controlador IRC5C}
+El sensor fotoeléctrico cuenta con cinco cables de conexión de diferentes colores:
+\begin{itemize}
+    \item Marrón. Alimentación entre 12-24V.
+    \item Azul. GND.
+    \item Blanco. Salida común del relé.
+    \item Negro. Salida de relé NA (Normalmente Abierto).
+    \item Gris. Salida de relé NC (Normalmente Cerrado).
+\end{itemize}
+
+\section{Cinta transportadora con elementos integrados}
+
+En el laboratorio de automática se encuentra una cinta transportadora con todos los elementos integrados,
+de modo que el proyecto consiste en definitva en una interfaz entre estos elementos y el robot que le
+acompaña.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth]{02-hardware/10-banda.png}
+    \caption{Cinta transportadora con elementos integrados}
+    \label{fig:figura210}
+    \end{figure}
+
+\section{Convertidor CC-CC con salida USB}
+
+Se trata de un pequeño dispositivo que se puede alimentar con un amplio rango de tensiones. En este caso,
+se puede alimentar con los 24V que proporciona la controladora del robot. Cuenta con cuatro salidas USB 
+(que funcionan a 5V) con las que se puede alimentar la placa de Arduino y toda la electrónica del sistema.
+
+\section{Controladora IRC5C}
+
+El robot ABB IRB120 presente en los laboratorios del departamento cuentan con unas controladoras IRC5C,
+que son los dispositivos con los que se tiene que interactuar para comunicar la cinta transportadora con
+el robot. Estos dispositivos funcionan a 24V y cuentan con su propia fuente de alimentación. Por otra parte,
+cuentan con todas las conexiones necesarias para la realización del proyecto. Entre ellas, una conexión Ethernet
+a la que conectar el Ethernet Shield de Arduino.
+
+Por otro lado, cuenta con una placa DSQC 652, que permite la conexión de señales digitales. Estas señales tienen
+un nivel lógico de 24V, necesitando un mínimo de 15V para detectar un '1' y un máximo de 5V para detectar un '0',
+por lo que las señales que les sean enviadas por esta vía deben ser adaptadas a dichas tensiones.
+
+\section{Optoacoplador TLP621-4}
+

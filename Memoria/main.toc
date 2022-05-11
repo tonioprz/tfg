@@ -10,6 +10,7 @@
 \contentsline {subsection}{\numberline {1.1.2}Modo remoto con microcontrolador}{2}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Modo local sin microcontrolador}{2}{subsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.1.4}Modo remoto sin microcontrolador}{2}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Distribución de los controles}{2}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Descripción del hardware}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Arduino Mega 2560}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Alimentación}{6}{subsection.2.1.1}%
@@ -19,23 +20,30 @@
 \contentsline {section}{\numberline {2.2}Ethernet Shield de Arduino}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Motor DC y Driver L298N}{8}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Conexionado del módulo L298N}{8}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Encoder Rotativo Incremental}{8}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Especificaciones técnicas}{8}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Conexionado del Encoder}{8}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Calibre digital}{9}{section.2.5}%
-\contentsline {section}{\numberline {2.6}LCD}{9}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Sensor fotoeléctrico OMRON}{9}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Banda transportadora con elementos integrados}{9}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Controlador IRC5C}{9}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Desarrollo de placa de conexiones}{11}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Planificación de caja}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Resultados}{19}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{21}{chapter.8}%
+\contentsline {section}{\numberline {2.4}Encoder Rotativo Incremental}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Especificaciones técnicas}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Conexionado del Encoder}{10}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Calibre digital}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.6}LCD}{11}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Sensor fotoeléctrico OMRON}{11}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Conexiones del sensor fotoeléctrico}{11}{subsection.2.7.1}%
+\contentsline {section}{\numberline {2.8}Cinta transportadora con elementos integrados}{12}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Convertidor CC-CC con salida USB}{13}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Controladora IRC5C}{13}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Optoacoplador TLP621-4}{13}{section.2.11}%
+\contentsline {chapter}{\numberline {3}Desarrollo de placa de conexiones}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Software utilizado. KiCAD.}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Niveles lógicos de tensión}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Señales digitales en 24V y en 5V}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}}{16}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Planificación de caja}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Resultados}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{25}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{23}{section*.16}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{25}{section*.18}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{27}{section*.20}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{29}{section*.22}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{27}{section*.28}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{29}{section*.30}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{31}{section*.32}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{33}{section*.34}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
