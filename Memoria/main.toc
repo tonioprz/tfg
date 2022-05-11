@@ -35,15 +35,15 @@
 \contentsline {section}{\numberline {3.1}Software utilizado. KiCAD.}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Niveles lógicos de tensión}{15}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Señales digitales en 24V y en 5V}{16}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}}{16}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Planificación de caja}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{19}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Resultados}{23}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{25}{chapter.8}%
+\contentsline {subsection}{\numberline {3.3.1}Optoacopladores}{16}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Planificación de caja}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Resultados}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{27}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{27}{section*.28}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{29}{section*.30}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{31}{section*.32}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{33}{section*.34}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{29}{section*.29}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{31}{section*.31}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{33}{section*.33}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{35}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
