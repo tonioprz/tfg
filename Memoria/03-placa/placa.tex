@@ -5,8 +5,8 @@ dentro de la caja y posibilitar ciertas funciones especificadas, se crea una pla
 donde se conectan todos los dispositivos. De este modo se consigue simplificar el montaje y la
 posible actualización del sistema, ya que todas las conexiones internas desaparecen por completo.
 Además, para favorecer el orden de los cables dentro de la caja se crea una segunda placa más básica
-cuya única función es agrupar todas las conexiones existentes en la tapa. Se conocerá como placa 'Fondo'
-a la placa general y placa 'Tapa' a la superior.
+cuya única función es agrupar todas las conexiones existentes en la tapa. Se conocerá como placa \textit{Fondo}
+a la placa general y placa \textit{Tapa} a la superior.
 
 \section{Software utilizado. KiCAD.}
 
@@ -70,16 +70,75 @@ se utiliza el circuito integrado TLP621-4 que cumple dicha función.
     \label{fig:figura32}
     \end{figure}
 
-\subsection{Optoacopladores}
+\subsection{Implementación de optoacopladores}
 
-En la figura \ref{fig:figura33} se muestra el circuito empleado. Se toman las señales de 24V
+En la figura \ref{fig:figura33} se muestra el circuito empleado. Se utiliza un total de dos TLP621-4 para
+tener un total de 8 optoacopladores. Como la tensión máxima que reciben los diodos es de 24V, se colocan
+unas resistencias para evitar que se quemen. El valor de las resistencias utilizadas es de 8.2 k$\Omega$,
+permitiendo que la corriente directa sea algo inferior a 3 mA. Como caso relevante, en el caso de la parada
+de emergencia, la resistencia será de 4.7 k$\Omega$ para que tenga una corriente directa y, una mayor
+salida por ello para asegurar que se produzca la parada en caso de ser necesaria.
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=\textwidth/2]{03-placa/03-optoacopladores.png}
-    \caption{Ejemplo de optoacoplador}
+    \includegraphics[scale=1.25]{03-placa/03-optoacopladores.png}
+    \caption{Implementación de optoacopladores}
     \label{fig:figura33}
     \end{figure}
+
+En el colector de los fototransistores se conectan directamente la línea de 5V para que, en caso de que la
+señal correspondiente se active, su equivalente de 5V también lo haga. En las señales FOTO, LR, MICRO y EMER
+se les añade un LED a la salida a modo de test para comprobar su funcionalidad, pero no se verán desde fuera
+de la caja.
+
+
+\section{Calibre digital}
+
+\subsection{Alimentación calibre}
+
+Para el funcionamiento del calibre digital, éste debe ser alimentado por una fuente de 1.5V. Como lo que se
+dispone en este proyecto es de 5V y 24V lo más sencillo es colocar un divisor resistivo a la línea de 5V y
+utilizar un búfer de tensión para mantener dicho nivel lógico estable. Utilizando resistencias lo suficientemente
+altas el consumo es despreciable. Por ello se utiliza una resistencia de 39k$\Omega$ y otra de 100k$\Omega$. La 
+tensión de salida obtenida será de:
+
+\begin{equation}
+    V_{out} = 5V \frac{39k\Omega}{39k\Omega+100k\Omega} \approx 1.4V
+\end{equation}
+
+Los 1.4V que se obtienen entran dentro del rango de funcionamiento del calibre utilizando resistencias comerciales,
+por lo que el resultado es válido. 
+
+El consumo del divisor resistivo por otro lado será de:
+
+\begin{equation}
+    I_{divisor} = \frac{5V}{39k\Omega+100k\Omega} \approx 0.036 mA
+\end{equation}
+
+Se puede considerar un consumo despreciable.
+
+Para el búfer de tensión se utiliza un circuito integrado TL082, del cual se utiliza uno de los dos amplificadores
+operacionales con el que cuenta. Como resultado se obtiene el circuito de la Figura \ref{fig:figura34}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth/2]{03-placa/04-alimentacion-calibre.png}
+    \caption{Alimentación calibre digital a 1.5V}
+    \label{fig:figura34}
+    \end{figure}
+
+\subsection{Amplificación señales calibre}
+
+
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth/2]{03-placa/05-amplificacion-calibre.png}
+    \caption{Amplificación señales calibre digital a 5V}
+    \label{fig:figura35}
+    \end{figure}
+
+
 
 
 Calibre digital
