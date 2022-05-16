@@ -1,17 +1,17 @@
 #include <Arduino.h>
 #include <Ethernet.h>
 #include <LiquidCrystal_I2C.h>
-#include <motor.h>
-#include <main.h>
+#include "main.h"
 
 
 //Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
 LiquidCrystal_I2C lcd(0x27,16,2);
 
-Motor mot(IN3, IN4, ENB, BUTTON_EMERGENCIA);
-
 void cambiofaseA(void);
 void cambiofaseB(void);
+void pararMotor(void);
+void moverMotor(void);
+void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd);
 float medidaCalibre(void);
 bool comprobarRobot(void);
 bool enviarRobot(char dato);
@@ -140,7 +140,7 @@ void loop() {
       if(comprobarRobot()){
         enviarRobot(estado);
       }
-      mot.movimientoMotor(objetivo, pposicion, lcd);
+      movimientoMotor(objetivo, pposicion, lcd);
       if(comprobarRobot()){
         enviarRobot(estado);
       }
@@ -303,6 +303,97 @@ void cambiofaseB(void){
     posicion--;
   } else{
     posicion++;
+  }
+}
+
+void pararMotor(void){
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, LOW);
+    analogWrite(ENB, 255);
+}
+
+void moverMotor(int u){
+    if(u >= 0){ // Avance positivo
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
+    } else{ // Avance negativo
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, LOW);
+      u = -u;
+    }
+
+    if(u > 200){
+        u = 200; // La salida máxima es de 255
+    }
+
+    analogWrite(ENB, u);
+}
+
+void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
+  lcd.setCursor(0, 0);
+  lcd.print("MOVIENDO...     ");
+  lcd.setCursor(0, 1);
+  lcd.print("                ");
+  lcd.setCursor(0, 1);
+  lcd.print(*posicion);
+  lcd.print("/");
+  lcd.print(objetivo);
+
+  long u = 0;
+  long ek = 0;
+  long ek1 = 0;
+  long ik = 0;
+  long D = 0;
+  int aux = 0;
+  bool emer = 0;
+  while(((*posicion < objetivo - 50) || (*posicion > objetivo + 50) || (u > 55)) && !emer){
+    
+    emer = digitalRead(BUTTON_EMERGENCIA);
+
+    // Se actualiza la posición actual en el LCD cada 120 ms
+    aux++;
+    if(aux > 3){
+      lcd.setCursor(0, 1);
+      lcd.print("                ");
+      lcd.setCursor(0, 1);
+      lcd.print(*posicion);
+      lcd.print("/");
+      lcd.print(objetivo);        
+      aux = 0;
+    }
+
+    //Actualización de error integral
+    ek1 = ek;
+    ek = objetivo - *posicion;
+    ik = ik + ek;
+    D = ek - ek1;
+    //Cálculo de la señal de control
+    u = kp * (ek + (T/Ti) * ik + (Td/T) * D);
+    
+    
+    if((abs(u) > 255) && (abs(ek) > 200)){
+      ik = 0;
+    }
+
+    if(u > 255){
+      u = 255;
+    }
+    if(u < -255){
+      u = -255;
+    }
+    
+    if(!emer){
+      moverMotor(u);
+      delay(1000 * T);
+    }
+  }
+  
+  pararMotor();
+  
+  if(emer){
+    lcd.clear();
+    lcd.print("EMERGENCIA");
+    delay(1000*T);
   }
 }
 

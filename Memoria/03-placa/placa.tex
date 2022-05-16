@@ -39,6 +39,8 @@ externo con el que se cuenta, por lo que con obtener dichas conexiones del propi
 las dos líneas. Sin embargo, en el caso de los 1.5V éstos deben ser generados dentro de la placa como
 se verá en la sección correspondiente más adelante.
 
+\section{}
+
 \section{Señales digitales en 24V y en 5V}
 
 El sistema cuenta con cuatro salidas digitales que deben estar representadas tanto en 24V como en 5V
@@ -118,7 +120,7 @@ El consumo del divisor resistivo por otro lado será de:
 Se puede considerar un consumo despreciable.
 
 Para el búfer de tensión se utiliza un circuito integrado TL082, del cual se utiliza uno de los dos amplificadores
-operacionales con el que cuenta. Como resultado se obtiene el circuito de la Figura \ref{fig:figura34}.
+operacionales con el que cuenta. Como resultado se obtiene el circuito de la figura \ref{fig:figura34}.
 
 \begin{figure}[hbtp]
     \centering
@@ -129,7 +131,10 @@ operacionales con el que cuenta. Como resultado se obtiene el circuito de la Fig
 
 \subsection{Amplificación señales calibre}
 
-
+Para la lectura de la señal del calibre por parte del Arduino es necesario elevar los niveles de tensión a 5V.
+Para ello se toma como referencia el circuito visto en la web \cite{caliper}. Éste utiliza un transistor junto
+con dos resistencias de modo que cuando el calibre envíe un '1' se eleve la tensión a 5V, pero sin distorsionarse
+cuando haya un '0' y dar falsos positivos. El esquema implementado es el que aparece en la figura \ref{fig:figura35}.
 
 \begin{figure}[hbtp]
     \centering
@@ -140,6 +145,4 @@ operacionales con el que cuenta. Como resultado se obtiene el circuito de la Fig
 
 
 
-
-Calibre digital
 Tapa

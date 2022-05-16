@@ -50,3 +50,8 @@ char estado = 'i';
 bool discreto = 0;
 long desplazamiento = 1000;
 long objetivo = 0;
+
+float kp = 0.5;
+float Ti = 2;
+float Td = 0.1;
+float T = 0.01;
