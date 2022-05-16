@@ -144,5 +144,42 @@ cuando haya un '0' y dar falsos positivos. El esquema implementado es el que apa
     \end{figure}
 
 
+\section{Señales}
+BEBÉ A BORDO
 
-Tapa
+\begin{table}[hbtp]
+    \begin{center}
+    \begin{tabular}{ | c | c | c | }
+    \hline
+    Señal & Observaciones & Nivel lógico de tensión (V)\\ \hline
+    24V & Alimentación de 24V & 24\\
+    5V & Alimentación de 5V &5\\
+    1.5V & Alimentación de 1.5V& 1.5\\
+    GND & Línea de masa &0\\
+    EMER & Señal de emergencia & 5 y 24 \\
+    LR &  Estado local o remoto & 5 y 24  \\
+    MICRO &  Estado con o sin microcontrolador & 5 y 24 \\
+    FOTO & Sensor fotoeléctrico &5 y 24\\
+    UP & Flecha hacia arriba &5\\
+    DOWN & Flecha hacia abajo &5\\    
+    ENTER & Avance en los menús &5\\
+    ESC & Retroceso en los menús &5\\
+    AVANCE & Mov. del motor sin microcontrolador (+) &24\\
+    RETROCESO & Mov. del motor sin microcontrolador (-) & 24\\
+    IN3 & Sentido de giro L298N &5\\
+    IN4 & Sentido de giro L298N &5\\
+    ENB & Velocidad de giro L298N &5\\
+    FASEA & Fase A del encoder &5\\
+    FASEB & Fase B del encoder &5\\
+    CLK & Señal reloj del calibre &1.5 y 5\\
+    DATA & Señal de datos del calibre &1.5 y 5\\
+    SDA & Señal de datos del LCD &5\\
+    SCL & Señal de reloj del LCD &5\\
+    
+    \hline
+
+    \end{tabular}
+    \end{center}
+    \caption{Listado de señales}
+    \label{tab:tab2}
+    \end{table}
