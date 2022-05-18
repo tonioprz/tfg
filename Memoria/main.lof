@@ -16,10 +16,14 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Cinta transportadora con elementos integrados\relax }}{12}{figure.caption.25}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Logo de KiCAD\relax }}{15}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo de optoacoplador\relax }}{16}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Implementación de optoacopladores\relax }}{17}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{18}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{18}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Switches de estado\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de optoacoplador\relax }}{17}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Implementación de optoacopladores\relax }}{18}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Búfer de tensión de la señal MICRO a 5V\relax }}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Conexiones flecha selección\relax }}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Implementación de optoacopladores para modo sin microcontrolador y emergencia\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{20}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{20}{figure.caption.35}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

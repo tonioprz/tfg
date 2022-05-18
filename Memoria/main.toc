@@ -33,22 +33,23 @@
 \contentsline {section}{\numberline {2.11}Optoacoplador TLP621-4}{13}{section.2.11}%
 \contentsline {chapter}{\numberline {3}Desarrollo de placa de conexiones}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Software utilizado. KiCAD.}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Niveles lógicos de tensión}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Señales digitales en 24V y en 5V}{16}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Implementación de optoacopladores}{16}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Calibre digital}{17}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Alimentación calibre}{17}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Amplificación señales calibre}{18}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Señales}{19}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Planificación de caja}{21}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{25}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Resultados}{27}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{29}{chapter.8}%
+\contentsline {section}{\numberline {3.2}Señales}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Señales digitales en 24V y en 5V}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Conversión de 24V a 5V}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Función sin microcontrolador y emergencia}{18}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Calibre digital}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Alimentación calibre}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Amplificación señales calibre}{20}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Placa \textit {Fondo}}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Placa \textit {Tapa}}{21}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Planificación de caja}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Resultados}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{31}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{31}{section*.32}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{33}{section*.34}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{35}{section*.36}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{37}{section*.38}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{33}{section*.36}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{35}{section*.38}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{37}{section*.40}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{39}{section*.42}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

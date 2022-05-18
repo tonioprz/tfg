@@ -19,7 +19,7 @@ Design Automation) y consta de diversas aplicaciones que permiten realizar todo 
     \centering
     \includegraphics[width=\textwidth/2]{03-placa/01-KiCad-Logo.png}
     \caption{Logo de KiCAD}
-    \label{fig:figura31}
+    \label{fig:figura31logo}
     \end{figure}
 
 Por un lado cuenta con \textit{eeschema}, un editor de esquemas electrónicos donde se puede plantear
@@ -27,125 +27,11 @@ la lógica de las conexiones de un modo abstracto. Por otro, se encuentra con \t
 de circuitos impresos. A partir de un esquemático creado se pasa a un circuito impreso de modo fácil y
 siendo modificable siempre que sea necesario.
 
-\section{Niveles lógicos de tensión}
-
-En primer lugar, el proyecto cuenta con dispositivos que funcionan a distintos niveles de tensión, por 
-lo que se tiene que plantear las transformaciones a realizar. Los dos principales niveles de tensión 
-son los 5V a los que funciona el Arduino y los 24V a los que funciona el motor y la controladora del 
-robot. Por otra parte, también se cuenta con el nivel lógico de 1.5V del calibre digital.
-
-El sistema se alimenta con 24V provenientes de la controladora y pasa a 5V mediante el convertidor
-externo con el que se cuenta, por lo que con obtener dichas conexiones del propio sistema ya se dispone
-las dos líneas. Sin embargo, en el caso de los 1.5V éstos deben ser generados dentro de la placa como
-se verá en la sección correspondiente más adelante.
-
-\section{}
-
-\section{Señales digitales en 24V y en 5V}
-
-El sistema cuenta con cuatro salidas digitales que deben estar representadas tanto en 24V como en 5V
-para que tanto el Arduino como la controladora conozcan de modo inequívoco el modo en el que se encuentra
-el sistema. Estas señales son:
-\begin{itemize}
-    \item Microcontrolador (MICRO). '1' si el microcontrolador se encuentra desactivado y '0' si está operativo.
-    \item Local/Remoto (LR). '1' si el sistema funciona en modo remoto y '0' si funciona en modo local.
-    \item Emergencia (EMER). '1' si el sistema requiere una parada de emergencia.
-    \item Sensor Fotoeléctrico (FOTO). '1' si hay una pieza detectada por el sensor.
-\end{itemize}
-
-Además, se cuenta con dos entradas digitales que deben ser capaces de mover el motor en el caso de que el
-sistema se encuentre funcionando sin microcontrolador. Para ello estas señales deben actuar sobre los
-pines de dirección del L298N. Estas dos señales son:
-\begin{itemize}
-    \item Avance (AVANCE). Actúa sobre el pin IN1 o IN3 del L298N.
-    \item Retroceso (RETR). Actúa sobre el pin IN2 o IN4 del L298N.
-\end{itemize}
-
-Las señales se generan a 24V por defecto, por lo que es necesario su paso a 5V. Para ello se utilizan
-optoacopladores, unos dispositivos que mediante fotodiodos acoplados a fototransistores. En este proyecto
-se utiliza el circuito integrado TLP621-4 que cumple dicha función.
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=\textwidth/4]{03-placa/02-optoac.png}
-    \caption{Ejemplo de optoacoplador}
-    \label{fig:figura32}
-    \end{figure}
-
-\subsection{Implementación de optoacopladores}
-
-En la figura \ref{fig:figura33} se muestra el circuito empleado. Se utiliza un total de dos TLP621-4 para
-tener un total de 8 optoacopladores. Como la tensión máxima que reciben los diodos es de 24V, se colocan
-unas resistencias para evitar que se quemen. El valor de las resistencias utilizadas es de 8.2 k$\Omega$,
-permitiendo que la corriente directa sea algo inferior a 3 mA. Como caso relevante, en el caso de la parada
-de emergencia, la resistencia será de 4.7 k$\Omega$ para que tenga una corriente directa y, una mayor
-salida por ello para asegurar que se produzca la parada en caso de ser necesaria.
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[scale=1.25]{03-placa/03-optoacopladores.png}
-    \caption{Implementación de optoacopladores}
-    \label{fig:figura33}
-    \end{figure}
-
-En el colector de los fototransistores se conectan directamente la línea de 5V para que, en caso de que la
-señal correspondiente se active, su equivalente de 5V también lo haga. En las señales FOTO, LR, MICRO y EMER
-se les añade un LED a la salida a modo de test para comprobar su funcionalidad, pero no se verán desde fuera
-de la caja.
-
-
-\section{Calibre digital}
-
-\subsection{Alimentación calibre}
-
-Para el funcionamiento del calibre digital, éste debe ser alimentado por una fuente de 1.5V. Como lo que se
-dispone en este proyecto es de 5V y 24V lo más sencillo es colocar un divisor resistivo a la línea de 5V y
-utilizar un búfer de tensión para mantener dicho nivel lógico estable. Utilizando resistencias lo suficientemente
-altas el consumo es despreciable. Por ello se utiliza una resistencia de 39k$\Omega$ y otra de 100k$\Omega$. La 
-tensión de salida obtenida será de:
-
-\begin{equation}
-    V_{out} = 5V \frac{39k\Omega}{39k\Omega+100k\Omega} \approx 1.4V
-\end{equation}
-
-Los 1.4V que se obtienen entran dentro del rango de funcionamiento del calibre utilizando resistencias comerciales,
-por lo que el resultado es válido. 
-
-El consumo del divisor resistivo por otro lado será de:
-
-\begin{equation}
-    I_{divisor} = \frac{5V}{39k\Omega+100k\Omega} \approx 0.036 mA
-\end{equation}
-
-Se puede considerar un consumo despreciable.
-
-Para el búfer de tensión se utiliza un circuito integrado TL082, del cual se utiliza uno de los dos amplificadores
-operacionales con el que cuenta. Como resultado se obtiene el circuito de la figura \ref{fig:figura34}.
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=\textwidth/2]{03-placa/04-alimentacion-calibre.png}
-    \caption{Alimentación calibre digital a 1.5V}
-    \label{fig:figura34}
-    \end{figure}
-
-\subsection{Amplificación señales calibre}
-
-Para la lectura de la señal del calibre por parte del Arduino es necesario elevar los niveles de tensión a 5V.
-Para ello se toma como referencia el circuito visto en la web \cite{caliper}. Éste utiliza un transistor junto
-con dos resistencias de modo que cuando el calibre envíe un '1' se eleve la tensión a 5V, pero sin distorsionarse
-cuando haya un '0' y dar falsos positivos. El esquema implementado es el que aparece en la figura \ref{fig:figura35}.
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=\textwidth/2]{03-placa/05-amplificacion-calibre.png}
-    \caption{Amplificación señales calibre digital a 5V}
-    \label{fig:figura35}
-    \end{figure}
-
-
 \section{Señales}
-BEBÉ A BORDO
+
+En primer lugar, la lista de señales presentes en el proyecto se describen en la tabla \ref{tab:tab2}.
+Estas señales se conectan a sus respectivos dispositivos por conectores atornillados en la PCB definitiva
+y, posteriormente se realizan las transformaciones e interconexiones internas que corresponden.
 
 \begin{table}[hbtp]
     \begin{center}
@@ -183,3 +69,186 @@ BEBÉ A BORDO
     \caption{Listado de señales}
     \label{tab:tab2}
     \end{table}
+
+El proyecto cuenta con dispositivos que funcionan a distintos niveles de tensión, por 
+lo que se tiene que plantear las transformaciones a realizar. Los dos principales niveles de tensión 
+son los 5V a los que funciona el Arduino y los 24V a los que funciona el motor y la controladora del 
+robot. Por otra parte, también se cuenta con el nivel lógico de 1.5V del calibre digital.
+
+El sistema se alimenta con 24V provenientes de la controladora y pasa a 5V mediante el convertidor
+externo con el que se cuenta, por lo que con obtener dichas conexiones del propio sistema ya se dispone
+las dos líneas. Sin embargo, en el caso de los 1.5V éstos deben ser generados dentro de la placa como
+se verá en la sección correspondiente más adelante.
+
+\section{Señales digitales en 24V y en 5V}
+
+El sistema cuenta con cuatro salidas digitales que deben estar representadas tanto en 24V como en 5V
+para que tanto el Arduino como la controladora conozcan de modo inequívoco el modo en el que se encuentra
+el sistema. Estas señales son:
+\begin{itemize}
+    \item Microcontrolador (MICRO). '1' si el microcontrolador se encuentra desactivado y '0' si está operativo.
+    \item Local/Remoto (LR). '1' si el sistema funciona en modo remoto y '0' si funciona en modo local.
+    \item Emergencia (EMER). '1' si el sistema requiere una parada de emergencia.
+    \item Sensor Fotoeléctrico (FOTO). '1' si hay una pieza detectada por el sensor.
+\end{itemize}
+
+Estas señales son generadas mediante contactos a la señal de 24V. Las señales MICRO y LR funcionan con dos
+interruptores de dos posiciones, EMER mediante una seta de emergencia con conexión normalmente abierta y
+FOTO con el sensor fotoeléctrico a la salida normalmente abierta, lo que hace que en el caso de activarse
+cierre el contacto con el común, que se encuentra a 24V. A los tres primeros se les llamará switches de estado,
+que son los que determinan el estado del sistema.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1.25]{03-placa/switches.png}
+    \caption{Switches de estado}
+    \label{fig:figura32switches}
+    \end{figure}
+
+Además, se cuenta con dos entradas digitales que deben ser capaces de mover el motor en el caso de que el
+sistema se encuentre funcionando sin microcontrolador. Para ello estas señales deben actuar sobre los
+pines de dirección del L298N. Estas dos señales son:
+\begin{itemize}
+    \item Avance (AVANCE). Actúa sobre el pin IN1 o IN3 del L298N.
+    \item Retroceso (RETR). Actúa sobre el pin IN2 o IN4 del L298N.
+\end{itemize}
+
+Las señales se generan a 24V por defecto, por lo que es necesario su paso a 5V. Para ello se utilizan
+optoacopladores, unos dispositivos que mediante fotodiodos acoplados a fototransistores. En este proyecto
+se utiliza el circuito integrado TLP621-4 que cumple dicha función.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth/4]{03-placa/02-optoac.png}
+    \caption{Ejemplo de optoacoplador}
+    \label{fig:figura33ejopto}
+    \end{figure}
+
+\subsection{Conversión de 24V a 5V}
+
+En la figura \ref{fig:figura34imp} se muestra el circuito empleado. Se utiliza un total de dos TLP621-4 para
+tener un total de 8 optoacopladores. Como la tensión máxima que reciben los diodos es de 24V, se colocan
+unas resistencias para evitar que se quemen. El valor de las resistencias utilizadas es de 8.2 k$\Omega$,
+permitiendo que la corriente directa sea algo inferior a 3 mA. Como caso relevante, en el caso de la parada
+de emergencia, la resistencia será de 4.7 k$\Omega$ para que tenga una corriente directa y, una mayor
+salida por ello para asegurar que se produzca la parada en caso de ser necesaria.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1.25]{03-placa/03-optoacopladores.png}
+    \caption{Implementación de optoacopladores}
+    \label{fig:figura34imp}
+    \end{figure}
+
+En el colector de los fototransistores se conectan directamente la línea de 5V para que, en caso de que la
+señal correspondiente se active, su equivalente de 5V también lo haga. En las señales FOTO, LR, MICRO y EMER
+se les añade un LED a la salida a modo de test para comprobar su funcionalidad, pero no se verán desde fuera
+de la caja.
+
+\subsection{Función sin microcontrolador y emergencia}
+
+El sistema debe funcionar tanto con como sin el microcontrolador, por lo que la parte en la que no funcione
+debe tener conexiones simples hacia la placa L298N. Para ello, cuando la señal MICRO sea un '1', se debe 
+actuar sobre este dispositivo. Para evitar conflictos cuando el Arduino se encuentre conectado en este modo,
+los pines conectados a IN3, IN4 y ENB se configurarán como entrada, ya que como salida generarán conflictos.
+
+En primer lugar, se actúa sobre el pin controlador de la velocidad de giro, ENB (o ENA). Para ello, mediante
+un búfer de tensión, se activa dicha señal al máximo cuando MICRO se encuentre en '1'. El búfer de tensión
+se utiliza para independizar la salida a ENB de la señal MICRO de 5V y permitir su uso con el Arduino en otros modos.
+La implementación se muestra en la figura \ref{fig:buferenb}. Para dicho búfer de tensión se emplea un canal
+del circuito integrado TL082.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1.25]{03-placa/buferenb.jpg}
+    \caption{Búfer de tensión de la señal MICRO a 5V}
+    \label{fig:buferenb}
+    \end{figure}
+
+Para dar señal de movimiento se utilizan las flechas presentes en la caja. Estas flechas de selección tienen
+dos salidas independientes, por lo que las señales lógicas que recibe el Arduino pueden ir por un canal 
+mientras que la señal de movimiento en modo sin microcontrolador por otro. De este modo, si las señales de 
+movimiento se utilizan a 24V se puede conectar directamente al panel de señales digitales remoto, el cual
+interactúa directamente con la controladora del robot. Por ello, el terminal común que conecta la flecha de 
+selección para el modo sin microcontrolador va conectado a la señal MICRO de 24V como se ve en la figura
+\ref{fig:flecha}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1.25]{03-placa/flecha.jpg}
+    \caption{Conexiones flecha selección}
+    \label{fig:flecha}
+    \end{figure}
+
+Por último, para que se produzca el movimiento además se debe actuar sobre IN3 o IN4 para que el motor se
+mueva hacia un lado o hacia el otro. Para ello, se vuelven a utilizar optoacopladores como se ve en la
+figura \ref{fig:sinmicro}. La señal de AVANCE y la señal de RETROCESO actúa sobre el optoacoplador que
+le corresponde y pone el pin que le corresponde a '1', haciendo que el motor se mueva en el sentido deseado.
+Como la flecha solo activa uno de los dos sentidos cada vez, no se producirá el bloqueo del motor.
+
+Sin embargo, interesa que se produzca dicho bloqueo en un determinado caso: la parada de emergencia. Si tanto
+IN3 como IN4 se ponen a '1' a la vez, el motor queda totalmente bloqueado y deja de moverse. Por ello, para
+ello, se conecta la señal EMER de 24V a dos optoacopladores independientes que, en caso de que sea necesario,
+produzca dicha parada. La misma se realizará tanto en modo sin microcontrolador como con éste activo, ya que 
+depende directamente de la señal EMER.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[scale=1.25]{03-placa/sinmicro.jpg}
+    \caption{Implementación de optoacopladores para modo sin microcontrolador y emergencia}
+    \label{fig:sinmicro}
+    \end{figure}
+
+\section{Calibre digital}
+
+\subsection{Alimentación calibre}
+
+Para el funcionamiento del calibre digital, éste debe ser alimentado por una fuente de 1.5V. Como lo que se
+dispone en este proyecto es de 5V y 24V lo más sencillo es colocar un divisor resistivo a la línea de 5V y
+utilizar un búfer de tensión para mantener dicho nivel lógico estable. Utilizando resistencias lo suficientemente
+altas el consumo es despreciable. Por ello se utiliza una resistencia de 39k$\Omega$ y otra de 100k$\Omega$. La 
+tensión de salida obtenida será de:
+
+\begin{equation}
+    V_{out} = 5V \frac{39k\Omega}{39k\Omega+100k\Omega} \approx 1.4V
+\end{equation}
+
+Los 1.4V que se obtienen entran dentro del rango de funcionamiento del calibre utilizando resistencias comerciales,
+por lo que el resultado es válido. 
+
+El consumo del divisor resistivo por otro lado será de:
+
+\begin{equation}
+    I_{divisor} = \frac{5V}{39k\Omega+100k\Omega} \approx 0.036 mA
+\end{equation}
+
+Se puede considerar un consumo despreciable.
+
+Para el búfer de tensión se utiliza un circuito integrado TL082, del cual se utiliza uno de los dos amplificadores
+operacionales con el que cuenta. Como resultado se obtiene el circuito de la figura \ref{fig:alimcal}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth/2]{03-placa/04-alimentacion-calibre.png}
+    \caption{Alimentación calibre digital a 1.5V}
+    \label{fig:alimcal}
+    \end{figure}
+
+\subsection{Amplificación señales calibre}
+
+Para la lectura de la señal del calibre por parte del Arduino es necesario elevar los niveles de tensión a 5V.
+Para ello se toma como referencia el circuito visto en la web \cite{caliper}. Éste utiliza un transistor junto
+con dos resistencias de modo que cuando el calibre envíe un '1' se eleve la tensión a 5V, pero sin distorsionarse
+cuando haya un '0' y dar falsos positivos. El esquema implementado es el que aparece en la figura \ref{fig:figura36amp}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth/2]{03-placa/05-amplificacion-calibre.png}
+    \caption{Amplificación señales calibre digital a 5V}
+    \label{fig:figura36amp}
+    \end{figure}
+
+
+\section{Placa \textit{Fondo}}
+
+\section{Placa \textit{Tapa}}
