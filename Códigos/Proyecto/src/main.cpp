@@ -65,7 +65,7 @@ void setup() {
   }
 
   posy = medidaCalibre();
-
+  posicion = 0;
   // Se inicia la comunicación Ethernet y la serie para depuración
   Serial.begin(9600);
   Ethernet.begin(MAC, IP);
@@ -151,7 +151,7 @@ void loop() {
       lcd.print("                ");
       lcd.setCursor(0, 1);
       lcd.print("X=");
-      lcd.print(posicion);
+      lcd.print(posicion/10);
       lcd.print(" Y=");
       lcd.print(posy);
       delay(2000);
@@ -206,7 +206,7 @@ void loop() {
         lcd.print("                ");
         lcd.setCursor(0, 0);
         lcd.print("X=");
-        lcd.print(posicion);
+        lcd.print(posicion/10);
         lcd.print(" Y=");
         lcd.print(posy);
 
@@ -214,8 +214,8 @@ void loop() {
         if(desplazamiento > 0){
           lcd.print("+");
         }
-        lcd.print(desplazamiento);
-        lcd.print(" pulsos");                
+        lcd.print(desplazamiento/10);
+        lcd.print(" mm");                
       }
       if(!esc && esc_ant){
         estado = 'i';
@@ -245,8 +245,8 @@ void loop() {
         if(desplazamiento > 0){
           lcd.print("+");
         }
-        lcd.print(desplazamiento);
-        lcd.print(" pulsos");        
+        lcd.print(desplazamiento/10);
+        lcd.print(" mm");        
       }
       if(!down && down_ant){
         desplazamiento = desplazamiento - 1000;
@@ -256,8 +256,8 @@ void loop() {
         if(desplazamiento > 0){
           lcd.print("+");
         }
-        lcd.print(desplazamiento);
-        lcd.print(" pulsos");        
+        lcd.print(desplazamiento/10);
+        lcd.print(" mm");        
       }
       break;
 
@@ -335,9 +335,9 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
   lcd.setCursor(0, 1);
   lcd.print("                ");
   lcd.setCursor(0, 1);
-  lcd.print(*posicion);
+  lcd.print((*posicion)/10);
   lcd.print("/");
-  lcd.print(objetivo);
+  lcd.print(objetivo/10);
 
   long u = 0;
   long ek = 0;
@@ -346,7 +346,7 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
   long D = 0;
   int aux = 0;
   bool emer = 0;
-  while(((*posicion < objetivo - 50) || (*posicion > objetivo + 50) || (u > 55)) && !emer){
+  while(((*posicion < objetivo - 5) || (*posicion > objetivo + 5) || (u > 55)) && !emer){
     
     emer = digitalRead(BUTTON_EMERGENCIA);
 
@@ -356,9 +356,9 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
       lcd.setCursor(0, 1);
       lcd.print("                ");
       lcd.setCursor(0, 1);
-      lcd.print(*posicion);
+      lcd.print((*posicion)/10);
       lcd.print("/");
-      lcd.print(objetivo);        
+      lcd.print(objetivo/10);        
       aux = 0;
     }
 

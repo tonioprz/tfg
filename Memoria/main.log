@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  18 MAY 2022 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  18 MAY 2022 12:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1766,12 +1766,7 @@ File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 LaTeX Warning: Unused global option(s):
     [Myfinal].
 
-(./main.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
- (./0a-agradecimientos/agradecimientos.aux) (./0b-resumen/resumen.aux) (./0c-notacion/notacion.aux) (./01-introduccion/introduccion.aux) (./02-hardware/hardware.aux) (./03-placa/placa.aux) (./04-caja/caja.aux) (./05-arduino/arduino.aux) (./06-robotstudio/robotstudio.aux) (./07-resultados/resultados.aux) (./08-conclusiones/conclusiones.aux))
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -2088,41 +2083,18 @@ LaTeX Info: Redefining \% on input line 137.
 
 
 
-] (./main.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.85492> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/c/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/c/sl' tried instead on input line 43.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
- [7
+]
+No file main.toc.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+[7
 
-])
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
- [8]
+] [8
+
+]
 Package tocbasic Info: character protrusion at toc deactivated on input line 151.
- (./main.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
- [9
-
-
-])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -2130,18 +2102,20 @@ LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
- [10]
+ [9
+
+]
 \openout2 = `0c-notacion/notacion.aux'.
 
- (./0c-notacion/notacion.tex
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
- [11
+ (./0c-notacion/notacion.tex [10
 
 
 ]
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [11]
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
 LaTeX Info: Redefining \. on input line 106.
@@ -2155,6 +2129,12 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (E) loversize=0.2;
 (lettrine.sty)             reported on input line 5.
+
+LaTeX Warning: Citation `tapia' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `rea' on page 1 undefined on input line 16.
+
 LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 24.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
@@ -2178,12 +2158,12 @@ l.47 \subsection{Modo local con microcontrolador}
 
 
 ]
-<01-introduccion/01-botonera.jpg, id=420, 592.614pt x 294.1389pt>
+<01-introduccion/01-botonera.jpg, id=195, 592.614pt x 294.1389pt>
 File: 01-introduccion/01-botonera.jpg Graphic file (type jpg)
 <use 01-introduccion/01-botonera.jpg>
 Package pdftex.def Info: 01-introduccion/01-botonera.jpg  used on input line 86.
 (pdftex.def)             Requested size: 296.30627pt x 147.06908pt.
-<01-introduccion/02-digitales.jpg, id=421, 597.31155pt x 101.53935pt>
+<01-introduccion/02-digitales.jpg, id=196, 597.31155pt x 101.53935pt>
 File: 01-introduccion/02-digitales.jpg Graphic file (type jpg)
 <use 01-introduccion/02-digitales.jpg>
 Package pdftex.def Info: 01-introduccion/02-digitales.jpg  used on input line 93.
@@ -2227,7 +2207,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (U) loversize=0.2;
 (lettrine.sty)             reported on input line 3.
-<02-hardware/01-arduino-mega-2560.jpg, id=434, 602.25pt x 602.25pt>
+<02-hardware/01-arduino-mega-2560.jpg, id=213, 602.25pt x 602.25pt>
 File: 02-hardware/01-arduino-mega-2560.jpg Graphic file (type jpg)
 <use 02-hardware/01-arduino-mega-2560.jpg>
 Package pdftex.def Info: 02-hardware/01-arduino-mega-2560.jpg  used on input line 17.
@@ -2254,7 +2234,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has b
                    \relax 
 l.83     \item C
                 omunicación SPI. Pines 50 (MISO), 51 (MOSI), 52 (SCK), 53 (... [6]
-<02-hardware/02-shield-ethernet-w5100.jpg, id=443, 225.9642pt x 162.3666pt>
+<02-hardware/02-shield-ethernet-w5100.jpg, id=227, 225.9642pt x 162.3666pt>
 File: 02-hardware/02-shield-ethernet-w5100.jpg Graphic file (type jpg)
 <use 02-hardware/02-shield-ethernet-w5100.jpg>
 Package pdftex.def Info: 02-hardware/02-shield-ethernet-w5100.jpg  used on input line 107.
@@ -2264,12 +2244,12 @@ LaTeX Info: Redefining \% on input line 124.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
  [7 <./02-hardware/02-shield-ethernet-w5100.jpg>]
-<02-hardware/03-l298n.png, id=450, 1016.79875pt x 639.38875pt>
+<02-hardware/03-l298n.png, id=236, 1016.79875pt x 639.38875pt>
 File: 02-hardware/03-l298n.png Graphic file (type png)
 <use 02-hardware/03-l298n.png>
 Package pdftex.def Info: 02-hardware/03-l298n.png  used on input line 147.
 (pdftex.def)             Requested size: 254.19907pt x 159.84679pt.
-<02-hardware/04-l298n-alimentacion.png, id=452, 1037.8775pt x 567.11874pt>
+<02-hardware/04-l298n-alimentacion.png, id=238, 1037.8775pt x 567.11874pt>
 File: 02-hardware/04-l298n-alimentacion.png Graphic file (type png)
 <use 02-hardware/04-l298n-alimentacion.png>
 Package pdftex.def Info: 02-hardware/04-l298n-alimentacion.png  used on input line 170.
@@ -2282,7 +2262,7 @@ LaTeX Info: Redefining \% on input line 181.
 LaTeX Info: Redefining \. on input line 181.
 LaTeX Info: Redefining \% on input line 181.
  [8 <./02-hardware/03-l298n.png>]
-<02-hardware/05-encoder.jpg, id=459, 1145.27875pt x 421.575pt>
+<02-hardware/05-encoder.jpg, id=247, 1145.27875pt x 421.575pt>
 File: 02-hardware/05-encoder.jpg Graphic file (type jpg)
 <use 02-hardware/05-encoder.jpg>
 Package pdftex.def Info: 02-hardware/05-encoder.jpg  used on input line 190.
@@ -2295,7 +2275,7 @@ LaTeX Info: Redefining \% on input line 210.
 LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
  [9 <./02-hardware/04-l298n-alimentacion.png> <./02-hardware/05-encoder.jpg>]
-<02-hardware/06-calibrador.png, id=467, 1074.0125pt x 518.93875pt>
+<02-hardware/06-calibrador.png, id=257, 1074.0125pt x 518.93875pt>
 File: 02-hardware/06-calibrador.png Graphic file (type png)
 <use 02-hardware/06-calibrador.png>
 Package pdftex.def Info: 02-hardware/06-calibrador.png  used on input line 230.
@@ -2308,17 +2288,17 @@ LaTeX Info: Redefining \% on input line 259.
 LaTeX Info: Redefining \. on input line 259.
 LaTeX Info: Redefining \% on input line 259.
  [10 <./02-hardware/06-calibrador.png>]
-<02-hardware/07-lcd162.png, id=474, 1141.26375pt x 602.25pt>
+<02-hardware/07-lcd162.png, id=266, 1141.26375pt x 602.25pt>
 File: 02-hardware/07-lcd162.png Graphic file (type png)
 <use 02-hardware/07-lcd162.png>
 Package pdftex.def Info: 02-hardware/07-lcd162.png  used on input line 262.
 (pdftex.def)             Requested size: 285.31523pt x 150.56212pt.
-<02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg, id=475, 183.5658pt x 130.8087pt>
+<02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg, id=267, 183.5658pt x 130.8087pt>
 File: 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg Graphic file (type jpg)
 <use 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg>
 Package pdftex.def Info: 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg  used on input line 273.
 (pdftex.def)             Requested size: 183.56534pt x 130.80836pt.
-<02-hardware/09-omron.png, id=476, 547.04375pt x 280.04625pt>
+<02-hardware/09-omron.png, id=268, 547.04375pt x 280.04625pt>
 File: 02-hardware/09-omron.png Graphic file (type png)
 <use 02-hardware/09-omron.png>
 Package pdftex.def Info: 02-hardware/09-omron.png  used on input line 288.
@@ -2331,7 +2311,7 @@ LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
  [11 <./02-hardware/07-lcd162.png> <./02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg>]
-<02-hardware/10-banda.png, id=484, 1228.59pt x 706.64pt>
+<02-hardware/10-banda.png, id=279, 1228.59pt x 706.64pt>
 File: 02-hardware/10-banda.png Graphic file (type png)
 <use 02-hardware/10-banda.png>
 Package pdftex.def Info: 02-hardware/10-banda.png  used on input line 312.
@@ -2362,11 +2342,14 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (P) loversize=0.2;
 (lettrine.sty)             reported on input line 3.
-<03-placa/01-KiCad-Logo.png, id=502, 2569.6pt x 1050.92625pt>
+<03-placa/01-KiCad-Logo.png, id=301, 2569.6pt x 1050.92625pt>
 File: 03-placa/01-KiCad-Logo.png Graphic file (type png)
 <use 03-placa/01-KiCad-Logo.png>
 Package pdftex.def Info: 03-placa/01-KiCad-Logo.png  used on input line 20.
 (pdftex.def)             Requested size: 213.39566pt x 87.26694pt.
+
+LaTeX Warning: Reference `tab:tab2' on page 15 undefined on input line 32.
+
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
 LaTeX Info: Redefining \. on input line 77.
@@ -2379,17 +2362,21 @@ LaTeX Info: Redefining \% on input line 100.
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
  [16]
-<03-placa/switches.png, id=515, 115.45132pt x 93.40898pt>
+<03-placa/switches.png, id=318, 115.45132pt x 93.40898pt>
 File: 03-placa/switches.png Graphic file (type png)
 <use 03-placa/switches.png>
 Package pdftex.def Info: 03-placa/switches.png  used on input line 103.
 (pdftex.def)             Requested size: 144.31378pt x 116.76091pt.
-<03-placa/02-optoac.png, id=516, 1043.9pt x 635.37375pt>
+<03-placa/02-optoac.png, id=319, 1043.9pt x 635.37375pt>
 File: 03-placa/02-optoac.png Graphic file (type png)
 <use 03-placa/02-optoac.png>
 Package pdftex.def Info: 03-placa/02-optoac.png  used on input line 122.
 (pdftex.def)             Requested size: 106.69783pt x 64.93716pt.
-<03-placa/03-optoacopladores.png, id=518, 223.85632pt x 122.49765pt>
+
+
+LaTeX Warning: Reference `fig:figura34imp' on page 17 undefined on input line 129.
+
+<03-placa/03-optoacopladores.png, id=320, 223.85632pt x 122.49765pt>
 File: 03-placa/03-optoacopladores.png Graphic file (type png)
 <use 03-placa/03-optoacopladores.png>
 Package pdftex.def Info: 03-placa/03-optoacopladores.png  used on input line 138.
@@ -2402,16 +2389,25 @@ LaTeX Info: Redefining \% on input line 154.
 LaTeX Info: Redefining \. on input line 154.
 LaTeX Info: Redefining \% on input line 154.
  [17 <./03-placa/switches.png> <./03-placa/02-optoac.png>]
-<03-placa/buferenb.jpg, id=528, 120.14888pt x 47.33685pt>
+
+LaTeX Warning: Reference `fig:buferenb' on page 18 undefined on input line 158.
+
+<03-placa/buferenb.jpg, id=329, 120.14888pt x 47.33685pt>
 File: 03-placa/buferenb.jpg Graphic file (type jpg)
 <use 03-placa/buferenb.jpg>
 Package pdftex.def Info: 03-placa/buferenb.jpg  used on input line 163.
 (pdftex.def)             Requested size: 150.18571pt x 59.17091pt.
-<03-placa/flecha.jpg, id=530, 123.76237pt x 70.1019pt>
+
+LaTeX Warning: Reference `fig:flecha' on page 18 undefined on input line 174.
+
+<03-placa/flecha.jpg, id=330, 123.76237pt x 70.1019pt>
 File: 03-placa/flecha.jpg Graphic file (type jpg)
 <use 03-placa/flecha.jpg>
 Package pdftex.def Info: 03-placa/flecha.jpg  used on input line 178.
 (pdftex.def)             Requested size: 154.70258pt x 87.62714pt.
+
+LaTeX Warning: Reference `fig:sinmicro' on page 18 undefined on input line 185.
+
 
 Underfull \vbox (badness 2980) has occurred while \output is active []
 
@@ -2420,11 +2416,15 @@ LaTeX Info: Redefining \% on input line 194.
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
  [18 <./03-placa/03-optoacopladores.png> <./03-placa/buferenb.jpg>]
-<03-placa/sinmicro.jpg, id=539, 189.70876pt x 123.76237pt>
+<03-placa/sinmicro.jpg, id=338, 189.70876pt x 123.76237pt>
 File: 03-placa/sinmicro.jpg Graphic file (type jpg)
 <use 03-placa/sinmicro.jpg>
 Package pdftex.def Info: 03-placa/sinmicro.jpg  used on input line 197.
 (pdftex.def)             Requested size: 237.13535pt x 154.70258pt.
+
+
+LaTeX Warning: Reference `fig:alimcal' on page 19 undefined on input line 228.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2433,30 +2433,51 @@ LaTeX Info: Redefining \% on input line 229.
 LaTeX Info: Redefining \. on input line 229.
 LaTeX Info: Redefining \% on input line 229.
  [19 <./03-placa/flecha.jpg> <./03-placa/sinmicro.jpg>]
-<03-placa/04-alimentacion-calibre.png, id=549, 123.40103pt x 90.87953pt>
+<03-placa/04-alimentacion-calibre.png, id=350, 123.40103pt x 90.87953pt>
 File: 03-placa/04-alimentacion-calibre.png Graphic file (type png)
 <use 03-placa/04-alimentacion-calibre.png>
 Package pdftex.def Info: 03-placa/04-alimentacion-calibre.png  used on input line 232.
 (pdftex.def)             Requested size: 213.39566pt x 157.1695pt.
-<03-placa/05-amplificacion-calibre.png, id=552, 128.45993pt x 146.7081pt>
+
+
+LaTeX Warning: Citation `caliper' on page 20 undefined on input line 240.
+
+
+LaTeX Warning: Reference `fig:figura36amp' on page 20 undefined on input line 242.
+
+<03-placa/05-amplificacion-calibre.png, id=351, 128.45993pt x 146.7081pt>
 File: 03-placa/05-amplificacion-calibre.png Graphic file (type png)
 <use 03-placa/05-amplificacion-calibre.png>
 Package pdftex.def Info: 03-placa/05-amplificacion-calibre.png  used on input line 246.
 (pdftex.def)             Requested size: 213.39566pt x 243.72118pt.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <14.23502> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 252.
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 167.
-LaTeX Info: Redefining \% on input line 167.
-LaTeX Info: Redefining \. on input line 167.
-LaTeX Info: Redefining \% on input line 167.
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
  [20 <./03-placa/04-alimentacion-calibre.png> <./03-placa/05-amplificacion-calibre.png>]
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 256.
+
+
+./03-placa/placa.tex:273: LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.273 \includegraphics{}
+                        
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 167.
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
  [21]
@@ -2541,12 +2562,6 @@ LaTeX Info: Redefining \% on input line 177.
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 200.
- (./main.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
@@ -2561,12 +2576,6 @@ LaTeX Info: Redefining \% on input line 203.
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 207.
- (./main.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-)
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
@@ -2580,31 +2589,23 @@ LaTeX Info: Redefining \% on input line 210.
 
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 214.
- (./main.lol
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
-)
+
+
+Package hyperref Warning: old lol file detected, not used; run LaTeX again.
+
 \tf@lol=\write11
 \openout11 = `main.lol'.
 
-LaTeX Info: Redefining \. on input line 217.
-LaTeX Info: Redefining \% on input line 217.
-LaTeX Info: Redefining \. on input line 217.
-LaTeX Info: Redefining \% on input line 217.
- [37
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
+[37
 
 ] [38
 
-] (./main.bbl)
-LaTeX Info: Redefining \. on input line 248.
-LaTeX Info: Redefining \% on input line 248.
-LaTeX Info: Redefining \. on input line 248.
-LaTeX Info: Redefining \% on input line 248.
- [39
-
 ]
+No file main.bbl.
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 1031.
 See the caption package documentation for explanation.
@@ -2626,21 +2627,31 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
- (./0a-agradecimientos/agradecimientos.aux) (./0b-resumen/resumen.aux) (./0c-notacion/notacion.aux) (./01-introduccion/introduccion.aux) (./02-hardware/hardware.aux) (./03-placa/placa.aux) (./04-caja/caja.aux) (./05-arduino/arduino.aux) (./06-robotstudio/robotstudio.aux) (./07-resultados/resultados.aux) (./08-conclusiones/conclusiones.aux)) )
+ (./0a-agradecimientos/agradecimientos.aux) (./0b-resumen/resumen.aux) (./0c-notacion/notacion.aux) (./01-introduccion/introduccion.aux) (./02-hardware/hardware.aux) (./03-placa/placa.aux) (./04-caja/caja.aux) (./05-arduino/arduino.aux) (./06-robotstudio/robotstudio.aux) (./07-resultados/resultados.aux) (./08-conclusiones/conclusiones.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred when \ifx on line 13 was incomplete) 
 Here is how much of TeX's memory you used:
- 64837 strings out of 478238
- 1511187 string characters out of 5843947
- 2214925 words of memory out of 5000000
- 81239 multiletter control sequences out of 15000+600000
- 580126 words of font info for 229 fonts, out of 8000000 for 9000
+ 64733 strings out of 478238
+ 1509462 string characters out of 5843947
+ 2194378 words of memory out of 5000000
+ 81232 multiletter control sequences out of 15000+600000
+ 557611 words of font info for 191 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
- 140i,17n,136p,10625b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 5474149 bytes).
+ 140i,17n,136p,10625b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section*.42} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (56 pages, 5434497 bytes).
 PDF statistics:
- 974 PDF objects out of 1000 (max. 8388607)
- 803 compressed objects within 9 object streams
- 144 named destinations out of 1000 (max. 500000)
- 85133 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 724 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 140 named destinations out of 1000 (max. 500000)
+ 58517 words of extra memory for PDF output out of 61914 (max. 10000000)
 
