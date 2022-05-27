@@ -1,4 +1,6 @@
 Pin Nombre
-10  GND
+1-8 INPUTS
+14-21 OUTPUTS
+
 24  GND 
 25  VCC-24V
