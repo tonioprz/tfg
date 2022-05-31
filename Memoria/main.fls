@@ -2955,6 +2955,8 @@ INPUT ./03-placa/tapatras.png
 INPUT 03-placa/tapatras.png
 INPUT ./03-placa/tapatras.png
 INPUT ./03-placa/tapatras.png
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvbo8tn.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvbo8rn.tfm
 INPUT ./03-placa/fondofrente.png
 INPUT ./03-placa/fondofrente.png
 INPUT 03-placa/fondofrente.png
@@ -2965,8 +2967,6 @@ INPUT ./03-placa/fondotras.png
 INPUT 03-placa/fondotras.png
 INPUT ./03-placa/fondotras.png
 INPUT ./03-placa/fondotras.png
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/helvetic/phvbo8tn.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvbo8rn.tfm
 INPUT ./04-caja/caja.tex
 OUTPUT 04-caja/caja.aux
 INPUT ./04-caja/caja.tex
