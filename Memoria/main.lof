@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Distribución de elementos en la tapa\relax }}{3}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Interfaz hombre-máquina. Distribución en la tapa.\relax }}{3}{figure.caption.13}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Distribución de conexiones digitales\relax }}{3}{figure.caption.14}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega 2560\relax }}{5}{figure.caption.15}%
@@ -24,6 +24,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Implementación de optoacopladores para modo sin microcontrolador y emergencia\relax }}{19}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{20}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{20}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces a) Vista frontal de la placa tapa. b) Vista trasera de la placa tapa\relax }}{21}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces a) Vista frontal de la placa fondo. b) Vista trasera de la placa fondo\relax }}{22}{figure.caption.37}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

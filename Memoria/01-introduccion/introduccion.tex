@@ -79,18 +79,41 @@ digitales enviadas por el robot.
 
 \section{Distribución de los controles}
 
-Para una interacción simple con el sistema se realiza una
+Para una interacción con el sistema se crea una interfaz hombre-máquina que permite cambiar entre los
+distintos modos de funcionamiento, visualizar información, controlar el sistema en el modo local y realizar
+paradas de emergencia en caso de ser necesario. Para ello, se prototipa la interfaz mostrada en la figura 
+\ref{fig:interfazhmi}, que posteriormente se aplicará en el diseño de la caja.
+
+En este diseño se observa un LCD que será el encargado de mostrar la información relevante como la posición o
+el modo en el que se encuentra el sistema. Por otra parte, se cuenta con dos botones y una flecha de selección,
+que permiten avanzar por los distintos menús y seleccionar las opciones durante el modo local. Además, las flechas
+serán las responsables del movimiento en el modo sin microcontrolador local. También se cuenta con dos interruptores
+de dos posiciones que permiten seleccionar los modos local/remoto y con microcontrolador/sin microcontrolador.
+Por último, una seta de emergencia es imprescindible para realizar una parada de emergencia en caso necesario. La 
+seta está situada en un lugar de fácil acceso y que no interfiera en el uso normal del sistema.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{01-introduccion/01-botonera.jpg}
-	\caption{Distribución de elementos en la tapa}
-	\label{fig:figura11}
+	\includegraphics[width=\textwidth]{01-introduccion/HMI.pdf}
+	\caption{Interfaz hombre-máquina. Distribución en la tapa.}
+	\label{fig:interfazhmi}
 	\end{figure}
 
+Además, se debe crear una serie de conexiones que permitan la interacción robot-cinta para el modo remoto sin microcontrolador.
+Esto se debe realizar mediante un conector que permita acceder a dichos pines de forma sencilla y queden expuestos.
+Para ello, se introducirá un conector similar a la figura \ref{fig:digitales}. Los pines que debe contener son:
+\begin{itemize}
+	\item Retroceso.
+ 	\item Avance.
+	\item Local.
+	\item Micro.
+	\item Emergencia.
+  	\item Fotoeléctrico.	
+\end{itemize}
+
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{01-introduccion/02-digitales.jpg}
+	\includegraphics[scale=0.75]{01-introduccion/DIGITALES.pdf}
 	\caption{Distribución de conexiones digitales}
-	\label{fig:figura12}
+	\label{fig:digitales}
 	\end{figure}
