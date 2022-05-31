@@ -44,6 +44,9 @@
 \contentsline {subsection}{\numberline {3.5.1}Placa \textit {Tapa}}{21}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Placa \textit {Fondo}}{22}{subsection.3.5.2}%
 \contentsline {chapter}{\numberline {4}Planificación de caja}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Diseño de caja}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Base}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Tapa}{23}{subsection.4.1.2}%
 \contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{25}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{27}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Resultados}{29}{chapter.7}%
