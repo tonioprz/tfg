@@ -47,13 +47,13 @@
 \contentsline {section}{\numberline {4.1}Diseño de caja}{23}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Base}{23}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Tapa}{23}{subsection.4.1.2}%
-\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{25}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{27}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Resultados}{29}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{31}{chapter.8}%
+\contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Resultados}{31}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{33}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{33}{section*.38}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{35}{section*.40}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{37}{section*.42}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{39}{section*.44}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{35}{section*.40}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{37}{section*.42}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{39}{section*.44}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{41}{section*.46}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
