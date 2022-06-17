@@ -3001,6 +3001,11 @@ INPUT ./04-caja/cajatapafondo.png
 INPUT 04-caja/cajatapafondo.png
 INPUT ./04-caja/cajatapafondo.png
 INPUT ./04-caja/cajatapafondo.png
+INPUT ./04-caja/ensamblajetapainferior.png
+INPUT ./04-caja/ensamblajetapainferior.png
+INPUT 04-caja/ensamblajetapainferior.png
+INPUT ./04-caja/ensamblajetapainferior.png
+INPUT ./04-caja/ensamblajetapainferior.png
 INPUT ./05-arduino/arduino.tex
 OUTPUT 05-arduino/arduino.aux
 INPUT ./05-arduino/arduino.tex

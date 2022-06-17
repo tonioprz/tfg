@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  13 JUN 2022 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  16 JUN 2022 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2510,38 +2510,46 @@ LaTeX Info: Redefining \% on input line 37.
 File: 04-caja/cajabase.png Graphic file (type png)
 <use 04-caja/cajabase.png>
 Package pdftex.def Info: 04-caja/cajabase.png  used on input line 44.
-(pdftex.def)             Requested size: 213.39566pt x 136.69226pt.
+(pdftex.def)             Requested size: 234.73653pt x 150.35469pt.
 <04-caja/cajabaseplanta.png, id=621, 3376.615pt x 2237.35875pt>
 File: 04-caja/cajabaseplanta.png Graphic file (type png)
 <use 04-caja/cajabaseplanta.png>
 Package pdftex.def Info: 04-caja/cajabaseplanta.png  used on input line 49.
-(pdftex.def)             Requested size: 213.39566pt x 141.37085pt.
+(pdftex.def)             Requested size: 234.73653pt x 155.50452pt.
 <04-caja/ensamblajebase.png, id=622, 3178.87625pt x 2107.875pt>
 File: 04-caja/ensamblajebase.png Graphic file (type png)
 <use 04-caja/ensamblajebase.png>
 Package pdftex.def Info: 04-caja/ensamblajebase.png  used on input line 57.
-(pdftex.def)             Requested size: 213.39566pt x 141.48741pt.
-<04-caja/cajatapa.png, id=623, 3288.285pt x 1720.4275pt>
+(pdftex.def)             Requested size: 234.73653pt x 155.63937pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+ [24 <./04-caja/cajabase.png> <./04-caja/cajabaseplanta.png> <./04-caja/ensamblajebase.png>]
+<04-caja/cajatapa.png, id=633, 3288.285pt x 1720.4275pt>
 File: 04-caja/cajatapa.png Graphic file (type png)
 <use 04-caja/cajatapa.png>
-Package pdftex.def Info: 04-caja/cajatapa.png  used on input line 73.
-(pdftex.def)             Requested size: 320.09349pt x 167.4588pt.
-<04-caja/cajatapafondo.png, id=624, 3388.66pt x 2235.35126pt>
+Package pdftex.def Info: 04-caja/cajatapa.png  used on input line 78.
+(pdftex.def)             Requested size: 234.73653pt x 122.80487pt.
+<04-caja/cajatapafondo.png, id=634, 3388.66pt x 2235.35126pt>
 File: 04-caja/cajatapafondo.png Graphic file (type png)
 <use 04-caja/cajatapafondo.png>
-Package pdftex.def Info: 04-caja/cajatapafondo.png  used on input line 78.
-(pdftex.def)             Requested size: 320.09349pt x 211.13266pt.
+Package pdftex.def Info: 04-caja/cajatapafondo.png  used on input line 83.
+(pdftex.def)             Requested size: 234.73653pt x 154.81924pt.
+<04-caja/ensamblajetapainferior.png, id=636, 3517.14pt x 2486.28876pt>
+File: 04-caja/ensamblajetapainferior.png Graphic file (type png)
+<use 04-caja/ensamblajetapainferior.png>
+Package pdftex.def Info: 04-caja/ensamblajetapainferior.png  used on input line 99.
+(pdftex.def)             Requested size: 234.73653pt x 165.9014pt.
 )
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
- [24 <./04-caja/cajabase.png> <./04-caja/cajabaseplanta.png> <./04-caja/ensamblajebase.png>]
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
- [25 <./04-caja/cajatapa.png> <./04-caja/cajatapafondo.png>]
+ [25 <./04-caja/cajatapa.png> <./04-caja/cajatapafondo.png> <./04-caja/ensamblajetapainferior.png>]
 \openout2 = `05-arduino/arduino.aux'.
 
  (./05-arduino/arduino.tex [26
@@ -2692,18 +2700,18 @@ LaTeX Info: Redefining \% on input line 33.
  (./0a-agradecimientos/agradecimientos.aux) (./0b-resumen/resumen.aux) (./0c-notacion/notacion.aux) (./01-introduccion/introduccion.aux) (./02-hardware/hardware.aux) (./03-placa/placa.aux) (./04-caja/caja.aux) (./05-arduino/arduino.aux) (./06-robotstudio/robotstudio.aux) (./07-resultados/resultados.aux) (./08-conclusiones/conclusiones.aux)) )
 (\end occurred when \ifx on line 13 was incomplete) 
 Here is how much of TeX's memory you used:
- 64948 strings out of 478238
- 1513537 string characters out of 5843947
- 2216387 words of memory out of 5000000
- 81318 multiletter control sequences out of 15000+600000
+ 64957 strings out of 478238
+ 1513839 string characters out of 5843947
+ 2216501 words of memory out of 5000000
+ 81325 multiletter control sequences out of 15000+600000
  580352 words of font info for 231 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
  140i,17n,136p,10625b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (59 pages, 7636350 bytes).
+Output written on main.pdf (59 pages, 8267825 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 881 compressed objects within 9 object streams
- 163 named destinations out of 1000 (max. 500000)
- 83162 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1079 PDF objects out of 1200 (max. 8388607)
+ 886 compressed objects within 9 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 83167 words of extra memory for PDF output out of 89155 (max. 10000000)
 
