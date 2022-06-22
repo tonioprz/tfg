@@ -1,10 +1,6 @@
 #define faseA 2
 #define faseB 3
 
-byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
-IPAddress IP(192,168,1,200); // IP estática del dispositivo
-EthernetServer servidor(4012); // Puerto donde se transmite la información
-
 #define BUTTON_ESC 22
 #define BUTTON_ENTER 23
 #define BUTTON_UP 24
@@ -22,6 +18,12 @@ EthernetServer servidor(4012); // Puerto donde se transmite la información
 #define ENB 5
 #define IN3 40
 #define IN4 41
+
+LiquidCrystal_I2C lcd(0x27,16,2);
+
+byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
+IPAddress IP(192,168,1,200); // IP estática del dispositivo
+EthernetServer servidor(4012); // Puerto donde se transmite la información
 
 bool enter;
 bool esc;
