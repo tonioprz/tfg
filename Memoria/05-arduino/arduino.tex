@@ -1,39 +1,130 @@
 \chapter{Desarrollo en Arduino}\label{chp-05}
 
-Una parte imprescindible del proyecto 
+Una parte imprescindible del proyecto es la programación del propio Arduino, que es el que centraliza
+todo el control del sistema. La parte relacionada con el control del motor y la programación del encoder 
+está bien documentada en el trabajo \cite{tapia}, mientras que para la medición del calibre se ha partido
+de la web \cite{caliper} al igual que en el diseño electrónico ya comentado en el capítulo \ref{chp-03}.
+
+\section{Diagrama de flujo}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[height=0.5\textheight]{05-arduino/diagramaflujo.pdf}
+    \caption{Diagrama de flujo del programa}
+    \label{fig:diagramaflujo}
+    \end{figure}
+
+En la figura \ref{fig:diagramaflujo} se observa los distintos estados que 
+
+\section{Programa final}
+
+El 
 
 
-\begin{lstlisting}[language=,caption={Inclusión de una tabla}, breaklines=true, label=prg01-02]
+
+\begin{lstlisting}[language=,caption={Declaración de variables, "main.h"}, breaklines=true, label=main_h]
+// Definición de pines
+#define faseA 2
+#define faseB 3
+
+#define BUTTON_ESC 22
+#define BUTTON_ENTER 23
+#define BUTTON_UP 24
+#define BUTTON_DOWN 25
+
+#define BUTTON_LOCAL 28
+#define BUTTON_MICRO 29
+#define BUTTON_EMERGENCIA 30
+
+#define SENSOR_FOTO 31
+
+#define CAL_CLK 32
+#define CAL_DATA 33
+
+#define ENB 5
+#define IN3 40
+#define IN4 41
+
+// Declaración de objetos de LCD y relacionados con Ethernet
+LiquidCrystal_I2C lcd(0x27,16,2);
+byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
+IPAddress IP(192,168,1,200); // IP estática del dispositivo
+EthernetServer servidor(4012); // Puerto donde se transmite la información
+
+// Declaración de variables booleanas auxiliares
+bool enter;
+bool esc;
+bool up;
+bool down;
+bool esc_ant = 0;
+bool enter_ant = 0;
+bool up_ant = 0;
+bool down_ant = 0;
+
+bool emergencia;
+bool local;
+bool micro;
+bool fotoelectrico;
+
+bool emergencia_ant;
+bool local_ant;
+bool micro_ant;
+
+// Declaración e inicialización de variable de posición 'x' e 'y'
+long posicion = 0;
+long * pposicion = &posicion;
+float posy = 0;
+
+// Inicialización de variables de estado y desplazamiento
+char estado = 'i';
+bool discreto = 0;
+long desplazamiento = 1000;
+long objetivo = 0;
+
+// Definición de parámetros de PID
+float kp = 0.5;
+float Ti = 2;
+float Td = 0.1;
+float T = 0.01;
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=,caption={Código principal Arduino, "main.ino"}, breaklines=true, label=main_cpp]
+// Inclusión de librerías
 #include <Ethernet.h>
 #include <LiquidCrystal_I2C.h>
 #include "main.h"
 
+// Definición de funciones:
 
-//Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
-LiquidCrystal_I2C lcd(0x27,16,2);
-
+// Funciones de interrupción de encoder
 void cambiofaseA(void);
 void cambiofaseB(void);
+
+// Funciones relacionadas al movimiento del motor
 void pararMotor(void);
 void moverMotor(void);
 void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd);
+
+// Función de lectura del calibre digital
 float medidaCalibre(void);
+
+// Funciones de conexión por Ethernet
 bool comprobarRobot(void);
 bool enviarRobot(char dato);
 void ethconex(void);
 
+// Función setup de configuración del sistema
 void setup() {
     // Inicializar el LCD
     lcd.init();
     
-    //Encender la luz de fondo.
+    // Encender la luz de fondo.
     lcd.backlight();
     
+    // Definición de pines
     pinMode(faseA, INPUT_PULLUP);
     pinMode(faseB, INPUT_PULLUP);
-
-    attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
-    attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
 
     pinMode(BUTTON_DOWN, INPUT);
     digitalWrite(BUTTON_DOWN, HIGH);
@@ -50,6 +141,7 @@ void setup() {
 
     pinMode(SENSOR_FOTO, INPUT);
 
+    // En función del estado de las señales MICRO, EMER y LR la configuración de IN3, IN4 y ENB pasa a INPUT u OUTPUT para evitar conflictos
     if(!digitalRead(BUTTON_MICRO)){
     pinMode(IN3, OUTPUT);
     pinMode(IN4, OUTPUT);
@@ -69,16 +161,20 @@ void setup() {
     estado = 'f';
     }
 
+    // Asociación de interrupción a los pines del encoder
+    attachInterrupt(digitalPinToInterrupt(faseA), cambiofaseA, RISING);
+    attachInterrupt(digitalPinToInterrupt(faseB), cambiofaseB, RISING);
+    
     posy = medidaCalibre();
     posicion = 0;
     // Se inicia la comunicación Ethernet y la serie para depuración
-    Serial.begin(9600);
     Ethernet.begin(MAC, IP);
-
+    Serial.begin(9600);
     Serial.print("Servidor en IP ");
     Serial.println(Ethernet.localIP());
 }
 
+// Bucle infinito
 void loop() {
 
     // Se lee el estado de los botones
@@ -92,6 +188,7 @@ void loop() {
     local = digitalRead(BUTTON_LOCAL);
     micro = digitalRead(BUTTON_MICRO);
 
+    // En el caso de cambio de las señales de modo o emergencia, pasar por setup() para reconfigurar los pines
     if(micro && (estado != 'f') && (estado != 'e')){
     setup();
     }
@@ -107,6 +204,7 @@ void loop() {
 
     // Máquina de estados
     switch(estado){
+    // Estado inicial
     case 'i':
         lcd.setCursor(0, 0);
         lcd.print("MODO LOCAL      ");
@@ -115,11 +213,13 @@ void loop() {
         digitalWrite(IN3, LOW);
         digitalWrite(IN4, LOW);
         analogWrite(ENB, 255);
+        // Envío por Ethernet del estado al robot
         if(comprobarRobot()){
         enviarRobot(estado);
         }
         break;
-    
+        
+    // Estado selección discreto/absoluto    
     case 's':
         lcd.setCursor(0, 0);
         lcd.print("SELECCIONE MOV. ");
@@ -134,13 +234,15 @@ void loop() {
         enviarRobot(estado);
         }
         break;
-
+        
+    // Estado selección distancia de movimiento
     case 'd':
         if(comprobarRobot()){
         enviarRobot(estado);
         }
         break;
-
+        
+    // Estado movimiento del motor
     case 'm':
         if(comprobarRobot()){
         enviarRobot(estado);
@@ -165,17 +267,20 @@ void loop() {
         estado ='r';
         }
         break;
-
+        
+    // Estado sin micro
     case 'f':
         lcd.setCursor(0, 0);
         lcd.print("SIN MICRO");
         break;
-    
+        
+    // Estado emergencia
     case 'e':
         lcd.setCursor(0, 0);
         lcd.print("EMERGENCIA");
         break;
-
+        
+    // Estado remoto
     case 'r':
         lcd.setCursor(0, 0);
         lcd.print("MODO REMOTO     ");
@@ -188,18 +293,16 @@ void loop() {
         enviarRobot(estado);
         }
         break;
-    }
-
+    
 
     // Transiciones entre estados
     switch(estado){
-
     case 'i':
         if(!enter && enter_ant){
         estado = 's';
         }
         break;
-
+        
     case 's':
         if(!enter && enter_ant){
         estado = 'd';
@@ -279,6 +382,7 @@ void loop() {
         break;
     }
 
+    // Guardado de estados
     esc_ant = esc;
     enter_ant = enter;
     up_ant = up;
@@ -291,8 +395,9 @@ void loop() {
     delay(10);
 }
 
+// Funciones definidas en la cabecera
 
-
+// Si hay cambio en la fase A, se comprueba la fase B para definir el sentido de giro
 void cambiofaseA(void){
     bool fB = digitalRead(faseB);
     if(fB){
@@ -302,6 +407,7 @@ void cambiofaseA(void){
     }
 }
 
+// Si hay cambio en la fase A, se comprueba la fase B para definir el sentido de giro
 void cambiofaseB(void){
     bool fA = digitalRead(faseA);
     if(fA){
@@ -311,12 +417,14 @@ void cambiofaseB(void){
     }
 }
 
+// Parado de motor
 void pararMotor(void){
     digitalWrite(IN3, LOW);
     digitalWrite(IN4, LOW);
     analogWrite(ENB, 255);
 }
 
+// Avance de motor a la velocidad especificada
 void moverMotor(int u){
     if(u >= 0){ // Avance positivo
         digitalWrite(IN3, LOW);
@@ -328,12 +436,13 @@ void moverMotor(int u){
     }
 
     if(u > 200){
-        u = 200; // La salida máxima es de 255
+        u = 200; // La salida máxima es de 255 pero se limita a 200
     }
 
     analogWrite(ENB, u);
 }
 
+// Función que coloca el sistema en la posición deseada
 void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
     lcd.setCursor(0, 0);
     lcd.print("MOVIENDO...     ");
@@ -351,6 +460,8 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
     long D = 0;
     int aux = 0;
     bool emer = 0;
+    
+    // Bucle PID. Se mantiene buscando la posición mientras no entre dentro de un margen y la acción de control no se encuentre por debajo del umbral de funcionamiento
     while(((*posicion < objetivo - 5) || (*posicion > objetivo + 5) || (u > 55)) && !emer){
     
     emer = digitalRead(BUTTON_EMERGENCIA);
@@ -375,11 +486,12 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
     //Cálculo de la señal de control
     u = kp * (ek + (T/Ti) * ik + (Td/T) * D);
     
-    
+    // En caso de saturación, reiniciar el error integral
     if((abs(u) > 255) && (abs(ek) > 200)){
         ik = 0;
     }
 
+    // Limitar la acción de control al máximo que permite Arduino
     if(u > 255){
         u = 255;
     }
@@ -393,6 +505,7 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
     }
     }
     
+    // Parar el motor cuando se alcance la posición deseada
     pararMotor();
     
     if(emer){
@@ -402,6 +515,7 @@ void movimientoMotor(long objetivo, long* posicion, LiquidCrystal_I2C lcd){
     }
 }
 
+// Medida del calibre
 float medidaCalibre(void){
     bool data;
     float medida;
@@ -411,44 +525,45 @@ float medidaCalibre(void){
     unsigned long tempmicros;
     unsigned long tempmicros2;
 
+    // Reintentar la medición hasta que se pueda realizar
     for(int j=0; j<10 && (value == 0); j++){
-    tempmicros = micros();
 
-    //while (digitalRead(CAL_CLK)==HIGH) {
+    tempmicros = micros();
     while (digitalRead(CAL_CLK)==LOW) {
-        delayMicroseconds(1);
-        
+        delayMicroseconds(1);      
     }
 
     tempmicros2 = micros();
-
     if ((tempmicros2-tempmicros)>10000) {
+        // Se leen los 24 bits que proporciona el calibre
         for (int i=0; i<24; i++) {
-        //while (digitalRead(CAL_CLK)==LOW) {
         while (digitalRead(CAL_CLK)==HIGH) {
             delayMicroseconds(1);
         }
 
         data = !digitalRead(CAL_DATA);
-
+    
+            // Se leen los datos cada bajada del flanco de reloj
         if(i<16){
             value |= data << i;
         }else{
             signo |= (data << (i-16));
         }
 
-        //while (digitalRead(CAL_CLK)==HIGH) {
         while (digitalRead(CAL_CLK)==LOW) {
             delayMicroseconds(1);
         }
         }
         
+        // El bit 0x80 corresponde a las unidades, pulgadas o milímetros
+        // En caso de que sean pulgadas, se realiza la conversión a milímetros
         if(signo & 0x80){
         medida = 25.4*float(value)/(2*1000);
         } else{
         medida = float(value)/100;
         } 
 
+        // El bit 0x10 corresponde al signo
         if(signo & 0x10){
         medida = -medida;
         }
@@ -457,11 +572,11 @@ float medidaCalibre(void){
     return medida;
 }
 
+// Comprobación de que existe una conexión con el robot
+// Devuelve 1 si se produce la conexión y 0 en caso contrario
 bool comprobarRobot(void){
     EthernetClient cliente = servidor.available();
     if (cliente) {
-    //Serial.print("CONECTADO");
-    //cliente.stop();
     return 1;
     } else{
     cliente.stop();
@@ -469,6 +584,9 @@ bool comprobarRobot(void){
     }
 }
 
+// Función para enviar estado del sistema, sensor fotoélectrico y recibir la orden de movimiento del propio robot
+// El robot envía la orden, ya sea de recibir el estado del sistema o el movimiento deseado
+// Una vez recibido, el Arduino envía los datos necesarios y mueve la cinta si se encuentra en estado remoto
 bool enviarRobot(char dato){
     EthernetClient cliente = servidor.available();
     String recepcion;

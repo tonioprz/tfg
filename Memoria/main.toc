@@ -44,20 +44,23 @@
 \contentsline {subsection}{\numberline {3.5.1}Placa \textit {Tapa}}{21}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Placa \textit {Fondo}}{22}{subsection.3.5.2}%
 \contentsline {chapter}{\numberline {4}Planificación de caja}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Diseño de caja}{23}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Base}{23}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Tapa}{24}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Resultado final}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Base}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tapa}{24}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diagrama de flujo}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Programa final}{28}{section.5.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{39}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Resultados}{41}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{43}{chapter.8}%
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {6}Desarrollo en Robotstudio}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Resultados}{43}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{45}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{45}{section*.42}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{47}{section*.44}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{49}{section*.46}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{51}{section*.48}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{47}{section*.43}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{49}{section*.45}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{51}{section*.47}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{53}{section*.49}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,3 +1,4 @@
+// Define de pines
 #define faseA 2
 #define faseB 3
 
@@ -19,12 +20,13 @@
 #define IN3 40
 #define IN4 41
 
+// Declaración de objetos de LCD y relacionados con Ethernet
 LiquidCrystal_I2C lcd(0x27,16,2);
-
 byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
 IPAddress IP(192,168,1,200); // IP estática del dispositivo
 EthernetServer servidor(4012); // Puerto donde se transmite la información
 
+// Declaración de variables booleanas auxiliares
 bool enter;
 bool esc;
 bool up;
@@ -43,16 +45,18 @@ bool emergencia_ant;
 bool local_ant;
 bool micro_ant;
 
+// Declaración e inicialización de variable de posición 'x' e 'y'
 long posicion = 0;
 long * pposicion = &posicion;
-
 float posy = 0;
 
+// Inicialización de variables de estado y desplazamiento
 char estado = 'i';
 bool discreto = 0;
 long desplazamiento = 1000;
 long objetivo = 0;
 
+// Definición de parámetros de PID
 float kp = 0.5;
 float Ti = 2;
 float Td = 0.1;

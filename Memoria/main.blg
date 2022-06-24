@@ -14,38 +14,34 @@ A level-1 auxiliary file: 07-resultados/resultados.aux
 A level-1 auxiliary file: 08-conclusiones/conclusiones.aux
 The style file: amsplain.bst
 Database file #1: bibliografiaLibroETSI.bib
-Warning--entry type for "tapia" isn't style-file defined
---line 1 of file bibliografiaLibroETSI.bib
-Warning--entry type for "rea" isn't style-file defined
---line 9 of file bibliografiaLibroETSI.bib
 Warning--entry type for "caliper" isn't style-file defined
---line 17 of file bibliografiaLibroETSI.bib
+--line 19 of file bibliografiaLibroETSI.bib
 You've used 3 entries,
             2213 wiz_defined-function locations,
-            521 strings with 4709 characters,
-and the built_in function-call counts, 751 in all, are:
-= -- 55
+            522 strings with 4731 characters,
+and the built_in function-call counts, 759 in all, are:
+= -- 53
 > -- 38
 < -- 0
 + -- 15
 - -- 12
-* -- 41
-:= -- 122
+* -- 45
+:= -- 130
 add.period$ -- 3
 call.type$ -- 3
 change.case$ -- 15
 chr.to.int$ -- 0
 cite$ -- 3
-duplicate$ -- 33
+duplicate$ -- 35
 empty$ -- 73
 format.name$ -- 12
 if$ -- 154
 int.to.chr$ -- 0
 int.to.str$ -- 3
-missing$ -- 3
+missing$ -- 7
 newline$ -- 19
 num.names$ -- 6
-pop$ -- 35
+pop$ -- 29
 preamble$ -- 1
 purify$ -- 12
 quote$ -- 0
@@ -56,9 +52,9 @@ swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 8
 warning$ -- 0
 while$ -- 6
 width$ -- 4
-write$ -- 29
-(There were 3 warnings)
+write$ -- 31
+(There was 1 warning)

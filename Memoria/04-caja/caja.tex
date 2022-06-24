@@ -4,14 +4,12 @@ Para que todos los dispositivos que componen el sistema estén bien aislados del
 y no haya problemas con las conexiones se planifica una caja estanca. Ésta deberá ser 
 accesible para el reemplazo de dispositivos defectuosos y ser replicable. 
 
-\section{Diseño de caja}
-
 Como referencia se toma de una caja de dimensiones 220 x 145 x 80 mm. Para reducir los 
 costes, se decide imprimirla en 3D, ya que permite mayor adaptabilidad para colocar 
 los lugares donde fijar los diferentes dispositivos. La caja estará dividida en una base y una 
 tapa que se unen mediante tornillos y permiten una unión estable.
 
-\subsection{Base}
+\section{Base}
 
 La base debe tener las siguientes características:
 \begin{itemize}
@@ -40,12 +38,12 @@ dispositivo. En la figura \ref{fig:ensamblajebase} se puede observar el resultad
     \centering 
     \subfloat[][]{% 
         \label{fig:cajabasevista}% 
-        \includegraphics[width=0.55\textwidth]{04-caja/cajabase.png}
+        \includegraphics[width=0.5\textwidth]{04-caja/cajabase.png}
     }% 
     \hspace{10pt}% 
     \subfloat[][]{% 
         \label{fig:cajabaseplanta}% 
-        \includegraphics[width=0.55\textwidth]{04-caja/cajabaseplanta.png}
+        \includegraphics[width=0.5\textwidth]{04-caja/cajabaseplanta.png}
     }
     \caption{a) Vista general de la base de la caja. b) Vista de planta de la base de la caja}
     \label{fig:cajabase} 
@@ -54,14 +52,14 @@ dispositivo. En la figura \ref{fig:ensamblajebase} se puede observar el resultad
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.55\textwidth]{04-caja/ensamblajebase.png}
+    \includegraphics[width=0.5\textwidth]{04-caja/ensamblajebase.png}
     \caption{Ensamblaje de la base con el soporte. Descripción por colores: a) Gris: Fuente. 
     b) Rojo: L298N. c) Azul: Arduino. d) Verde: placa de conexiones. e) Amarillo: Soporte tapa}
     \label{fig:ensamblajebase}
     \end{figure}
 
 
-\subsection{Tapa}
+\section{Tapa}
 
 La tapa debe ser el soporte para la interfaz hombre-máquina y, por ello, sostener todos sus 
 dispositivos. Por lo general, todos los dispositivos que van en la tapa son de tamaño reducido,
@@ -74,12 +72,12 @@ muestra la tapa tanto en la planta como en una vista general.
     \centering 
     \subfloat[][]{% 
         \label{fig:cajatapavista}% 
-        \includegraphics[width=0.55\textwidth]{04-caja/cajatapa.png}
+        \includegraphics[width=0.5\textwidth]{04-caja/cajatapa.png}
     }% 
     \hspace{10pt}% 
     \subfloat[][]{% 
         \label{fig:cajatapaplanta}% 
-        \includegraphics[width=0.55\textwidth]{04-caja/cajatapafondo.png}
+        \includegraphics[width=0.5\textwidth]{04-caja/cajatapafondo.png}
     }
     \caption{a) Vista general de la tapa de la caja. b) Vista inferior de la tapa de la caja}
     \label{fig:cajatapa} 
@@ -92,11 +90,9 @@ la línea de interconexión de forma paralela.
 
 \begin{figure}[h]%  
     \centering 
-        \includegraphics[width=0.55\textwidth]{04-caja/ensamblajetapainferior.png}
+        \includegraphics[width=0.5\textwidth]{04-caja/ensamblajetapainferior.png}
     \caption{Vista inferio de la tapa ensamblada. Descripción por colores: a) Verde: placa de 
     conexiones. b) Naranja: LCD c) Rojo: Seta de emergencia. d) Gris: Flechas de selección.
     e) Amarillo: Botones intro y escape. f) Morado: Selectores de modo}
     \label{fig:cajatapaensamblaje} 
 \end{figure}
-
-\section{Resultado final}

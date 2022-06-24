@@ -441,7 +441,6 @@ float medidaCalibre(void){
   // Reintentar la medición hasta que se pueda realizar
   for(int j=0; j<10 && (value == 0); j++){
 
-    
     tempmicros = micros();
     while (digitalRead(CAL_CLK)==LOW) {
       delayMicroseconds(1);      
@@ -449,13 +448,15 @@ float medidaCalibre(void){
 
     tempmicros2 = micros();
     if ((tempmicros2-tempmicros)>10000) {
+      // Se leen los 24 bits que proporciona el calibre
       for (int i=0; i<24; i++) {
         while (digitalRead(CAL_CLK)==HIGH) {
           delayMicroseconds(1);
         }
 
         data = !digitalRead(CAL_DATA);
-
+	
+	      // Se leen los datos cada bajada del flanco de reloj
         if(i<16){
           value |= data << i;
         }else{
@@ -466,13 +467,16 @@ float medidaCalibre(void){
           delayMicroseconds(1);
         }
       }
-        
+      
+      // El bit 0x80 corresponde a las unidades, pulgadas o milímetros
+      // En caso de que sean pulgadas, se realiza la conversión a milímetros
       if(signo & 0x80){
         medida = 25.4*float(value)/(2*1000);
       } else{
         medida = float(value)/100;
       } 
 
+      // El bit 0x10 corresponde al signo
       if(signo & 0x10){
         medida = -medida;
       }
@@ -481,11 +485,11 @@ float medidaCalibre(void){
   return medida;
 }
 
+// Comprobación de que existe una conexión con el robot
+// Devuelve 1 si se produce la conexión y 0 en caso contrario
 bool comprobarRobot(void){
   EthernetClient cliente = servidor.available();
   if (cliente) {
-    //Serial.print("CONECTADO");
-    //cliente.stop();
     return 1;
   } else{
     cliente.stop();
@@ -493,6 +497,11 @@ bool comprobarRobot(void){
   }
 }
 
+// Función para enviar estado del sistema, sensor fotoélectrico y recibir la orden de movimiento
+// del propio robot
+// El robot envía la orden, ya sea de recibir el estado del sistema o el movimiento deseado
+// Una vez recibido, el Arduino envía los datos necesarios y mueve la cinta si se encuentra
+// en estado remoto
 bool enviarRobot(char dato){
   EthernetClient cliente = servidor.available();
   String recepcion;
