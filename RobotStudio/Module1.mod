@@ -13,6 +13,7 @@ MODULE Module1
     !***********************************************************
     
     VAR socketdev my_socket;
+    
     VAR rawbytes data;
     VAR rawbytes raw_data;
     VAR num estad:=0;

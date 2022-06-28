@@ -14,47 +14,53 @@ A level-1 auxiliary file: 07-resultados/resultados.aux
 A level-1 auxiliary file: 08-conclusiones/conclusiones.aux
 The style file: amsplain.bst
 Database file #1: bibliografiaLibroETSI.bib
-Warning--entry type for "caliper" isn't style-file defined
+Warning--entry type for "arduino" isn't style-file defined
 --line 19 of file bibliografiaLibroETSI.bib
-You've used 3 entries,
+Warning--entry type for "caliper" isn't style-file defined
+--line 23 of file bibliografiaLibroETSI.bib
+Warning--entry type for "lcd" isn't style-file defined
+--line 27 of file bibliografiaLibroETSI.bib
+Warning--entry type for "ethernet" isn't style-file defined
+--line 31 of file bibliografiaLibroETSI.bib
+You've used 6 entries,
             2213 wiz_defined-function locations,
-            522 strings with 4731 characters,
-and the built_in function-call counts, 759 in all, are:
-= -- 53
-> -- 38
+            531 strings with 4907 characters,
+and the built_in function-call counts, 1365 in all, are:
+= -- 98
+> -- 59
 < -- 0
-+ -- 15
-- -- 12
-* -- 45
-:= -- 130
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 15
++ -- 24
+- -- 18
+* -- 69
+:= -- 223
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 35
-empty$ -- 73
-format.name$ -- 12
-if$ -- 154
+cite$ -- 6
+duplicate$ -- 68
+empty$ -- 145
+format.name$ -- 18
+if$ -- 286
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 7
-newline$ -- 19
-num.names$ -- 6
-pop$ -- 29
+int.to.str$ -- 6
+missing$ -- 10
+newline$ -- 28
+num.names$ -- 12
+pop$ -- 59
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 21
 quote$ -- 0
-skip$ -- 24
+skip$ -- 51
 stack$ -- 0
-substring$ -- 15
-swap$ -- 3
+substring$ -- 30
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 20
 warning$ -- 0
-while$ -- 6
-width$ -- 4
-write$ -- 31
-(There was 1 warning)
+while$ -- 12
+width$ -- 7
+write$ -- 49
+(There were 4 warnings)

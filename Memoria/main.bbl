@@ -7,6 +7,13 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
+\bibitem{arduino}
+Arduino, \emph{https://arduino.cc}.
+
+\bibitem{lcd}
+Frank de~Brabander,
+  \emph{https://github.com/fdebrabander/arduino-liquidcrystal-i2c-library}.
+
 \bibitem{tapia}
 Jorge Andrés~Tapia Herrera and Luis Fernando~Castaño Castaño, \emph{Control
   de equipo de posicionado de piezas semiautomático en zona de trabajo de
@@ -21,5 +28,8 @@ Mauricio~Hinojosa Rea, Luis Fernando~Castaño Castaño, and David~Muñoz de~la
 \bibitem{caliper}
 Martin Thalheimer,
   \emph{https://sites.google.com/site/marthalprojects/home/arduino/arduino-reads-digital-caliper}.
+
+\bibitem{ethernet}
+Varios, \emph{https://www.arduino.cc/en/reference/ethernet}.
 
 \end{thebibliography}

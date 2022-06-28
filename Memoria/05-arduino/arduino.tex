@@ -41,12 +41,27 @@ en estado emergencia "e". En este modo no se podrá realizar ninguna acción has
 
 \section{Programa final}
 
-La pruebecita
+A continuación se muestra el programa final. Este se divide en dos archivos, "main.h" y "main.ino". El programa puede ser 
+cargado a la placa mediante el Arduino IDE que se puede descargar desde la págica oficial \cite{arduino}. Además, en la propia
+página se puede a la documentación referente a las funciones utilizadas en el programa.
 
+Por otro lado, se ha utilizado dos librerías para el funcionamiento del LCD y de la conexión por Ethernet. Para el caso
+de la librería para el LCD se ha utilizado la librería \cite{lcd}, ya que la conexión se realiza mediante protocolo I2C.
+Este protocolo permite que un segundo microcontrolador integrado dentro de la placa del LCD sea el que lo controle, evitando
+tener que realizar todas las conexiones que requiere el mismo directamente hacia el arduino y delegando el control al mismo.
+Para la conexión mediante Ethernet se ha utilizado la librería \cite{ethernet}. Este caso es similar al anterior, en el cual
+mediante el módulo Arduino Ethernet Shield acoplado al Arduino Mega se realiza una comunicación SPI con el microcontrolador 
+W5100 del módulo, que es el que realiza todas las operaciones necesarias para permitir la conexión.
 
+El archivo "main.h", mostrado a continuación en el código \ref{main_h} es el encargado de definir todas las variables globales
+y definir macros para los pines. Este archivo se separa del principal para tener un acceso más rápido a las variables por si 
+se necesita realizar un ajuste y que el código principal sea más fácil de leer. En éste se incluyen los parámetros del PID,
+la inicialización del estado, la configuración inicial de la poisición y el desplazamiento, además de ciertas variables auxiliares
+que se utilizan a lo largo de todo el programa.
 
 \input{05-arduino/mainh.tex}
 
-blablabla
+Por último, se incluye el código \ref{main_cpp} que es el código el archivo "main.ino". Este archivo contiene el programa en sí
+con todas sus funciones y protocolos. Éste cuenta con comentarios relevantes que explican el código que se muestra.
 
 \input{05-arduino/maincpp.tex}
