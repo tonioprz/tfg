@@ -7,6 +7,9 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
+\bibitem{rapid}
+ABB, \emph{Rapid instructions, functions and data types}.
+
 \bibitem{arduino}
 Arduino, \emph{https://arduino.cc}.
 

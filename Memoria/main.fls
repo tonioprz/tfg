@@ -3040,6 +3040,11 @@ INPUT ./06-robotstudio/robotstudio.tex
 INPUT 06-robotstudio/robotstudio.tex
 INPUT ./06-robotstudio/robotstudio.tex
 INPUT 06-robotstudio/robotstudio.tex
+INPUT ./06-robotstudio/interfazdigital.jpg
+INPUT ./06-robotstudio/interfazdigital.jpg
+INPUT 06-robotstudio/interfazdigital.jpg
+INPUT ./06-robotstudio/interfazdigital.jpg
+INPUT ./06-robotstudio/interfazdigital.jpg
 INPUT ./07-resultados/resultados.tex
 OUTPUT 07-resultados/resultados.aux
 INPUT ./07-resultados/resultados.tex

@@ -14,6 +14,10 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\contentsline {lstlisting}{\numberline {6.1}{\ignorespaces Ejemplo de programa sin microcontrolador}}{44}{lstlisting.6.1}%
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
