@@ -13,9 +13,9 @@ referencia sobre la cual poder repetir el proceso de forma eficaz y el error int
 es alto. Por otro lado, al invadir el espacio de trabajo del brazo robótico continuamente se
 producen riesgos innecesarios impropios de las normas de seguridad en la industria.
 
-Este trabajo es la continuación de \cite{tapia} y \cite{rea}, que sentaron las bases del proyecto.
+Este trabajo es la continuación de Tapia\cite{tapia} e Hinojosa\cite{rea}, que sentaron las bases del proyecto.
 En esta ocasión, el enfoque es en la implementación sobre los equipos del laboratorio. Por ello,
-el sistema creado debe quedar en una caja donde se realicen las conexiones electrónicas y todos
+el sistema creado debe quedar compacto en una caja donde se realicen las conexiones electrónicas y todos
 los dispositivos. Además el sistema debe tener componentes fácilmente sustituibles para facilitar
 las reparaciones.
 
@@ -30,9 +30,9 @@ El sistema cuenta con las siguientes características:
 
 \section{Modos de funcionamiento}\label{sec-00}
 
-Todas las funciones especificadas no pueden cumplirse al mismo tiempo ya que existirían conflictos
-entre las mismas, por lo que el sistema debe tener ciertos modos de funcionamiento en los que
-se activen o desactiven dichas características. 
+Todas las características especificadas previamente no pueden cumplirse al mismo tiempo ya que 
+existirían conflictos entre las mismas, por lo que el sistema debe tener modos de funcionamiento 
+específicos y diferenciados en los que se activen o desactiven dichas características. 
 
 La primera consideración es determinar el dispositivo que gobierna el sistema o \textit{máster}.
 Por ello, se puede diferenciar cuando el máster es la controladora del robot (o RobotStudio durante
@@ -46,9 +46,9 @@ En total, se cuenta con cuatro modos de funcionamiento que se describen a contin
 
 \subsection{Modo local con microcontrolador}\label{subsec-01}
 
-Las órdenes del sistema están proporcionadas por los periféricos de entrada presentes en la caja y
-el microcontrolador es el encargado de gestionar el posicionamiento y mover el motor cuando
-le sea indicado.
+Las órdenes del sistema están proporcionadas por los periféricos de entrada como pueden ser los botones
+o interruptores bipolares presentes en la caja, mientras que el microcontrolador es el encargado de 
+gestionar el posicionamiento y mover el motor cuando le sea indicado.
 
 En caso de que esté disponible la conexión con la controladora del robot, el Arduino comunica 
 mediante conexión TCP/IP la posición de la pieza en los ejes X e Y además del estado
@@ -70,12 +70,13 @@ sistema pasan a ser más básicas. El movimiento del motor queda a cargo de la e
 sistema. Para interactuar con el motor y moverlo se realizará mediante los pulsadores de avance y 
 retroceso.
 
-El robot queda no comunicado y solo recibe la señal digital del sensor fotoeléctrico.
+El robot queda no comunicado y solo recibe las señales digitales.
 
 \subsection{Modo remoto sin microcontrolador}\label{subsec-04}
 
-Es un modo similar al anterior, en la cual la interacción con el sistema se produce mediante señales
-digitales enviadas por el robot.
+Este modo comparte la mayoría de características con el anterior y, físicamente es idéntico. La 
+única diferencia es en el modo de uso, ya que que el control del movimiento de la cinta se realiza
+con las señales digitales de avance y retroceso que permiten el movimiento.
 
 \section{Distribución de los controles}
 
@@ -85,10 +86,10 @@ paradas de emergencia en caso de ser necesario. Para ello, se prototipa la inter
 \ref{fig:interfazhmi}, que posteriormente se aplicará en el diseño de la caja.
 
 En este diseño se observa un LCD que será el encargado de mostrar la información relevante como la posición o
-el modo en el que se encuentra el sistema. Por otra parte, se cuenta con dos botones y una flecha de selección,
+el modo en el que se encuentra el sistema. Por otra parte, hay dos botones y una flecha de selección
 que permiten avanzar por los distintos menús y seleccionar las opciones durante el modo local. Además, las flechas
-serán las responsables del movimiento en el modo sin microcontrolador local. También se cuenta con dos interruptores
-de dos posiciones que permiten seleccionar los modos local/remoto y con microcontrolador/sin microcontrolador.
+serán las responsables del movimiento en el modo sin microcontrolador local. También se dispone de dos interruptores
+de dos posiciones que permiten seleccionar los modos "local/remoto" y "con microcontrolador/sin microcontrolador".
 Por último, una seta de emergencia es imprescindible para realizar una parada de emergencia en caso necesario. La 
 seta está situada en un lugar de fácil acceso y que no interfiera en el uso normal del sistema.
 
