@@ -52,38 +52,8 @@ El trabajo con el brazo robótico queda a cargo de futuros alumnos, aquí se mue
 con las señales digitales. Para simplificar los nombres de las señales se utilizan nombres descriptivos, no
 el que realmente aparece en RobotStudio.
 
-\begin{lstlisting}[language=,caption={Ejemplo de programa sin microcontrolador}, breaklines=true, label=no_micro]
-MODULE Module1
-    !Aquí deben estar definidas las posiciones y variables auxiliares
-    !
-    PROC main()
-        !Se procede a avanzar 
-        SetDO señalAvance, 1;
-        SetDO señalRetroceso, 0;
-
-        !Se espera a que se active el sensor fotoeléctrico
-        WaitDI señalFoto, 1;
-        !Se para la cinta
-        SetDO señalAvance, 0;
-        SetDO señalRetroceso, 0;
-        
-        !Movimiento del brazo robótico para recoger la pieza y colocarla en una posición avanzada donde haya que retroceder
-        ...
-
-        !Misma operación a la inversa
-        SetDO señalAvance, 0;
-        SetDO señalRetroceso, 1;
-
-        !Se espera a que se active el sensor fotoeléctrico
-        WaitDI señalFoto, 1;
-        !Se para la cinta
-        SetDO señalAvance, 0;
-        SetDO señalRetroceso, 0;
-
-        !Movimiento del brazo robótico para recoger la pieza y colocarla en la posición original
-        ...
-    ENDPROC
-END MODULE
-\end{lstlisting}
+\input{06-robotstudio/ejemplosinmicro.tex}
 
 \section{Funcionamiento con microcontrolador}
+
+explicar tcp/ip
