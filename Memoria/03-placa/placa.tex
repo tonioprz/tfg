@@ -95,7 +95,7 @@ el sistema. Estas señales son:
 Estas señales son generadas mediante contactos a la señal de 24V. Las señales MICRO y LR funcionan con dos
 interruptores de dos posiciones, EMER mediante una seta de emergencia con conexión normalmente abierta y
 FOTO con el sensor fotoeléctrico a la salida normalmente abierta, lo que hace que en el caso de activarse
-cierre el contacto con el común, que se encuentra a 24V. A los tres primeros se les llamará switches de estado,
+cierre el contacto con el común, que se encuentra a 24V. A los tres primeros se les llamará \emph{switches} de estado,
 que son los que determinan el estado del sistema.
 
 \begin{figure}[hbtp]
@@ -122,10 +122,11 @@ se utiliza el circuito integrado TLP621-4 que cumple dicha función.
     \includegraphics[width=\textwidth/4]{03-placa/02-optoac.png}
     \caption{Ejemplo de optoacoplador}
     \label{fig:figura33ejopto}
-    \end{figure}
+\end{figure}
+
+\smallskip
 
 \subsection{Conversión de 24V a 5V}
-
 En la figura \ref{fig:figura34imp} se muestra el circuito empleado. Se utiliza un total de dos TLP621-4 para
 tener un total de 8 optoacopladores. Como la tensión máxima que reciben los diodos es de 24V, se colocan
 unas resistencias para evitar que se quemen. El valor de las resistencias utilizadas es de 8.2 k$\Omega$,
@@ -187,8 +188,8 @@ le corresponde y pone el pin que le corresponde a '1', haciendo que el motor se 
 Como la flecha solo activa uno de los dos sentidos cada vez, no se producirá el bloqueo del motor.
 
 Sin embargo, interesa que se produzca dicho bloqueo en un determinado caso: la parada de emergencia. Si tanto
-IN3 como IN4 se ponen a '1' a la vez, el motor queda totalmente bloqueado y deja de moverse. Por ello, para
-ello, se conecta la señal EMER de 24V a dos optoacopladores independientes que, en caso de que sea necesario,
+IN3 como IN4 se ponen en alto a 1a la vez, el motor queda totalmente bloqueado y deja de moverse. Por ello, 
+se conecta la señal EMER de 24V a dos optoacopladores independientes que, en caso de que sea necesario,
 produzca dicha parada. La misma se realizará tanto en modo sin microcontrolador como con éste activo, ya que 
 depende directamente de la señal EMER.
 
@@ -236,10 +237,10 @@ operacionales con el que cuenta. Como resultado se obtiene el circuito de la fig
 
 \subsection{Amplificación señales calibre}
 
-Para la lectura de la señal del calibre por parte del Arduino es necesario elevar los niveles de tensión a 5V.
+En la lectura de la señal del calibre por parte del Arduino es necesario elevar los niveles de tensión a 5V.
 Para ello se toma como referencia el circuito visto en la web \cite{caliper}. Éste utiliza un transistor junto
-con dos resistencias de modo que cuando el calibre envíe un '1' se eleve la tensión a 5V, pero sin distorsionarse
-cuando haya un '0' y dar falsos positivos. El esquema implementado es el que aparece en la figura \ref{fig:figura36amp}.
+con dos resistencias de modo que cuando el calibre envíe un '1' eleve la tensión a 5V, pero sin distorsionarse
+cuando haya un '0' y para no dar falsos positivos. El esquema implementado es el que aparece en la figura \ref{fig:figura36amp}.
 
 \begin{figure}[hbtp]
     \centering
@@ -251,17 +252,18 @@ cuando haya un '0' y dar falsos positivos. El esquema implementado es el que apa
 \section{Placas finales}
 
 Una vez descrita la funcionalidad del sistema electrónico a implementar, el resto del proceso consiste en 
-separar las conexiones entre las placas de circuito impreso y determinar qué va conectado a cada una.
+separar las conexiones entre las placas de circuito impreso y determinar las conexiones correspondientes a 
+cada una de ellas.
 
 \subsection{Placa \textit{Tapa}}
 
 La placa \textit{Tapa} como su propio nombre indica irá colocada en la superficie superior de la caja. Su 
 principal función es permitir que la caja se pueda abrir sin que haya peligro de desconexiones ni tirones
 entre los cables que conectan los distintos dispositivos que se encuentren en la tapa. Para ello, habrá
-ristra de cables que se conecte a al fondo de la caja directamente y así simplificarlo todo.
+un mazo de cables que se conecte a al fondo de la caja directamente y así simplificarlo todo.
 
-Por otro lado, los dispositivos que van conectados a esta tapa son los destinados a ser la interfaz 
-hombre-máquina. Estos dispositivos son:
+Por otro lado, los dispositivos conectados a esta tapa estánd destinados a ser la interfaz 
+de interacción con el usuario. Estos dispositivos son:
 \begin{itemize}
     \item LCD.
     \item Seta de emergencia.
@@ -272,7 +274,7 @@ hombre-máquina. Estos dispositivos son:
 
 El resultado final se puede observar en la figura \ref{fig:placatapa}. En ésta se puede observar los 
 huecos para soldar los futuros conectores atornillables. Cuenta con dos zonas diferenciadas como se 
-comentó previamente: una para la conexión de los dispositivos y otra para la conexión a la placa del 
+explicó previamente: una para la conexión de los dispositivos y otra para la conexión a la placa del 
 fondo.
 
 \begin{figure}[htpb]% 
@@ -286,7 +288,7 @@ fondo.
         \label{fig:tapatras}% 
         \includegraphics[scale=0.15]{03-placa/tapatras.png}
     }
-    \caption{a) Vista frontal de la placa tapa. b) Vista trasera de la placa tapa}
+    \caption{(a) Vista frontal de la placa tapa. (b) Vista trasera de la placa tapa}
     \label{fig:placatapa} 
     \end{figure} 
 
@@ -311,7 +313,7 @@ del proyecto donde se producen todas las conexiones. En la figura \ref{fig:placa
         \label{fig:fondotras}% 
         \includegraphics[scale=0.29]{03-placa/fondotras.png}
     }
-    \caption{a) Vista frontal de la placa fondo. b) Vista trasera de la placa fondo}
+    \caption{(a) Vista frontal de la placa fondo. (b) Vista trasera de la placa fondo}
     \label{fig:placafondo} 
     \end{figure} 
 

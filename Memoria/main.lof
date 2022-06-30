@@ -24,10 +24,10 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Implementación de optoacopladores para modo sin microcontrolador y emergencia\relax }}{19}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{20}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{20}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces a) Vista frontal de la placa tapa. b) Vista trasera de la placa tapa\relax }}{21}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces a) Vista frontal de la placa fondo. b) Vista trasera de la placa fondo\relax }}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Vista frontal de la placa tapa. (b) Vista trasera de la placa tapa\relax }}{21}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces (a) Vista frontal de la placa fondo. (b) Vista trasera de la placa fondo\relax }}{22}{figure.caption.37}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces a) Vista general de la base de la caja. b) Vista de planta de la base de la caja\relax }}{24}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Vista general de la base de la caja. (b) Vista de planta de la base de la caja\relax }}{24}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Ensamblaje de la base con el soporte. Descripción por colores: a) Gris: Fuente. b) Rojo: L298N. c) Azul: Arduino. d) Verde: placa de conexiones. e) Amarillo: Soporte tapa\relax }}{24}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces a) Vista general de la tapa de la caja. b) Vista inferior de la tapa de la caja\relax }}{25}{figure.caption.40}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Vista inferio de la tapa ensamblada. Descripción por colores: a) Verde: placa de conexiones. b) Naranja: LCD c) Rojo: Seta de emergencia. d) Gris: Flechas de selección. e) Amarillo: Botones intro y escape. f) Morado: Selectores de modo\relax }}{25}{figure.caption.41}%
