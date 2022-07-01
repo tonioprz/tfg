@@ -36,16 +36,18 @@ deseada mediante el mismo algoritmo. Primero se aproxima la pieza a la posición
 para posicionar finalmente la pieza mediante un PID. Una vez terminada la operación, vuelve al modo inicial para 
 seguir esperando órdenes.
 
-En cualquier caso, si en cualquier momento se pulsa la seta de emergencia, la cinta parará automáticamente y se entrará
-en estado emergencia "e". En este modo no se podrá realizar ninguna acción hasta que se desarme la seta de emergencia.
+La seta de emergencia puede ser pulsada en cualquier instante en todos los modos de funcionamiento, la cinta parará 
+automáticamente y se entrará en estado emergencia "e". 
+Se trata de un sistema de seguridad independiente y una vez activado este modo no se podrá realizar ninguna acción 
+hasta que se desarme la seta de emergencia.
 
 \section{Programa final}
 
 A continuación se muestra el programa final. Este se divide en dos archivos, "main.h" y "main.ino". El programa puede ser 
 cargado a la placa mediante el Arduino IDE que se puede descargar desde la págica oficial \cite{arduino}. Además, en la propia
-página se puede a la documentación referente a las funciones utilizadas en el programa.
+página se puede acceder a la documentación referente a las funciones utilizadas en el programa.
 
-Por otro lado, se ha utilizado dos librerías para el funcionamiento del LCD y de la conexión por Ethernet. Para el caso
+Por otro lado, dos librerías han sido utilizadas para el funcionamiento del LCD y de la conexión por Ethernet. Para el caso
 de la librería para el LCD se ha utilizado la librería \cite{lcd}, ya que la conexión se realiza mediante protocolo I2C.
 Este protocolo permite que un segundo microcontrolador integrado dentro de la placa del LCD sea el que lo controle, evitando
 tener que realizar todas las conexiones que requiere el mismo directamente hacia el Arduino y delegando el control al mismo.

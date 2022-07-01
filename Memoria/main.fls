@@ -3049,6 +3049,10 @@ INPUT ./06-robotstudio/ejemplosinmicro.tex
 INPUT 06-robotstudio/ejemplosinmicro.tex
 INPUT ./06-robotstudio/ejemplosinmicro.tex
 INPUT 06-robotstudio/ejemplosinmicro.tex
+INPUT ./06-robotstudio/ejemploconmicro.tex
+INPUT 06-robotstudio/ejemploconmicro.tex
+INPUT ./06-robotstudio/ejemploconmicro.tex
+INPUT 06-robotstudio/ejemploconmicro.tex
 INPUT ./07-resultados/resultados.tex
 OUTPUT 07-resultados/resultados.aux
 INPUT ./07-resultados/resultados.tex

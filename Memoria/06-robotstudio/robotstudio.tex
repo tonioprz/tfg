@@ -3,7 +3,8 @@
 La idea principal del proyecto es orientar el sistema para la realización de prácticas de 
 laboratorio, por lo que el trabajo a realizar por los alumnos está en la programación en 
 Robotstudio. Por esta razón, este capítulo va orientado a dar las pautas necesarias para el 
-funcionamiento del sistema y su integración en el ecosistema de ABB.
+funcionamiento del sistema y su integración en el ecosistema de ABB. Este capítulo se basa 
+en gran medida al trabajo previo de Hinojosa\cite{rea}.
 
 \section{Funcionamiento sin microcontrolador}
 
@@ -34,7 +35,7 @@ de entrada estarán la señal del sensor fotoeléctrico, la emergencia, el estad
 la señal micro.
 
 Las funciones referentes a las señales digitales se pueden consultar en el manual de RAPID \cite{rapid}.
-Las más relevantes para el uso básico son:
+Las más relevantes para el uso básico requerido en el laboratorio:
 \begin{itemize}
     \item SetDO, cambio de valor en salida digital. Uso: SetDo señalDO, valor;
     \item Lectura de entrada digital. Se puede realizar simpelmente utilizando el nombre de la señal. 
@@ -44,10 +45,11 @@ Las más relevantes para el uso básico son:
 \end{itemize}
 
 Un ejemplo de programa es el que se puede ver en \ref{no_micro}. Este programa consiste en hacer avanzar
-la cinta hasta que se enciende el sensor fotoeléctrico, que el robot recoja la pieza y repita la operación
+la cinta hasta que se enciende el sensor fotoeléctrico.
+Una vez detecta esa señal, el robot recoge la pieza y se repite la operación 
 haciéndolo retroceder. Para ello, se debe definir el \textit{workobject} de la cinta transportadora para mover
 el brazo robótico sobre sus ejes. Posteriormenete se debe definir la posición de recogida del brazo donde 
-se activa el sensor fotoeléctrico. Las demás posiciones se generarán mediante offsets de la posición de recogida.
+se activa el sensor fotoeléctrico. Las demás posiciones se generarán mediante \emph{offsets} de la posición de recogida.
 El trabajo con el brazo robótico queda a cargo de futuros alumnos, aquí se muestra exclusivamente el trato 
 con las señales digitales. Para simplificar los nombres de las señales se utilizan nombres descriptivos, no
 el que realmente aparece en RobotStudio.
@@ -56,4 +58,40 @@ el que realmente aparece en RobotStudio.
 
 \section{Funcionamiento con microcontrolador}
 
-explicar tcp/ip
+El funcionamiento del sistema con microcontrolador permite al controlador del robot tener la información
+completa sobre la posición de la pieza a lo largo de la cinta y del estado del sistema. Para poder 
+transmitir los datos se realizará una conexión TCP/IP donde Arduino y controladora se enviarán
+información mutuamente. Para que esta opción esté habilitada en RobotStudio, es necesario añadir la 
+funcionalidad "PC Interface" durante la creación de la estación. El procedimiento para realizar la conexión 
+y el envío de datos se encuentra explicado demostrado en Hinojosa\cite{rea}, mientras que en el código 
+\ref{cod_micro} se encuentra un ejemplo funcional.
+
+La comunicación es bidireccional: la controladora del robot envía una orden mientras que el Arduino responde
+en consecuencia. Existen tres órdenes enviadas por la controladora diferentes:
+\begin{itemize}
+    \item Solicitud de posición y estado, se envía la cadena "STATUS" al Arduino.
+    \item Orden de movimiento absoluto. Se envía una cadena con el carácter "M" seguido de la posición final en 
+    milímetros con el formato ";X=" + posicion.
+    \item Orden de avance discreto. Se envía una cadena con el carácter "R" seguido de los milímetros que tiene
+    que avanzar la cinta con el formato ";X=" + avance.
+\end{itemize}
+
+En el caso de recibir una cadena "STATUS", el Arduino responderá con una cadena con el siguiente formato:
+
+Carácter de estado + ";X=" + posición + ";Y=" medida del calibre + ";F=" + valor del sensor fotoeléctrico.
+
+El microcontrolador del Arduino está continuamente comprobando si existe una orden por parte de la controladora,
+ya que se comprueba en muchas partes del código, independientemente de si se encuentra en modo local o en modo
+remoto. Sin embargo, si se encuentra en modo local únicamente responderá a la solicitud de "STATUS", ya que 
+no puede recibir órdenes de movimiento en este modo. En modo remoto, si recibe una orden de movimiento, pasará
+automáticamente al estado de movimiento con los datos recogidos y realizará dicho movimiento.
+
+A continuación se incluye el código \ref{cod_micro} necesario para la lectura del estado y la posición, además del envío
+de movimiento absoluto y discreto.
+
+\input{06-robotstudio/ejemploconmicro.tex}
+
+Una vez obtenida la posición de la pieza, hay que tener en cuenta que estos están expresados en unos ejes 
+concretos expresados desde el comienzo de la cinta. Por ello, hay que definir un \emph{workobject} donde 
+estos ejes tengan la misma dirección y, posteriormente encontrar una equivalencia para que el brazo 
+robótico sea capaz de alcanzar la posición exacta de la pieza.

@@ -1,0 +1,112 @@
+\begin{lstlisting}[language=,caption={Ejemplo de programa con microcontrolador}, breaklines=true, label=cod_micro]
+MODULE Module1  
+    !Declaración de variables del programa
+    !Objeto de socket de conexión
+    VAR socketdev my_socket;
+
+    !Variable de estado
+    VAR string estado:=0;
+
+    !Cadenas de caracteres de recepción
+    VAR rawbytes receive_string;
+    VAR string string1;
+    VAR string posx_str;
+    VAR string posy_str;
+    VAR string fotoele_str;
+
+    !Posiciones de los datos a lo largo de la cadena recibida
+    VAR num xpos;
+    VAR num ypos;
+    VAR num fepos;
+    
+    !Valores numéricos finales recibidos
+    VAR num posx;
+    VAR num posy;
+    VAR byte fotoele;
+    
+    !Comprobación de recepción correcta
+    VAR bool okposx:=true;
+    VAR bool okposy:=true;
+
+    !Bucle principal del programa
+    PROC main()
+        !Se cierran los posibles sockets abiertos
+        SocketClose my_socket;
+        
+        WaitTime 0.2;
+        
+        !Función de lectura de posición y estado
+        leer;
+
+        !Movimiento absoluto
+        mov_abs(200);
+
+        !Movimiento discreto
+        mov_dis(100);
+
+        WaitTime 0.5;
+    ENDPROC
+    
+    !Función de apertura de socket
+    PROC abricomunicacion()        
+        SocketCreate my_socket; !crea el socket
+        SocketConnect my_socket, "192.168.50.200", 4012;        
+    ENDPROC
+    
+    !Función de lectura de estado y 
+    PROC leer()
+        !Se abre el socket y conecta al Arduino
+        abricomunicacion;
+        
+        !Escribe en el socket la cadena "STATUS" para que el Arduino envíe sus datos
+        SocketSend my_socket,\Str:="STATUS"; 
+        WaitTime 0.1; !espera un tiempo
+
+        !Recibe la respuesta 
+        ClearRawBytes receive_string;
+        SocketReceive my_socket \RawData := receive_string,\Time:=WAIT_MAX;
+        
+        !Desempaqueta los bytes y los convierte en una cadena de caracteres
+        UnpackRawBytes receive_string, 1, string1 \ASCII:=32;
+        
+        !Se buscan las posiciones de cada variable a lo largo de la cadena
+        xpos        := StrFind(string1, 1, "=");
+        ypos        := StrFind(string1, xpos+1, "=");
+        fepos       := StrFind(string1, ypos+1, "=");
+        
+        !Se trocea la cadena para obtener subcadenas con los datos recibidos
+        estado      := StrPart(string1, 0, 1);
+        posx_str    := StrPart(string1, xpos+1, ypos - xpos - 3);
+        posy_str    := StrPart(string1, ypos+1, fepos - ypos - 3);
+        fotoele_str := StrPart(string1, fepos+1, 1);
+
+        !Se transforman las cadenas a los tipos de datos que les corresponden
+        okposx      :=  StrToVal(posx_str,posx);
+        okposy      :=  StrToVal(posy_str,posy);
+        fotoele     :=  StrToByte(fotoele_str);
+        
+        !Conversión de pulsos a milímetros
+        posx := posx / 100;
+
+        !Se cierra el socket
+        ClearRawBytes receive_string;
+        SocketClose my_socket;
+    ENDPROC
+
+    !Funciones de movimiento. Se envía una cadena con un caracter y la distancia a recorrer. Si el carácter es "M", el movimiento es absoluto, mientras que si es "R" es relativo.
+    PROC mov_abs(num distancia)
+        abricomunicacion;
+        SocketSend my_socket,\Str:="M;X=" + ValToStr(distancia*100) + ";";
+        WaitTime 0.1;
+        SocketClose my_socket;
+    ENDPROC
+    
+    PROC mov_dis(num distancia)
+        abricomunicacion;
+        SocketSend my_socket,\Str:="R;X=" + ValToStr(distancia*100) + ";";
+        WaitTime 0.1;
+        SocketClose my_socket;
+    ENDPROC
+ENDMODULE
+\end{lstlisting}
+    

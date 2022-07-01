@@ -61,11 +61,14 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {6.2}Funcionamiento con microcontrolador}{45}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Resultados}{47}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{49}{chapter.8}%
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {7}Resultados}{49}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{51}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{51}{section*.44}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{53}{section*.46}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{55}{section*.48}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{57}{section*.50}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{53}{section*.44}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{55}{section*.46}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{57}{section*.48}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{59}{section*.50}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
