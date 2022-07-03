@@ -2492,6 +2492,9 @@ INPUT 06-robotstudio/robotstudio.aux
 INPUT ./07-resultados/resultados.aux
 INPUT 07-resultados/resultados.aux
 INPUT 07-resultados/resultados.aux
+INPUT ./08-conclusiones/conclusiones.aux
+INPUT 08-conclusiones/conclusiones.aux
+INPUT 08-conclusiones/conclusiones.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-ptm.cfg
@@ -3059,6 +3062,15 @@ INPUT ./07-resultados/resultados.tex
 INPUT 07-resultados/resultados.tex
 INPUT ./07-resultados/resultados.tex
 INPUT 07-resultados/resultados.tex
+INPUT ./08-conclusiones/conclusiones.tex
+OUTPUT 08-conclusiones/conclusiones.aux
+INPUT ./08-conclusiones/conclusiones.tex
+INPUT ./08-conclusiones/conclusiones.tex
+INPUT ./08-conclusiones/conclusiones.tex
+INPUT ./08-conclusiones/conclusiones.tex
+INPUT 08-conclusiones/conclusiones.tex
+INPUT ./08-conclusiones/conclusiones.tex
+INPUT 08-conclusiones/conclusiones.tex
 INPUT ./main.lof
 INPUT main.lof
 INPUT main.lof
@@ -3107,6 +3119,9 @@ INPUT 06-robotstudio/robotstudio.aux
 INPUT ./07-resultados/resultados.aux
 INPUT 07-resultados/resultados.aux
 INPUT 07-resultados/resultados.aux
+INPUT ./08-conclusiones/conclusiones.aux
+INPUT 08-conclusiones/conclusiones.aux
+INPUT 08-conclusiones/conclusiones.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
