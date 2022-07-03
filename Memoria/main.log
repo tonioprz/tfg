@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.23)  3 JUL 2022 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.23)  3 JUL 2022 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2193,24 +2193,14 @@ LaTeX Info: Redefining \% on input line 153.
 \openout2 = `0c-notacion/notacion.aux'.
 
  (./0c-notacion/notacion.tex
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
  [11
 
 
-]
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
- [12]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
- [13]) [14
+]) [12
 
 
 
@@ -2244,7 +2234,7 @@ l.45 E
 ]
 
 pdfTeX warning: pdflatex.exe (file ./01-introduccion/HMI.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<01-introduccion/HMI.pdf, id=481, 476.74109pt x 248.8497pt>
+<01-introduccion/HMI.pdf, id=462, 476.74109pt x 248.8497pt>
 File: 01-introduccion/HMI.pdf Graphic file (type pdf)
 <use 01-introduccion/HMI.pdf>
 Package pdftex.def Info: 01-introduccion/HMI.pdf  used on input line 98.
@@ -2260,7 +2250,7 @@ l.101 	\end{figure}
                     [2]
 
 pdfTeX warning: pdflatex.exe (file ./01-introduccion/DIGITALES.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<01-introduccion/DIGITALES.pdf, id=487, 352.43669pt x 77.3289pt>
+<01-introduccion/DIGITALES.pdf, id=468, 352.43669pt x 77.3289pt>
 File: 01-introduccion/DIGITALES.pdf Graphic file (type pdf)
 <use 01-introduccion/DIGITALES.pdf>
 Package pdftex.def Info: 01-introduccion/DIGITALES.pdf  used on input line 117.
@@ -2292,7 +2282,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (U) loversize=0.2;
 (lettrine.sty)             reported on input line 3.
-<02-hardware/01-arduino-mega-2560.jpg, id=512, 602.25pt x 602.25pt>
+<02-hardware/01-arduino-mega-2560.jpg, id=493, 602.25pt x 602.25pt>
 File: 02-hardware/01-arduino-mega-2560.jpg Graphic file (type jpg)
 <use 02-hardware/01-arduino-mega-2560.jpg>
 Package pdftex.def Info: 02-hardware/01-arduino-mega-2560.jpg  used on input line 17.
@@ -2317,7 +2307,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has b
                    \relax 
 l.83     \item C
                 omunicación SPI. Pines 50 (MISO), 51 (MOSI), 52 (SCK), 53 (... [6]
-<02-hardware/02-shield-ethernet-w5100.jpg, id=522, 225.9642pt x 162.3666pt>
+<02-hardware/02-shield-ethernet-w5100.jpg, id=502, 225.9642pt x 162.3666pt>
 File: 02-hardware/02-shield-ethernet-w5100.jpg Graphic file (type jpg)
 <use 02-hardware/02-shield-ethernet-w5100.jpg>
 Package pdftex.def Info: 02-hardware/02-shield-ethernet-w5100.jpg  used on input line 107.
@@ -2327,12 +2317,12 @@ LaTeX Info: Redefining \% on input line 124.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
  [7 <./02-hardware/02-shield-ethernet-w5100.jpg>]
-<02-hardware/03-l298n.png, id=528, 1016.79875pt x 639.38875pt>
+<02-hardware/03-l298n.png, id=509, 1016.79875pt x 639.38875pt>
 File: 02-hardware/03-l298n.png Graphic file (type png)
 <use 02-hardware/03-l298n.png>
 Package pdftex.def Info: 02-hardware/03-l298n.png  used on input line 147.
 (pdftex.def)             Requested size: 254.19907pt x 159.84679pt.
-<02-hardware/04-l298n-alimentacion.png, id=530, 1037.8775pt x 567.11874pt>
+<02-hardware/04-l298n-alimentacion.png, id=511, 1037.8775pt x 567.11874pt>
 File: 02-hardware/04-l298n-alimentacion.png Graphic file (type png)
 <use 02-hardware/04-l298n-alimentacion.png>
 Package pdftex.def Info: 02-hardware/04-l298n-alimentacion.png  used on input line 170.
@@ -2345,7 +2335,7 @@ LaTeX Info: Redefining \% on input line 181.
 LaTeX Info: Redefining \. on input line 181.
 LaTeX Info: Redefining \% on input line 181.
  [8 <./02-hardware/03-l298n.png>]
-<02-hardware/05-encoder.jpg, id=537, 1145.27875pt x 421.575pt>
+<02-hardware/05-encoder.jpg, id=518, 1145.27875pt x 421.575pt>
 File: 02-hardware/05-encoder.jpg Graphic file (type jpg)
 <use 02-hardware/05-encoder.jpg>
 Package pdftex.def Info: 02-hardware/05-encoder.jpg  used on input line 190.
@@ -2358,7 +2348,7 @@ LaTeX Info: Redefining \% on input line 210.
 LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
  [9 <./02-hardware/04-l298n-alimentacion.png> <./02-hardware/05-encoder.jpg>]
-<02-hardware/06-calibrador.png, id=545, 1074.0125pt x 518.93875pt>
+<02-hardware/06-calibrador.png, id=526, 1074.0125pt x 518.93875pt>
 File: 02-hardware/06-calibrador.png Graphic file (type png)
 <use 02-hardware/06-calibrador.png>
 Package pdftex.def Info: 02-hardware/06-calibrador.png  used on input line 230.
@@ -2371,17 +2361,17 @@ LaTeX Info: Redefining \% on input line 259.
 LaTeX Info: Redefining \. on input line 259.
 LaTeX Info: Redefining \% on input line 259.
  [10 <./02-hardware/06-calibrador.png>]
-<02-hardware/07-lcd162.png, id=553, 1141.26375pt x 602.25pt>
+<02-hardware/07-lcd162.png, id=533, 1141.26375pt x 602.25pt>
 File: 02-hardware/07-lcd162.png Graphic file (type png)
 <use 02-hardware/07-lcd162.png>
 Package pdftex.def Info: 02-hardware/07-lcd162.png  used on input line 262.
 (pdftex.def)             Requested size: 285.31523pt x 150.56212pt.
-<02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg, id=554, 183.5658pt x 130.8087pt>
+<02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg, id=534, 183.5658pt x 130.8087pt>
 File: 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg Graphic file (type jpg)
 <use 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg>
 Package pdftex.def Info: 02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg  used on input line 273.
 (pdftex.def)             Requested size: 183.56534pt x 130.80836pt.
-<02-hardware/09-omron.png, id=555, 547.04375pt x 280.04625pt>
+<02-hardware/09-omron.png, id=535, 547.04375pt x 280.04625pt>
 File: 02-hardware/09-omron.png Graphic file (type png)
 <use 02-hardware/09-omron.png>
 Package pdftex.def Info: 02-hardware/09-omron.png  used on input line 288.
@@ -2394,7 +2384,7 @@ LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
  [11 <./02-hardware/07-lcd162.png> <./02-hardware/08-modulo-adaptador-lcd-a-i2c.jpg>]
-<02-hardware/10-banda.png, id=564, 1228.59pt x 706.64pt>
+<02-hardware/10-banda.png, id=544, 1228.59pt x 706.64pt>
 File: 02-hardware/10-banda.png Graphic file (type png)
 <use 02-hardware/10-banda.png>
 Package pdftex.def Info: 02-hardware/10-banda.png  used on input line 312.
@@ -2425,7 +2415,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (P) loversize=0.2;
 (lettrine.sty)             reported on input line 3.
-<03-placa/01-KiCad-Logo.png, id=581, 2569.6pt x 1050.92625pt>
+<03-placa/01-KiCad-Logo.png, id=562, 2569.6pt x 1050.92625pt>
 File: 03-placa/01-KiCad-Logo.png Graphic file (type png)
 <use 03-placa/01-KiCad-Logo.png>
 Package pdftex.def Info: 03-placa/01-KiCad-Logo.png  used on input line 20.
@@ -2442,17 +2432,17 @@ LaTeX Info: Redefining \% on input line 100.
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
  [16]
-<03-placa/switches.png, id=594, 115.45132pt x 93.40898pt>
+<03-placa/switches.png, id=575, 115.45132pt x 93.40898pt>
 File: 03-placa/switches.png Graphic file (type png)
 <use 03-placa/switches.png>
 Package pdftex.def Info: 03-placa/switches.png  used on input line 103.
 (pdftex.def)             Requested size: 144.31378pt x 116.76091pt.
-<03-placa/02-optoac.png, id=595, 1043.9pt x 635.37375pt>
+<03-placa/02-optoac.png, id=576, 1043.9pt x 635.37375pt>
 File: 03-placa/02-optoac.png Graphic file (type png)
 <use 03-placa/02-optoac.png>
 Package pdftex.def Info: 03-placa/02-optoac.png  used on input line 122.
 (pdftex.def)             Requested size: 106.69783pt x 64.93716pt.
-<03-placa/03-optoacopladores.png, id=597, 223.85632pt x 122.49765pt>
+<03-placa/03-optoacopladores.png, id=578, 223.85632pt x 122.49765pt>
 File: 03-placa/03-optoacopladores.png Graphic file (type png)
 <use 03-placa/03-optoacopladores.png>
 Package pdftex.def Info: 03-placa/03-optoacopladores.png  used on input line 139.
@@ -2465,12 +2455,12 @@ LaTeX Info: Redefining \% on input line 155.
 LaTeX Info: Redefining \. on input line 155.
 LaTeX Info: Redefining \% on input line 155.
  [17 <./03-placa/switches.png> <./03-placa/02-optoac.png>]
-<03-placa/buferenb.jpg, id=608, 120.14888pt x 47.33685pt>
+<03-placa/buferenb.jpg, id=588, 120.14888pt x 47.33685pt>
 File: 03-placa/buferenb.jpg Graphic file (type jpg)
 <use 03-placa/buferenb.jpg>
 Package pdftex.def Info: 03-placa/buferenb.jpg  used on input line 164.
 (pdftex.def)             Requested size: 150.18571pt x 59.17091pt.
-<03-placa/flecha.jpg, id=610, 123.76237pt x 70.1019pt>
+<03-placa/flecha.jpg, id=590, 123.76237pt x 70.1019pt>
 File: 03-placa/flecha.jpg Graphic file (type jpg)
 <use 03-placa/flecha.jpg>
 Package pdftex.def Info: 03-placa/flecha.jpg  used on input line 179.
@@ -2483,12 +2473,12 @@ LaTeX Info: Redefining \% on input line 195.
 LaTeX Info: Redefining \. on input line 195.
 LaTeX Info: Redefining \% on input line 195.
  [18 <./03-placa/03-optoacopladores.png> <./03-placa/buferenb.jpg>]
-<03-placa/sinmicro.jpg, id=619, 189.70876pt x 123.76237pt>
+<03-placa/sinmicro.jpg, id=599, 189.70876pt x 123.76237pt>
 File: 03-placa/sinmicro.jpg Graphic file (type jpg)
 <use 03-placa/sinmicro.jpg>
 Package pdftex.def Info: 03-placa/sinmicro.jpg  used on input line 198.
 (pdftex.def)             Requested size: 237.13535pt x 154.70258pt.
-<03-placa/04-alimentacion-calibre.png, id=620, 123.40103pt x 90.87953pt>
+<03-placa/04-alimentacion-calibre.png, id=600, 123.40103pt x 90.87953pt>
 File: 03-placa/04-alimentacion-calibre.png Graphic file (type png)
 <use 03-placa/04-alimentacion-calibre.png>
 Package pdftex.def Info: 03-placa/04-alimentacion-calibre.png  used on input line 230.
@@ -2501,7 +2491,7 @@ LaTeX Info: Redefining \% on input line 237.
 LaTeX Info: Redefining \. on input line 237.
 LaTeX Info: Redefining \% on input line 237.
  [19 <./03-placa/flecha.jpg> <./03-placa/sinmicro.jpg>]
-<03-placa/05-amplificacion-calibre.png, id=630, 128.45993pt x 146.7081pt>
+<03-placa/05-amplificacion-calibre.png, id=616, 128.45993pt x 146.7081pt>
 File: 03-placa/05-amplificacion-calibre.png Graphic file (type png)
 <use 03-placa/05-amplificacion-calibre.png>
 Package pdftex.def Info: 03-placa/05-amplificacion-calibre.png  used on input line 247.
@@ -2516,12 +2506,12 @@ LaTeX Info: Redefining \% on input line 257.
  [20 <./03-placa/04-alimentacion-calibre.png> <./03-placa/05-amplificacion-calibre.png>]
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 258.
-<03-placa/tapafrente.png, id=639, 1667.22874pt x 696.6025pt>
+<03-placa/tapafrente.png, id=625, 1667.22874pt x 696.6025pt>
 File: 03-placa/tapafrente.png Graphic file (type png)
 <use 03-placa/tapafrente.png>
 Package pdftex.def Info: 03-placa/tapafrente.png  used on input line 285.
 (pdftex.def)             Requested size: 250.07352pt x 104.48586pt.
-<03-placa/tapatras.png, id=640, 1666.225pt x 697.60625pt>
+<03-placa/tapatras.png, id=626, 1666.225pt x 697.60625pt>
 File: 03-placa/tapatras.png Graphic file (type png)
 <use 03-placa/tapatras.png>
 Package pdftex.def Info: 03-placa/tapatras.png  used on input line 290.
@@ -2531,12 +2521,12 @@ LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
  [21 <./03-placa/tapafrente.png> <./03-placa/tapatras.png>]
-<03-placa/fondofrente.png, id=651, 701.62125pt x 851.18pt>
+<03-placa/fondofrente.png, id=637, 701.62125pt x 851.18pt>
 File: 03-placa/fondofrente.png Graphic file (type png)
 <use 03-placa/fondofrente.png>
 Package pdftex.def Info: 03-placa/fondofrente.png  used on input line 310.
 (pdftex.def)             Requested size: 203.46495pt x 246.83588pt.
-<03-placa/fondotras.png, id=652, 701.62125pt x 851.18pt>
+<03-placa/fondotras.png, id=638, 701.62125pt x 851.18pt>
 File: 03-placa/fondotras.png Graphic file (type png)
 <use 03-placa/fondotras.png>
 Package pdftex.def Info: 03-placa/fondotras.png  used on input line 315.
@@ -2565,27 +2555,27 @@ LaTeX Info: Redefining \% on input line 35.
 
 
 ]
-<04-caja/cajabase.png, id=670, 3476.99pt x 2227.32124pt>
+<04-caja/cajabase.png, id=655, 3476.99pt x 2227.32124pt>
 File: 04-caja/cajabase.png Graphic file (type png)
 <use 04-caja/cajabase.png>
 Package pdftex.def Info: 04-caja/cajabase.png  used on input line 42.
 (pdftex.def)             Requested size: 213.39566pt x 136.69226pt.
-<04-caja/cajabaseplanta.png, id=671, 3376.615pt x 2237.35875pt>
+<04-caja/cajabaseplanta.png, id=656, 3376.615pt x 2237.35875pt>
 File: 04-caja/cajabaseplanta.png Graphic file (type png)
 <use 04-caja/cajabaseplanta.png>
 Package pdftex.def Info: 04-caja/cajabaseplanta.png  used on input line 47.
 (pdftex.def)             Requested size: 213.39566pt x 141.37085pt.
-<04-caja/ensamblajebase.png, id=672, 3178.87625pt x 2107.875pt>
+<04-caja/ensamblajebase.png, id=657, 3178.87625pt x 2107.875pt>
 File: 04-caja/ensamblajebase.png Graphic file (type png)
 <use 04-caja/ensamblajebase.png>
 Package pdftex.def Info: 04-caja/ensamblajebase.png  used on input line 55.
 (pdftex.def)             Requested size: 213.39566pt x 141.48741pt.
-<04-caja/cajatapa.png, id=674, 3288.285pt x 1720.4275pt>
+<04-caja/cajatapa.png, id=659, 3288.285pt x 1720.4275pt>
 File: 04-caja/cajatapa.png Graphic file (type png)
 <use 04-caja/cajatapa.png>
 Package pdftex.def Info: 04-caja/cajatapa.png  used on input line 76.
 (pdftex.def)             Requested size: 213.39566pt x 111.64795pt.
-<04-caja/cajatapafondo.png, id=675, 3388.66pt x 2235.35126pt>
+<04-caja/cajatapafondo.png, id=660, 3388.66pt x 2235.35126pt>
 File: 04-caja/cajatapafondo.png Graphic file (type png)
 <use 04-caja/cajatapafondo.png>
 Package pdftex.def Info: 04-caja/cajatapafondo.png  used on input line 81.
@@ -2602,7 +2592,7 @@ LaTeX Info: Redefining \% on input line 90.
 LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
  [24 <./04-caja/cajabase.png> <./04-caja/cajabaseplanta.png> <./04-caja/ensamblajebase.png>]
-<04-caja/ensamblajetapainferior.png, id=689, 3517.14pt x 2486.28876pt>
+<04-caja/ensamblajetapainferior.png, id=673, 3517.14pt x 2486.28876pt>
 File: 04-caja/ensamblajetapainferior.png Graphic file (type png)
 <use 04-caja/ensamblajetapainferior.png>
 Package pdftex.def Info: 04-caja/ensamblajetapainferior.png  used on input line 93.
@@ -2629,7 +2619,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 
 
 pdfTeX warning: pdflatex.exe (file ./05-arduino/diagramaflujo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<05-arduino/diagramaflujo.pdf, id=707, 373.395pt x 422.53859pt>
+<05-arduino/diagramaflujo.pdf, id=693, 373.395pt x 422.53859pt>
 File: 05-arduino/diagramaflujo.pdf Graphic file (type pdf)
 <use 05-arduino/diagramaflujo.pdf>
 Package pdftex.def Info: 05-arduino/diagramaflujo.pdf  used on input line 12.
@@ -2766,7 +2756,7 @@ Package lettrine.sty Info: Targeted height = 18.58224pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 22.29866pt (L) loversize=0.2;
 (lettrine.sty)             reported on input line 3.
-<06-robotstudio/interfazdigital.jpg, id=1404, 636.12656pt x 483.30562pt>
+<06-robotstudio/interfazdigital.jpg, id=1389, 636.12656pt x 483.30562pt>
 File: 06-robotstudio/interfazdigital.jpg Graphic file (type jpg)
 <use 06-robotstudio/interfazdigital.jpg>
 Package pdftex.def Info: 06-robotstudio/interfazdigital.jpg  used on input line 18.
@@ -2824,22 +2814,26 @@ LaTeX Info: Redefining \% on input line 173.
 
  (./07-resultados/resultados.tex
 chapter 7.
-<07-resultados/placafondo.jpg, id=1583, 2809.49625pt x 3543.2375pt>
+Package lettrine.sty Info: Targeted height = 18.58224pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 22.29866pt (F) loversize=0.2;
+(lettrine.sty)             reported on input line 3.
+<07-resultados/placafondo.jpg, id=1568, 2809.49625pt x 3543.2375pt>
 File: 07-resultados/placafondo.jpg Graphic file (type jpg)
 <use 07-resultados/placafondo.jpg>
 Package pdftex.def Info: 07-resultados/placafondo.jpg  used on input line 14.
 (pdftex.def)             Requested size: 170.71393pt x 215.28835pt.
-<07-resultados/placatapa.jpg, id=1584, 3382.6375pt x 1541.76pt>
+<07-resultados/placatapa.jpg, id=1569, 3382.6375pt x 1541.76pt>
 File: 07-resultados/placatapa.jpg Graphic file (type jpg)
 <use 07-resultados/placatapa.jpg>
 Package pdftex.def Info: 07-resultados/placatapa.jpg  used on input line 21.
-(pdftex.def)             Requested size: 320.09349pt x 145.88058pt.
-<07-resultados/cajaexterior.jpg, id=1586, 2783.39874pt x 2431.0825pt>
+(pdftex.def)             Requested size: 213.39566pt x 97.25372pt.
+<07-resultados/cajaexterior.jpg, id=1571, 2783.39874pt x 2431.0825pt>
 File: 07-resultados/cajaexterior.jpg Graphic file (type jpg)
 <use 07-resultados/cajaexterior.jpg>
 Package pdftex.def Info: 07-resultados/cajaexterior.jpg  used on input line 34.
-(pdftex.def)             Requested size: 320.09349pt x 279.55006pt.
-<07-resultados/cajatrasero.jpg, id=1588, 3618.51875pt x 1833.85126pt>
+(pdftex.def)             Requested size: 234.73653pt x 204.98854pt.
+<07-resultados/cajatrasero.jpg, id=1573, 3618.51875pt x 1833.85126pt>
 File: 07-resultados/cajatrasero.jpg Graphic file (type jpg)
 <use 07-resultados/cajatrasero.jpg>
 Package pdftex.def Info: 07-resultados/cajatrasero.jpg  used on input line 44.
@@ -2857,60 +2851,57 @@ LaTeX Info: Redefining \% on input line 47.
 
 
  <./07-resultados/placafondo.jpg>]
-<07-resultados/cajainterior.jpg, id=1595, 3615.5075pt x 2371.86125pt>
+<07-resultados/cajainterior.jpg, id=1581, 3615.5075pt x 2371.86125pt>
 File: 07-resultados/cajainterior.jpg Graphic file (type jpg)
 <use 07-resultados/cajainterior.jpg>
 Package pdftex.def Info: 07-resultados/cajainterior.jpg  used on input line 59.
 (pdftex.def)             Requested size: 320.09349pt x 209.9839pt.
-<07-resultados/cajatapa.jpg, id=1597, 3637.59pt x 2325.68875pt>
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+ [50 <./07-resultados/placatapa.jpg> <./07-resultados/cajaexterior.jpg> <./07-resultados/cajatrasero.jpg>]
+<07-resultados/cajatapa.jpg, id=1589, 3637.59pt x 2325.68875pt>
 File: 07-resultados/cajatapa.jpg Graphic file (type jpg)
 <use 07-resultados/cajatapa.jpg>
 Package pdftex.def Info: 07-resultados/cajatapa.jpg  used on input line 69.
 (pdftex.def)             Requested size: 320.09349pt x 204.61865pt.
-<07-resultados/modoemer.jpg, id=1598, 3669.71pt x 2455.1725pt>
+<07-resultados/modoemer.jpg, id=1590, 3669.71pt x 2455.1725pt>
 File: 07-resultados/modoemer.jpg Graphic file (type jpg)
 <use 07-resultados/modoemer.jpg>
 Package pdftex.def Info: 07-resultados/modoemer.jpg  used on input line 82.
-(pdftex.def)             Requested size: 320.09349pt x 214.13774pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [50 <./07-resultados/placatapa.jpg> <./07-resultados/cajaexterior.jpg>]
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [51 <./07-resultados/cajatrasero.jpg> <./07-resultados/cajainterior.jpg> <./07-resultados/cajatapa.jpg>]
-<07-resultados/modolocal.jpg, id=1610, 3579.3725pt x 2365.83875pt>
+(pdftex.def)             Requested size: 213.39566pt x 142.73352pt.
+<07-resultados/modolocal.jpg, id=1591, 3579.3725pt x 2365.83875pt>
 File: 07-resultados/modolocal.jpg Graphic file (type jpg)
 <use 07-resultados/modolocal.jpg>
 Package pdftex.def Info: 07-resultados/modolocal.jpg  used on input line 89.
-(pdftex.def)             Requested size: 320.09349pt x 211.54451pt.
-<07-resultados/modoremoto.jpg, id=1611, 3686.77374pt x 2448.14626pt>
+(pdftex.def)             Requested size: 213.39566pt x 141.0417pt.
+<07-resultados/modoremoto.jpg, id=1592, 3686.77374pt x 2448.14626pt>
 File: 07-resultados/modoremoto.jpg Graphic file (type jpg)
 <use 07-resultados/modoremoto.jpg>
 Package pdftex.def Info: 07-resultados/modoremoto.jpg  used on input line 96.
-(pdftex.def)             Requested size: 320.09349pt x 212.55368pt.
-<07-resultados/modosinmicro.jpg, id=1612, 3472.975pt x 2305.61375pt>
+(pdftex.def)             Requested size: 213.39566pt x 141.69pt.
+<07-resultados/modosinmicro.jpg, id=1593, 3472.975pt x 2305.61375pt>
 File: 07-resultados/modosinmicro.jpg Graphic file (type jpg)
 <use 07-resultados/modosinmicro.jpg>
 Package pdftex.def Info: 07-resultados/modosinmicro.jpg  used on input line 103.
-(pdftex.def)             Requested size: 320.09349pt x 212.49196pt.
+(pdftex.def)             Requested size: 213.39566pt x 141.63785pt.
 )
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
- [52 <./07-resultados/modoemer.jpg> <./07-resultados/modolocal.jpg>]
+ [51 <./07-resultados/cajainterior.jpg> <./07-resultados/cajatapa.jpg>]
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
- [53 <./07-resultados/modoremoto.jpg> <./07-resultados/modosinmicro.jpg>]
+ [52 <./07-resultados/modoemer.jpg> <./07-resultados/modolocal.jpg> <./07-resultados/modoremoto.jpg>]
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [53 <./07-resultados/modosinmicro.jpg>]
 \openout2 = `08-conclusiones/conclusiones.aux'.
 
  (./08-conclusiones/conclusiones.tex [54
@@ -3085,18 +3076,18 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \ifx on line 13 was incomplete) 
 Here is how much of TeX's memory you used:
- 66717 strings out of 478278
- 1531306 string characters out of 5850546
- 2415277 words of memory out of 5000000
- 82212 multiletter control sequences out of 15000+600000
- 584915 words of font info for 245 fonts, out of 8000000 for 9000
+ 66692 strings out of 478278
+ 1531072 string characters out of 5850546
+ 2415600 words of memory out of 5000000
+ 82206 multiletter control sequences out of 15000+600000
+ 573830 words of font info for 230 fonts, out of 8000000 for 9000
  1162 hyphenation exceptions out of 8191
- 140i,17n,136p,10614b,2326s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (83 pages, 21618678 bytes).
+ 140i,11n,136p,10614b,2326s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (81 pages, 21575603 bytes).
 PDF statistics:
- 2253 PDF objects out of 2487 (max. 8388607)
- 2008 compressed objects within 21 object streams
- 954 named destinations out of 1000 (max. 500000)
- 87891 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2214 PDF objects out of 2487 (max. 8388607)
+ 1984 compressed objects within 20 object streams
+ 952 named destinations out of 1000 (max. 500000)
+ 83795 words of extra memory for PDF output out of 89155 (max. 10000000)
 

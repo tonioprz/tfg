@@ -68,7 +68,7 @@
 \contentsline {section}{\numberline {7.1}Placas}{49}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Caja}{49}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Integración de componentes}{50}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Modos}{52}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Modos}{51}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Conclusiones}{55}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
 \contentsline {listasb}{{\'I}ndice de Figuras}{57}{section*.54}%
