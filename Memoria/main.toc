@@ -65,10 +65,14 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {7}Resultados}{49}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{51}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Placas}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Caja}{49}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Integración de componentes}{50}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Modos}{52}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{55}{chapter.8}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{53}{section*.44}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{55}{section*.46}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{57}{section*.48}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{59}{section*.50}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{57}{section*.54}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{59}{section*.56}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{61}{section*.58}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{63}{section*.60}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
