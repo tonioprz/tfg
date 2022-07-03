@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: 0a-agradecimientos/agradecimientos.aux
@@ -14,13 +14,13 @@ A level-1 auxiliary file: 07-resultados/resultados.aux
 The style file: amsplain.bst
 Database file #1: bibliografiaLibroETSI.bib
 Warning--entry type for "arduino" isn't style-file defined
---line 19 of file bibliografiaLibroETSI.bib
+--line 37 of file bibliografiaLibroETSI.bib
 Warning--entry type for "caliper" isn't style-file defined
---line 23 of file bibliografiaLibroETSI.bib
+--line 45 of file bibliografiaLibroETSI.bib
 Warning--entry type for "lcd" isn't style-file defined
---line 27 of file bibliografiaLibroETSI.bib
+--line 53 of file bibliografiaLibroETSI.bib
 Warning--entry type for "ethernet" isn't style-file defined
---line 31 of file bibliografiaLibroETSI.bib
+--line 61 of file bibliografiaLibroETSI.bib
 You've used 7 entries,
             2213 wiz_defined-function locations,
             533 strings with 4927 characters,
