@@ -1,6 +1,6 @@
 \chapter{Desarrollo en Robotstudio}\label{chp-06}
 
-La idea principal del proyecto es orientar el sistema para la realización de prácticas de 
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}a idea principal del proyecto es orientar el sistema para la realización de prácticas de 
 laboratorio, por lo que el trabajo a realizar por los alumnos está en la programación en 
 Robotstudio. Por esta razón, este capítulo va orientado a dar las pautas necesarias para el 
 funcionamiento del sistema y su integración en el ecosistema de ABB. Este capítulo se basa 
@@ -30,9 +30,9 @@ como el de este proyecto. Los pines expuestos en el módulo de interfaz son los 
     \item VCC 24V. Pin 25.
 \end{itemize}
 
-En el los pines de salida se conectarán las señales de Avance y Retroceso, mientras que en los
-de entrada estarán la señal del sensor fotoeléctrico, la emergencia, el estado de la señal local y
-la señal micro.
+En éste, los pines de salida se conectarán a las señales de Avance y Retroceso, mientras que en los
+de entrada estarán la señal del sensor fotoeléctrico, la de emergencia, el estado de la señal local y
+la señal microcontrolador.
 
 Las funciones referentes a las señales digitales se pueden consultar en el manual de RAPID \cite{rapid}.
 Las más relevantes para el uso básico requerido en el laboratorio:
@@ -91,7 +91,8 @@ de movimiento absoluto y discreto.
 
 \input{06-robotstudio/ejemploconmicro.tex}
 
-Una vez obtenida la posición de la pieza, hay que tener en cuenta que estos están expresados en unos ejes 
-concretos expresados desde el comienzo de la cinta. Por ello, hay que definir un \emph{workobject} donde 
-estos ejes tengan la misma dirección y, posteriormente encontrar una equivalencia para que el brazo 
-robótico sea capaz de alcanzar la posición exacta de la pieza.
+Una vez obtenida la posición de la pieza en los ejes x e y, hay que tener en cuenta que dicha posición
+está expresada en unos ejes concretos definidos desde el comienzo de la cinta. Por ello, hay que crear 
+un \emph{workobject} en el proyecto de Robotstudiodonde estos ejes tengan la misma dirección que los ejes
+de la cinta para, posteriormente poder transformar las posiciones obtenidas por parte del Arduino 
+a unas unidades utilizables por parte del robot y del propio usuario.
