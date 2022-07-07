@@ -78,7 +78,7 @@ void setup() {
   posy = medidaCalibre();
   posicion = 0;
   // Se inicia la comunicación Ethernet y la serie para depuración
-  Ethernet.begin(MAC, IP);
+  Ethernet.begin(MAC);
   Serial.begin(9600);
   Serial.print("Servidor en IP ");
   Serial.println(Ethernet.localIP());

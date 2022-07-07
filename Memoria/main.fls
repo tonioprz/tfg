@@ -2499,6 +2499,9 @@ INPUT 07-resultados/resultados.aux
 INPUT ./08-conclusiones/conclusiones.aux
 INPUT 08-conclusiones/conclusiones.aux
 INPUT 08-conclusiones/conclusiones.aux
+INPUT ./09-guiadeuso/guiadeuso.aux
+INPUT 09-guiadeuso/guiadeuso.aux
+INPUT 09-guiadeuso/guiadeuso.aux
 OUTPUT main.aux
 INPUT c:/texlive/2021/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT c:/texlive/2021/texmf-dist/tex/latex/microtype/mt-ptm.cfg
@@ -3109,6 +3112,15 @@ INPUT ./08-conclusiones/conclusiones.tex
 INPUT 08-conclusiones/conclusiones.tex
 INPUT ./08-conclusiones/conclusiones.tex
 INPUT 08-conclusiones/conclusiones.tex
+INPUT ./09-guiadeuso/guiadeuso.tex
+OUTPUT 09-guiadeuso/guiadeuso.aux
+INPUT ./09-guiadeuso/guiadeuso.tex
+INPUT ./09-guiadeuso/guiadeuso.tex
+INPUT ./09-guiadeuso/guiadeuso.tex
+INPUT ./09-guiadeuso/guiadeuso.tex
+INPUT 09-guiadeuso/guiadeuso.tex
+INPUT ./09-guiadeuso/guiadeuso.tex
+INPUT 09-guiadeuso/guiadeuso.tex
 INPUT ./main.lof
 INPUT main.lof
 INPUT main.lof
@@ -3160,6 +3172,9 @@ INPUT 07-resultados/resultados.aux
 INPUT ./08-conclusiones/conclusiones.aux
 INPUT 08-conclusiones/conclusiones.aux
 INPUT 08-conclusiones/conclusiones.aux
+INPUT ./09-guiadeuso/guiadeuso.aux
+INPUT 09-guiadeuso/guiadeuso.aux
+INPUT 09-guiadeuso/guiadeuso.aux
 INPUT c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT c:/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc

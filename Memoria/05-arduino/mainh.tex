@@ -25,7 +25,6 @@
 // Declaración de objetos de LCD y relacionados con Ethernet
 LiquidCrystal_I2C lcd(0x27,16,2);
 byte MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED }; // Dirección MAC del dispositivo
-IPAddress IP(192,168,1,200); // IP estática del dispositivo
 EthernetServer servidor(4012); // Puerto donde se transmite la información
 
 // Declaración de variables booleanas auxiliares
