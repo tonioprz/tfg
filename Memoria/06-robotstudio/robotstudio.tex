@@ -2,7 +2,7 @@
 
 \lettrine[lraise=-0.1, lines=2, loversize=0.2]{L}a idea principal del proyecto es orientar el sistema para la realización de prácticas de 
 laboratorio, por lo que el trabajo a realizar por los alumnos está en la programación en 
-Robotstudio. Por esta razón, este capítulo va orientado a dar las pautas necesarias para el 
+RobotStudio. Por esta razón, este capítulo va orientado a dar las pautas necesarias para el 
 funcionamiento del sistema y su integración en el ecosistema de ABB. Este capítulo se basa 
 en gran medida al trabajo previo de Hinojosa\cite{rea}.
 
@@ -42,7 +42,7 @@ Las más relevantes para el uso básico requerido en el laboratorio:
     Uso: WaitDI señalDI, valor;
 \end{itemize}
 
-Un ejemplo de programa es el que se puede ver en \ref{no_micro}. Este programa consiste en hacer avanzar
+Un ejemplo de programa es el que se puede ver en el código \ref{no_micro}. Este programa consiste en hacer avanzar
 la cinta hasta que se enciende el sensor fotoeléctrico.
 Una vez detecta esa señal, el robot recoge la pieza y se repite la operación 
 haciéndolo retroceder. Para ello, se debe definir el \textit{workobject} de la cinta transportadora para mover
@@ -69,7 +69,7 @@ en consecuencia. Existen tres órdenes enviadas por la controladora diferentes:
 \begin{itemize}
     \item Solicitud de posición y estado, se envía la cadena "STATUS" al Arduino.
     \item Orden de movimiento absoluto. Se envía una cadena con el carácter "M" seguido de la posición final en 
-    milímetros con el formato ";X=" + posicion.
+    milímetros con el formato ";X=" + posición.
     \item Orden de avance discreto. Se envía una cadena con el carácter "R" seguido de los milímetros que tiene
     que avanzar la cinta con el formato ";X=" + avance.
 \end{itemize}

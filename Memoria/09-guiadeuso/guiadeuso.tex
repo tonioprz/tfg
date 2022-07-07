@@ -1,17 +1,45 @@
-\chapter*{Guía de usuario}
-\pagestyle{especial}
-\chaptermark{Guía de usuario}
-\phantomsection
-\addcontentsline{toc}{listasf}{Guía de usuario}
+\chapter{Guía de usuario}
+
+Este capítulo se plantea como una guía de cara a un usuario final que tenga que usar la cinta transportadora presente en el laboratorio de Automática de la ETSI. Está pensado para ser leído independientemente del resto del trabajo sin conocimientos previos.
+
+\section{Descripción y cuadro de mandos}
+
+Este panel de control se trata de una interfaz que es capaz de mover la cinta transportadora y enviar la posición de una pieza 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{09-guiadeuso/HMI_REAL.pdf}
+	\caption{Comandos del panel de control}
+	\label{fig:interfazhmireal}
+	\end{figure}
+
+
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{09-guiadeuso/DIGITALES_REAL.pdf}
+        \caption{}
+        \label{fig:pinesdigitalesreal}
+        \end{figure}
 
 \section{Tipos de movimiento}
 
 \subsection{Movimiento absoluto}
 
-Este movimiento permite desplazar una pieza a lo largo de la cinta desde el origen de coordenadas de la misma a un punto concreto. La idea para la cual está concebido este tipo de desplazamiento es la colocación de la pieza en el origen de la cinta, lejos del espacio de trabajo del robot, para 
+Este movimiento permite desplazar una pieza a lo largo de la cinta desde el origen de coordenadas de la misma a un punto concreto. La idea para la cual está concebido este tipo de desplazamiento es la colocación de la pieza en el origen de la cinta, lejos del espacio de trabajo del robot, y posicionarla, a continuación, dentro del área de trabajo del robot.
 
 \subsection{Movimiento discreto}
 
+El movimiento relativo consiste en desplazar la pieza a partir de la posición actual de la misma, por lo que no es necesario tener una referencia exacta de la posición real en la cinta de la pieza. Esto permite avanzar o retroceder una pieza lo deseado independientemente de la posición actual de la misma.
+
+Esto se ve en el momento en que el robot mueve la pieza a lo largo de la cinta la posición, ya que la posición almacenada en el Arduino y la posición real de la pieza dejan de ser coincidentes. Por lo tanto, en caso de volver a depositar la pieza en la cinta y realizar un movimiento se necesita forzosamente utilizar un movimiento relativo para seguir con referencias exactas de la posición de la pieza.
+
 \subsection{Movimiento con actuadores digitales}
 
+De forma alternativa se puede mover la cinta sin control alguno de la posición. Este movimiento se basa simplemente en el avance o retroceso de la cinta accionada digitalmente.
+
 \section{Usos de cada modo}
+
+\input{09-guiadeuso/libreria.tex}
+
+

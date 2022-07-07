@@ -64,21 +64,24 @@
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {7}Resultados}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Placas}{49}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Caja}{49}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Integración de componentes}{50}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Modos}{51}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{55}{chapter.8}%
-\contentsline {listasf}{Guía de usuario}{57}{section*.55}%
-\contentsline {section}{\numberline {1}Tipos de movimiento}{57}{section.8.1}%
-\contentsline {subsection}{\numberline {1.1}Movimiento absoluto}{57}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {1.2}Movimiento discreto}{57}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {1.3}Movimiento con actuadores digitales}{57}{subsection.8.1.3}%
-\contentsline {section}{\numberline {2}Usos de cada modo}{57}{section.8.2}%
+\contentsline {chapter}{\numberline {7}Guía de usuario}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Descripción y cuadro de mandos}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Tipos de movimiento}{50}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Movimiento absoluto}{50}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Movimiento discreto}{50}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Movimiento con actuadores digitales}{50}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Usos de cada modo}{51}{section.7.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {8}Resultados}{55}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Placas}{55}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Caja}{55}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Integración de componentes}{57}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{59}{chapter.9}%
 \mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{59}{section*.56}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{61}{section*.58}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{63}{section*.60}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{65}{section*.62}%
+\contentsline {listasb}{{\'I}ndice de Figuras}{61}{section*.52}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{63}{section*.54}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{65}{section*.56}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{67}{section*.58}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

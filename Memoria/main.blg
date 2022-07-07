@@ -10,9 +10,9 @@ A level-1 auxiliary file: 03-placa/placa.aux
 A level-1 auxiliary file: 04-caja/caja.aux
 A level-1 auxiliary file: 05-arduino/arduino.aux
 A level-1 auxiliary file: 06-robotstudio/robotstudio.aux
+A level-1 auxiliary file: 09-guiadeuso/guiadeuso.aux
 A level-1 auxiliary file: 07-resultados/resultados.aux
 A level-1 auxiliary file: 08-conclusiones/conclusiones.aux
-A level-1 auxiliary file: 09-guiadeuso/guiadeuso.aux
 The style file: amsplain.bst
 Database file #1: bibliografiaLibroETSI.bib
 Warning--entry type for "arduino" isn't style-file defined

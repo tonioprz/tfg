@@ -61,17 +61,16 @@ Es un modo similar al anterior, dado que la electrónica es la encargada de gest
 Para una interacción con el sistema con el usuario se crea una interfaz hombre-máquina que permite cambiar entre los distintos modos de funcionamiento, visualizar información, controlar el sistema en el modo local y realizar paradas de emergencia en caso de ser necesario. Para ello, se prototipa la interfaz mostrada en la figura 
 \ref{fig:interfazhmi}, que posteriormente se explicará en profundidad en el diseño de la caja.
 
-En este diseño se observa un LCD que será el principal encargado de mostrar la información relevante al usuario como la posición o el modo en el que se encuentra el sistema. Por otra parte, se cuenta con dos botones y una flecha de selección, que permiten avanzar por los distintos menús y seleccionar las opciones durante el modo local. Además, las flechas serán las responsables del movimiento de la cinta en el modo local sin microcontrolador. También se cuenta con dos interruptores de dos posiciones cada uno, que permiten seleccionar los modos local/remoto y con microcontrolador/sin microcontrolador.
-
-Por último, una seta de emergencia es imprescindible para realizar una parada de emergencia en caso necesario. La seta está situada en un lugar de fácil acceso y que no interfiere en el uso normal del sistema.
-
-
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\textwidth]{01-introduccion/HMI.pdf}
-	\caption{Interfaz hombre-máquina. Distribución en la tapa.}
+	\caption{Interfaz hombre-máquina. Distribución en la tapa}
 	\label{fig:interfazhmi}
 	\end{figure}
+
+En este diseño se observa un LCD que será el principal encargado de mostrar la información relevante al usuario como la posición o el modo en el que se encuentra el sistema. Por otra parte, se cuenta con dos botones y una flecha de selección, que permiten avanzar por los distintos menús y seleccionar las opciones durante el modo local. Además, las flechas serán las responsables del movimiento de la cinta en el modo local sin microcontrolador. También se cuenta con dos interruptores de dos posiciones cada uno, que permiten seleccionar los modos local/remoto y con microcontrolador/sin microcontrolador.
+
+Por último, una seta de emergencia es imprescindible para realizar una parada de emergencia en caso necesario. La seta está situada en un lugar de fácil acceso y que no interfiere en el uso normal del sistema.
 
 Además, se debe crear una serie de conexiones que permitan la interacción robot-cinta para el modo remoto sin microcontrolador. Esto se debe realizar mediante un conector que permita acceder a dichos pines de forma sencilla y queden expuestos. Para ello, se introducirá un conector similar a la figura \ref{fig:digitales}. Los pines que debe contener son:
 \begin{itemize}
