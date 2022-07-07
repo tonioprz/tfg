@@ -10,7 +10,7 @@ en gran medida al trabajo previo de Hinojosa\cite{rea}.
 
 El caso más simple de funcionamiento es cuando no hay microcontrolador. En este caso se
 utilizarán las entradas y salidas digitales del controlador para realizar los movimientos.
-La conexión entre las salidas digitales de la caja y el controlador se realiza mediante 
+La conexión entre las salidas digitales del panel de control y el controlador se realiza mediante 
 un módulo de interfaz como el mostrado en la figura \ref{fig:interfazfisicadigital}.
 
 \begin{figure}[hbtp]
@@ -30,9 +30,7 @@ como el de este proyecto. Los pines expuestos en el módulo de interfaz son los 
     \item VCC 24V. Pin 25.
 \end{itemize}
 
-En éste, los pines de salida se conectarán a las señales de Avance y Retroceso, mientras que en los
-de entrada estarán la señal del sensor fotoeléctrico, la de emergencia, el estado de la señal local y
-la señal microcontrolador.
+En éste, los pines de salida se conectarán a las señales de Avance y Retroceso, mientras que en los de entrada estarán la señal del sensor fotoeléctrico, la de emergencia, el estado de la señal local y la señal microcontrolador.
 
 Las funciones referentes a las señales digitales se pueden consultar en el manual de RAPID \cite{rapid}.
 Las más relevantes para el uso básico requerido en el laboratorio:
@@ -91,8 +89,5 @@ de movimiento absoluto y discreto.
 
 \input{06-robotstudio/ejemploconmicro.tex}
 
-Una vez obtenida la posición de la pieza en los ejes x e y, hay que tener en cuenta que dicha posición
-está expresada en unos ejes concretos definidos desde el comienzo de la cinta. Por ello, hay que crear 
-un \emph{workobject} en el proyecto de Robotstudiodonde estos ejes tengan la misma dirección que los ejes
-de la cinta para, posteriormente poder transformar las posiciones obtenidas por parte del Arduino 
-a unas unidades utilizables por parte del robot y del propio usuario.
+Una vez obtenida la posición de la pieza en los ejes x e y, hay que tener en cuenta que dicha posición está expresada en unos ejes concretos definidos desde el comienzo de la cinta. Por ello, hay que crear 
+un \emph{workobject} en el proyecto de Robotstudio donde estos ejes tengan la misma dirección que los ejes de la cinta para, posteriormente poder transformar las posiciones obtenidas por parte del Arduino a unas unidades utilizables por parte del robot y del propio usuario.

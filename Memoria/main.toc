@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {3.5}Placas finales}{21}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Placa \textit {Tapa}}{21}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Placa \textit {Fondo}}{22}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Planificación de caja}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Planificación del panel de control}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Base}{23}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Tapa}{24}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Desarrollo en Arduino}{27}{chapter.5}%
