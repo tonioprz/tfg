@@ -64,24 +64,30 @@
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {7}Guía de usuario}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Descripción y cuadro de mandos}{49}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Tipos de movimiento}{50}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Movimiento absoluto}{50}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Movimiento discreto}{50}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Movimiento con actuadores digitales}{50}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Usos de cada modo}{51}{section.7.3}%
+\contentsline {chapter}{\numberline {7}Resultados}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Placas}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Panel de control}{50}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Integración de componentes}{50}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{53}{chapter.8}%
+\mbox {}\hspace *{0pt}\par 
+\contentsline {listasb}{{\'I}ndice de Figuras}{55}{section*.50}%
+\contentsline {listasb}{{\'I}ndice de Tablas}{57}{section*.52}%
+\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{59}{section*.54}%
+\contentsline {listasb}{Bibliograf\'{\i }a}{61}{section*.56}%
+\contentsline {listasf}{Anexo I: Guía de uso}{63}{section*.59}%
+\contentsline {section}{\numberline {1}Descripción y cuadro de mandos}{63}{section.8.1}%
+\contentsline {section}{\numberline {2}Tipos de movimiento}{64}{section.8.2}%
+\contentsline {subsection}{\numberline {2.1}Movimiento absoluto}{65}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {2.2}Movimiento relativo o discreto}{65}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {2.3}Movimiento con actuadores digitales}{65}{subsection.8.2.3}%
+\contentsline {section}{\numberline {3}Modos de funcionamiento}{65}{section.8.3}%
+\contentsline {subsection}{\numberline {3.1}Modo local con microcontrolador}{65}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {3.2}Modo remoto con microcontrolador}{65}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {3.3}Modo local sin microcontrolador}{66}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {3.4}Modo remoto sin microcontrolador}{66}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {3.5}Modo emergencia}{66}{subsection.8.3.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {8}Resultados}{55}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Placas}{55}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Caja}{55}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Integración de componentes}{57}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{59}{chapter.9}%
-\mbox {}\hspace *{0pt}\par 
-\contentsline {listasb}{{\'I}ndice de Figuras}{61}{section*.52}%
-\contentsline {listasb}{{\'I}ndice de Tablas}{63}{section*.54}%
-\contentsline {listasb}{{\'I}ndice de C{\'o}digos}{65}{section*.56}%
-\contentsline {listasb}{Bibliograf\'{\i }a}{67}{section*.58}%
+\contentsline {listasf}{Anexo catapun}{69}{section*.62}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

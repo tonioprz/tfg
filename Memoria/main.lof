@@ -30,7 +30,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Vista en perspectiva de la base de la caja. (b) Vista de planta de la base de la caja\relax }}{24}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Ensamblaje de la base con el soporte. Descripción por colores: (a) Gris: Fuente. (b) Rojo: L298N. (c) Azul: Arduino. (d) Verde: placa de conexiones. (e) Amarillo: Soporte tapa\relax }}{24}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Vista en perspectiva de la tapa de la caja. (b) Vista inferior de la tapa de la caja\relax }}{25}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Vista inferior de la tapa ensamblada. Descripción por colores: a) Verde: placa de conexiones. b) Naranja: LCD c) Rojo: Seta de emergencia. d) Gris: Flechas de selección. e) Amarillo: Botones intro y escape. f) Morado: Selectores de modo\relax }}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Vista inferior de la tapa ensamblada. Descripción por colores: (a) Verde: placa de conexiones. (b) Naranja: LCD (c) Rojo: Seta de emergencia. (d) Gris: Flechas de selección. (e) Amarillo: Botones intro y escape. (f) Morado: Selectores de modo\relax }}{25}{figure.caption.41}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de flujo del programa\relax }}{28}{figure.caption.42}%
 \babel@toc {english}{}\relax 
@@ -48,17 +48,16 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Comandos del panel de control\relax }}{49}{figure.caption.44}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces \relax }}{50}{figure.caption.45}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Placa de conexiones general\relax }}{49}{figure.caption.44}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Placa de conexiones de la tapa\relax }}{49}{figure.caption.45}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Vista en perspectiva del panel de control\relax }}{50}{figure.caption.46}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Vista trasera del panel de control\relax }}{50}{figure.caption.47}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Interior de la base del panel con todos sus componentes\relax }}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Interior de la tapa del panel con sus componentes\relax }}{51}{figure.caption.49}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Comandos del panel de control\relax }}{63}{figure.caption.60}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Conexiones traseras del panel de control\relax }}{64}{figure.caption.61}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Placa de conexiones general\relax }}{55}{figure.caption.46}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Placa de conexiones de la tapa\relax }}{56}{figure.caption.47}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Vista en perspectiva de la caja\relax }}{56}{figure.caption.48}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Vista trasera de la caja\relax }}{56}{figure.caption.49}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Interior de la base de la caja con todos sus componentes\relax }}{57}{figure.caption.50}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Interior de la tapa de la caja con sus componentes\relax }}{57}{figure.caption.51}%
-\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -6,7 +6,7 @@
 
 El proceso se realiza colocando manualmente la pieza sobre la mesa de trabajo, lo que lleva asociada diferente problemática que puede llegar a interferir en los resultados obtenidos por los alumnos. Por un lado, la precisión es cuestionable, ya que el propio alumno no tiene una referencia sobre la cual poder repetir el proceso de forma eficaz, ya que la referencia empleada suele ser una marca realizada a mano alzada con lapicero sobre la mesa y el posicionamiento lo realiza un alumno. Esto puede influir negativamente dado que la programación establece un punto inicial fijo en unas coordenadas, sin embargo, al tener que repetir varias veces el proceso para modificar la programación de la trayectoria, el punto inicial no se ubica exactamente en las mismas coordenadas, sino que se empiezan a aproximar al punto inicialmente establecido. Por otro lado, al invadir el espacio de trabajo del brazo robótico continuamente se producen riesgos innecesarios impropios de las normas de seguridad en la industria y en el ambiente académico.
 
-Este trabajo es la continuación de Tapia\cite{tapia} e Hinojosa\cite{rea}, que sentaron las bases del proyecto en prototipos teóricos. En esta ocasión, el enfoque es en la implementación sobre los equipos del laboratorio a nivel real. El objetivo es añadir a la práctica una cinta transportadora que controle la posición de la pieza de forma precisa y permita trasladar dicha pieza a través de la cinta. Para que esta cinta pueda ser utilizada por los alumnos, en este trabajo de fin de grado se desarrolla la construcción de un panel de control que permita su manejo. Este panel debe quedar recogido en una caja donde se realicen las conexiones electrónicas y todas las placas empleadas para controlar electrónicamente la cinta para garantizar la seguridad del dispositivo y asegurar que estas conexiones no se modifican accidentalmente en el laboratorio por los alumnos.
+Este trabajo es la continuación de Tapia\cite{tapia} e Hinojosa\cite{rea}, que sentaron las bases del proyecto en prototipos teóricos. En esta ocasión, el enfoque es en la implementación sobre los equipos del laboratorio a nivel real. El objetivo es añadir a la práctica una cinta transportadora que controle la posición de la pieza de forma precisa y permita trasladar dicha pieza a través de la cinta. Para que esta cinta pueda ser utilizada por los alumnos, en este trabajo de fin de grado se desarrolla la construcción de un panel de control que permita su manejo. Este panel como dispositivo final debe encerrar las conexiones electrónicas y todas las placas empleadas para controlar electrónicamente la cinta para garantizar la seguridad del dispositivo y asegurar que estas conexiones no se modifican accidentalmente en el laboratorio por los alumnos.
 
 Un objetivo secundario establecido en el proyecto consiste en la garantía de reparabilidad, es decir,el sistema debe tener componentes fácilmente sustituibles para facilitar las reparaciones. Ya que, al ser manipulado este dispositivo de forma recurrente por diferentes alumnos, y no profesionales, la probabilidad de avería por uso y desgaste es mayor.
 
@@ -17,6 +17,8 @@ Para poder emplearse en las prácticas, el sistema se diseña para contar con la
 	\item Funcionamiento sin Arduino mediante señales digitales del robot.
 	\item Funcionamiento sin conexión directa entre RobotStudio y Arduino.
 \end{itemize}
+
+Finalmente, en el \nameref{Anexo} se incluye una guía de uso que puede ser incluida dentro de un guión de prácticas para que los alumnos tengan todos los conocimientos necesarios para manejar el panel de control.
 
 \section{Modos de funcionamiento}\label{sec-00}
 
@@ -59,7 +61,7 @@ Es un modo similar al anterior, dado que la electrónica es la encargada de gest
 \section{Distribución de los controles}
 
 Para una interacción con el sistema con el usuario se crea una interfaz hombre-máquina que permite cambiar entre los distintos modos de funcionamiento, visualizar información, controlar el sistema en el modo local y realizar paradas de emergencia en caso de ser necesario. Para ello, se prototipa la interfaz mostrada en la figura 
-\ref{fig:interfazhmi}, que posteriormente se explicará en profundidad en el diseño de la caja.
+\ref{fig:interfazhmi}, que posteriormente se explicará en profundidad en el capítulo \ref{chp-04} el diseño del panel de control.
 
 \begin{figure}[htbp]
 	\centering

@@ -17,9 +17,9 @@ La base debe tener las siguientes especificaciones:
     \item Hueco para conector de pines digitales.
 \end{itemize} 
 
-Con todo ello se ha diseñado la base que se puede ver en la figura \ref{fig:cajabase}. Se muestra una imagen de la planta y otra en perspectiva. Se puede observar que cuenta con distintos orificios en los que se debe introducir tuercas M3 durante la impresión en 3D para los distintos anclajes de dispositivos que se comenta a continuación y para la unión con la tapa para que quede estanca la caja.
+Con todo ello se ha diseñado la base que se puede ver en la figura \ref{fig:cajabase}. Se muestra una imagen de la planta y otra en perspectiva. Se puede observar que cuenta con distintos orificios en los que se debe introducir tuercas M3 durante la impresión en 3D para los distintos anclajes de dispositivos que se comenta a continuación y para la unión con la tapa para que quede estanco el panel de control.
 
-Además, para el anclaje de los dispositivos sobre la base, se ha diseñado un soporte que va atornillado a la misma. Para ello, se ha modelado mediante CAD de forma simplificada todos los dispositivos y se ha buscado la forma óptima de disponerlos. También se han tenido en cuenta los cables que van conectados tanto a la fuente como al Arduino, modelándolos en el espacio que ocupan hasta que el ángulo de giro es aceptable para que el cable se pueda colocar de forma holgada y sin tensiones dentro de la caja. Posteriormente se ha creado el soporte en base a dicha disposición y contando con los orificios de cada dispositivo. En la figura \ref{fig:ensamblajebase} se puede observar el resultado final de este ensamblaje.
+Además, para el anclaje de los dispositivos sobre la base, se ha diseñado un soporte que va atornillado a la misma. Para ello, se ha modelado mediante CAD de forma simplificada todos los dispositivos y se ha buscado la forma óptima de disponerlos. También se han tenido en cuenta los cables que van conectados tanto a la fuente como al Arduino, modelándolos en el espacio que ocupan hasta que el ángulo de giro es aceptable para que el cable se pueda colocar de forma holgada y sin tensiones dentro del panel. Posteriormente se ha creado el soporte en base a dicha disposición y contando con los orificios de cada dispositivo. En la figura \ref{fig:ensamblajebase} se puede observar el resultado final de este ensamblaje.
 
 \newpage
 
@@ -55,6 +55,8 @@ de emergencia se ubicará en la esquina superior izquierda, situándose justo en
 de conexiones del fondo, ya que ésta es la de menor altura. En la figura \ref{fig:cajatapa} se 
 muestra la tapa tanto en la planta como en una vista en perspectiva.
 
+\newpage
+
 \begin{figure}[h]% 
     \centering 
     \subfloat[][]{% 
@@ -70,16 +72,20 @@ muestra la tapa tanto en la planta como en una vista en perspectiva.
     \label{fig:cajatapa} 
 \end{figure} 
 
+\vspace{1cm}
+
 Además, se muestra en la figura \ref{fig:cajatapaensamblaje} se muestra la distribución de los 
 dispositivos. Ésta distribución permite cumplir con la planificación inicial que se observó en 
 la figura \ref{fig:interfazhmi} y facilitar la conexión entre las placas electrónicas al colocar
 la línea de interconexión de forma paralela.
 
+\vspace{1cm}
+
 \begin{figure}[h]%  
     \centering 
         \includegraphics[width=0.5\textwidth]{04-caja/ensamblajetapainferior.png}
-    \caption{Vista inferior de la tapa ensamblada. Descripción por colores: a) Verde: placa de 
-    conexiones. b) Naranja: LCD c) Rojo: Seta de emergencia. d) Gris: Flechas de selección.
-    e) Amarillo: Botones intro y escape. f) Morado: Selectores de modo}
+    \caption{Vista inferior de la tapa ensamblada. Descripción por colores: (a) Verde: placa de 
+    conexiones. (b) Naranja: LCD (c) Rojo: Seta de emergencia. (d) Gris: Flechas de selección.
+    (e) Amarillo: Botones intro y escape. (f) Morado: Selectores de modo}
     \label{fig:cajatapaensamblaje} 
 \end{figure}

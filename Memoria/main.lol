@@ -23,10 +23,9 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
+\addvspace {10\p@ }
 \babel@toc {english}{}\relax 
-\contentsline {lstlisting}{\numberline {7.1}{\ignorespaces Librería}}{51}{lstlisting.7.1}%
+\contentsline {lstlisting}{\numberline {8.1}{\ignorespaces Librería}}{66}{lstlisting.8.1}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\addvspace {10\p@ }
-\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
