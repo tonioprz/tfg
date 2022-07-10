@@ -78,10 +78,14 @@ void setup() {
   posy = medidaCalibre();
   posicion = 0;
   // Se inicia la comunicación Ethernet y la serie para depuración
-  Ethernet.begin(MAC);
+  
   Serial.begin(9600);
   Serial.print("Servidor en IP ");
+
+  Ethernet.begin(MAC);
+
   Serial.println(Ethernet.localIP());
+
 }
 
 // Bucle infinito
@@ -205,7 +209,7 @@ void loop() {
         enviarRobot(estado);
       }
       break;
-  
+  }
 
   // Transiciones entre estados
   switch(estado){

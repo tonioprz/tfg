@@ -1,6 +1,6 @@
 \chapter{Desarrollo de placa de conexiones}\label{chp-03}
 
-\lettrine[lraise=-0.1, lines=2, loversize=0.2]{P}ara simplificar todas las conexiones internas dentro del panel de control y posibilitar ciertas funciones especificadas, se crea una placa electrónica donde se conectan todos los dispositivos. De este modo se consigue simplificar el montaje y la posible actualización del sistema, ya que todas las conexiones internas desaparecen por completo. Además, para favorecer el orden de los cables dentro del panel se crea una segunda placa más básica cuya única función es agrupar todas las conexiones existentes en la tapa. Se conocerá como placa \textit{Fondo} a la placa general y placa \textit{Tapa} a la superior. 
+\lettrine[lraise=-0.1, lines=2, loversize=0.2]{P}ara simplificar todas las conexiones internas dentro del panel de control y posibilitar ciertas funciones especificadas, se crea una placa electrónica donde se conectan todos los dispositivos. De este modo se consigue simplificar el montaje y la posible actualización del sistema, ya que todas las conexiones internas desaparecen por completo. Además, para favorecer el orden de los cables dentro del panel se crea una segunda placa más básica cuya única función es agrupar todas las conexiones existentes en la tapa. Se conocerá como placa \textit{Fondo} a la placa general que cuyo esquemático corresponde a la figura \ref{fig:esquemabase}, y placa \textit{Tapa} a la superior, cuyo esquemático corresponde a la figura \ref{fig:esquematapa}.
 
 \section{Software utilizado. KiCAD.}
 
@@ -9,12 +9,28 @@ libre bajo licencia GNU General Public License, lo que permite su uso sin coste 
 es un paquete de software orientado hacia el diseño electrónico (EDA por sus siglas en inglés: Electronic
 Design Automation) y consta de diversas aplicaciones que permiten realizar todo el trabajo.
 
+
+
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=\textwidth/2]{03-placa/01-KiCad-Logo.png}
+    \includegraphics[width=\textwidth/3]{03-placa/01-KiCad-Logo.png}
     \caption{Logo de KiCAD}
     \label{fig:figura31logo}
     \end{figure}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=\textwidth]{03-placa/base.pdf}
+    \caption{Esquemático completo de la placa Fondo}
+    \label{fig:esquemabase}
+    \end{figure}
+
+    \begin{figure}[hbtp]
+        \centering
+        \includegraphics[width=\textwidth]{03-placa/tapa.pdf}
+        \caption{Esquemático completo de la placa Tapa}
+        \label{fig:esquematapa}
+        \end{figure}
 
 Por un lado cuenta con \textit{eeschema}, un editor de esquemas electrónicos donde se puede plantear
 la lógica de las conexiones de un modo abstracto. Por otro, se encuentra con \textit{pcbnew}, un editor

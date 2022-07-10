@@ -16,23 +16,25 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Cinta transportadora con elementos integrados\relax }}{12}{figure.caption.25}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Logo de KiCAD\relax }}{15}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Switches de estado\relax }}{17}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de optoacoplador\relax }}{17}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Implementación de optoacopladores\relax }}{18}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Búfer de tensión de la señal MICRO a 5V\relax }}{18}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Conexiones flecha selección\relax }}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Implementación de optoacopladores para modo sin microcontrolador y emergencia\relax }}{19}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{20}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{20}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces (a) Vista frontal de la placa tapa. (b) Vista trasera de la placa tapa\relax }}{21}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces (a) Vista frontal de la placa fondo. (b) Vista trasera de la placa fondo\relax }}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquemático completo de la placa Fondo\relax }}{16}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Esquemático completo de la placa Tapa\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Switches de estado\relax }}{19}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de optoacoplador\relax }}{19}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Implementación de optoacopladores\relax }}{20}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Búfer de tensión de la señal MICRO a 5V\relax }}{20}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Conexiones flecha selección\relax }}{21}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Implementación de optoacopladores para modo sin microcontrolador y emergencia\relax }}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Alimentación calibre digital a 1.5V\relax }}{22}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces (a) Vista frontal de la placa tapa. (b) Vista trasera de la placa tapa\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces (a) Vista frontal de la placa fondo. (b) Vista trasera de la placa fondo\relax }}{24}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Vista en perspectiva de la base de la caja. (b) Vista de planta de la base de la caja\relax }}{24}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ensamblaje de la base con el soporte. Descripción por colores: (a) Gris: Fuente. (b) Rojo: L298N. (c) Azul: Arduino. (d) Verde: placa de conexiones. (e) Amarillo: Soporte tapa\relax }}{24}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Vista en perspectiva de la tapa de la caja. (b) Vista inferior de la tapa de la caja\relax }}{25}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Vista inferior de la tapa ensamblada. Descripción por colores: (a) Verde: placa de conexiones. (b) Naranja: LCD (c) Rojo: Seta de emergencia. (d) Gris: Flechas de selección. (e) Amarillo: Botones intro y escape. (f) Morado: Selectores de modo\relax }}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Vista en perspectiva de la base de la caja. (b) Vista de planta de la base de la caja\relax }}{26}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ensamblaje de la base con el soporte. Descripción por colores: (a) Gris: Fuente. (b) Rojo: L298N. (c) Azul: Arduino. (d) Verde: placa de conexiones. (e) Amarillo: Soporte tapa\relax }}{26}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Vista en perspectiva de la tapa de la caja. (b) Vista inferior de la tapa de la caja\relax }}{27}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Vista inferior de la tapa ensamblada. Descripción por colores: (a) Verde: placa de conexiones. (b) Naranja: LCD (c) Rojo: Seta de emergencia. (d) Gris: Flechas de selección. (e) Amarillo: Botones intro y escape. (f) Morado: Selectores de modo\relax }}{27}{figure.caption.43}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de flujo del programa\relax }}{28}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de flujo del programa\relax }}{30}{figure.caption.44}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -40,7 +42,7 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{43}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Amplificación señales calibre digital a 5V\relax }}{45}{figure.caption.45}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -48,15 +50,15 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Placa de conexiones general\relax }}{49}{figure.caption.44}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Placa de conexiones de la tapa\relax }}{49}{figure.caption.45}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Vista en perspectiva del panel de control\relax }}{50}{figure.caption.46}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Vista trasera del panel de control\relax }}{50}{figure.caption.47}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Interior de la base del panel con todos sus componentes\relax }}{51}{figure.caption.48}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Interior de la tapa del panel con sus componentes\relax }}{51}{figure.caption.49}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Placa de conexiones general\relax }}{51}{figure.caption.46}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Placa de conexiones de la tapa\relax }}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Vista en perspectiva del panel de control\relax }}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Vista trasera del panel de control\relax }}{52}{figure.caption.49}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Interior de la base del panel con todos sus componentes\relax }}{53}{figure.caption.50}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Interior de la tapa del panel con sus componentes\relax }}{53}{figure.caption.51}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Comandos del panel de control\relax }}{63}{figure.caption.60}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Conexiones traseras del panel de control\relax }}{64}{figure.caption.61}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Comandos del panel de control\relax }}{65}{figure.caption.62}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Conexiones traseras del panel de control\relax }}{66}{figure.caption.63}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
