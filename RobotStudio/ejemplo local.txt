@@ -1,0 +1,200 @@
+MODULE Module1  
+    !Declaración de variables del programa
+    
+    PERS wobjdata cinta0:=[FALSE,TRUE,"",[[-126.364,347.009,192.387],[7.47927E-05,-0.687938,-0.72577,0.000112789]],[[0,0,0],[1,0,0,0]]];
+    CONST robtarget p10:=[[0,0,0],[0.361816,0.00013682,0.000103799,0.932249],[0,0,3,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    VAR robtarget p20; !reposo
+    VAR robtarget p30;
+    VAR robtarget p40;
+    VAR robtarget p50;
+    VAR robtarget p60;
+    VAR robtarget p70;
+    VAR robtarget p80;
+    !Objeto de socket de conexión
+    VAR socketdev my_socket;
+
+    !Variable de estado
+    VAR string estado:="a";
+
+    !Cadenas de caracteres de recepción
+    VAR rawbytes receive_string;
+    VAR string string1;
+    VAR string posx_str;
+    VAR string posy_str;
+    VAR string fotoele_str;
+
+    !Posiciones de los datos a lo largo de la cadena recibida
+    VAR num xpos;
+    VAR num ypos;
+    VAR num fepos;
+    
+    !Valores numéricos finales recibidos
+    VAR num posx;
+    VAR num posy;
+    VAR byte fotoele;
+    
+    !Comprobación de recepción correcta
+    VAR bool okposx:=true;
+    VAR bool okposy:=true;
+    
+    !Variables usuario
+    VAR num posx1;
+    VAR num posy1;
+    VAR num posx2;
+    VAR num posy2;
+    VAR num posx3;
+        
+    !Función de apertura de socket
+    PROC abricomunicacion()        
+        SocketCreate my_socket; !crea el socket
+        SocketConnect my_socket, "192.168.125.201", 4012;        
+    ENDPROC
+    
+    !Función de lectura de estado y 
+    PROC leer()
+        !Se abre el socket y conecta al Arduino
+        abricomunicacion;
+        
+        !Escribe en el socket la cadena "STATUS" para que el Arduino envíe sus datos
+        SocketSend my_socket,\Str:="STATUS"; 
+        WaitTime 0.1; !espera un tiempo
+
+        !Recibe la respuesta 
+        ClearRawBytes receive_string;
+        SocketReceive my_socket \RawData := receive_string,\Time:=WAIT_MAX;
+        
+        !Desempaqueta los bytes y los convierte en una cadena de caracteres
+        UnpackRawBytes receive_string, 1, string1 \ASCII:=32;
+        
+        !Se buscan las posiciones de cada variable a lo largo de la cadena
+        xpos        := StrFind(string1, 1, "=");
+        ypos        := StrFind(string1, xpos+1, "=");
+        fepos       := StrFind(string1, ypos+1, "=");
+        
+        !Se trocea la cadena para obtener subcadenas con los datos recibidos
+        estado      := StrPart(string1, 1, 1);
+        posx_str    := StrPart(string1, xpos+1, ypos - xpos - 3);
+        posy_str    := StrPart(string1, ypos+1, fepos - ypos - 3);
+        fotoele_str := StrPart(string1, fepos+1, 1);
+
+        !Se transforman las cadenas a los tipos de datos que les corresponden
+        okposx      :=  StrToVal(posx_str,posx);
+        okposy      :=  StrToVal(posy_str,posy);
+        fotoele     :=  StrToByte(fotoele_str);
+        
+        !Conversión de pulsos a milímetros
+        posx := posx / 10;
+
+        !Se cierra el socket
+        ClearRawBytes receive_string;
+        SocketClose my_socket;
+    ENDPROC
+
+    !Funciones de movimiento. Se envía una cadena con un caracter y la distancia a recorrer. Si el carácter es "M", el movimiento es absoluto, mientras que si es "R" es relativo.
+    PROC mov_abs(num distancia)
+        abricomunicacion;
+        SocketSend my_socket,\Str:="M;X=" + ValToStr(distancia*10) + ";";
+        WaitTime 0.1;
+        SocketClose my_socket;
+    ENDPROC
+    
+    PROC mov_dis(num distancia)
+        abricomunicacion;
+        SocketSend my_socket,\Str:="R;X=" + ValToStr(distancia*10) + ";";
+        WaitTime 0.1;
+        SocketClose my_socket;
+    ENDPROC
+
+    !Bucle principal del programa
+    PROC main()
+        
+        !Se cierran los posibles sockets abiertos
+        SocketClose my_socket;
+        !Soltar gancho
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        !Ir a posicion de reposo
+        p20 := Offs(p10,0,0,-150);
+        MoveJ p20, v100, z100, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        
+        leer;
+        posx1 := posx;
+        posy1 := posy;
+        
+        WaitTime(2);
+        WHILE posx < 600 DO
+            leer;           
+            WaitTime(1);
+        ENDWHILE
+        
+        posx2 := posx;
+        posy2 := posy;
+        
+        SocketClose my_socket;
+        
+        p30 := Offs(p10,posy1,900-posx2-20,-50);
+        p40 := Offs(p10,posy1,900-posx2-20,0);
+        MoveJ p30, v100, z10, tool0\WObj:=cinta0;
+        MoveL p40, v20, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        
+        SetDO D652_10_DO10, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO10, 0;
+        
+        WaitTime(1);
+        
+        MoveL p30, v50, z10, tool0\WObj:=cinta0;
+        
+        p50 := Offs(p10,posy1,900-posx2 +100,-50);
+        p60 := Offs(p10,posy1,900-posx2 +100,0);
+        
+        MoveJ p50, v100, z10, tool0\WObj:=cinta0;
+        MoveL p60, v20, z10, tool0\WObj:=cinta0;
+        
+        
+        WaitTime(2);
+        
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        MoveL p50, v20, z10, tool0\WObj:=cinta0;
+        MoveJ p20, v100, z100, tool0\WObj:=cinta0;
+        
+        
+        
+        WaitTime(4);
+        WHILE posx < (posx2 + 20) DO
+            leer;           
+            WaitTime(2);
+        ENDWHILE
+        
+        leer;
+        posx3 := posx;
+        
+        
+        
+        p70 := Offs(p60,0, posx2 - posx3,-50);
+        p80 := Offs(p60,0, posx2 - posx3,0);
+        MoveJ p70, v100, z10, tool0\WObj:=cinta0;
+        MoveL p80, v20, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        
+        SetDO D652_10_DO10, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO10, 0;
+        
+        WaitTime(1);
+        
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+    ENDPROC
+ENDMODULE

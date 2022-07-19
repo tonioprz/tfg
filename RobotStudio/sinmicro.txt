@@ -1,0 +1,111 @@
+MODULE Module1
+	PERS wobjdata cinta0:=[FALSE,TRUE,"",[[-126.364,347.009,192.387],[7.47927E-05,-0.687938,-0.72577,0.000112789]],[[0,0,0],[1,0,0,0]]];
+	CONST robtarget p10:=[[94.11,201.51,1.12],[0.361816,0.00013682,0.000103799,0.932249],[0,0,3,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    VAR robtarget p20;
+    VAR robtarget p30;
+    VAR robtarget p40;
+    VAR robtarget p50;
+    VAR robtarget p60;
+    VAR robtarget p70;
+    VAR robtarget p80;
+    PROC main()
+     
+        
+        p20 := Offs(p10,0,0,-50);
+        p30 := Offs(p10,0,-100,-50);
+        p40 := Offs(p10,0,-100,0);
+        p50 := Offs(p10,0,-200,-50);
+        p60 := Offs(p10,0,-200,0);
+        p70 := Offs(p10,0,100,-50);
+        p80 := Offs(p10,0,100,0);
+        
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        SetDO D652_10_DO01, 0;
+        SetDO D652_10_DO02, 0;
+        WHILE D652_10_DI01=0 DO
+            SetDO D652_10_DO01, 1;
+        ENDWHILE
+        SetDO D652_10_DO01, 0;
+        
+        agarrar;      
+        
+        MoveL p30, v50, z10, tool0\WObj:=cinta0;
+        MoveL p40, v50, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        MoveL p30, v50, z10, tool0\WObj:=cinta0;
+
+        WaitTime(2);
+     
+        WHILE D652_10_DI01=0 DO
+            SetDO D652_10_DO01, 1;
+        ENDWHILE
+        SetDO D652_10_DO01, 0;
+        agarrar;
+        
+        MoveL p70, v50, z10, tool0\WObj:=cinta0;
+        MoveL p80, v50, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        MoveL p70, v50, z10, tool0\WObj:=cinta0;
+
+        WaitTime(2);
+        
+        SetDO D652_10_DO01, 0;
+        SetDO D652_10_DO02, 0;
+        WHILE D652_10_DI01=0 DO
+            SetDO D652_10_DO02, 1;
+        ENDWHILE
+        SetDO D652_10_DO02, 0;
+        
+        agarrar;
+        
+        
+        
+        
+        
+        
+        MoveL p50, v50, z10, tool0\WObj:=cinta0;
+        MoveL p60, v50, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        SetDO D652_10_DO09, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO09, 0;
+        
+        MoveL p50, v50, z10, tool0\WObj:=cinta0;
+
+        WaitTime(2);
+        
+        
+        
+    ENDPROC
+
+  
+    PROC agarrar()
+        
+        MoveL p20, v50, z10, tool0\WObj:=cinta0;
+        MoveL p10, v50, z10, tool0\WObj:=cinta0;
+        
+        WaitTime(2);
+        
+        SetDO D652_10_DO10, 1;
+        WaitTime(0.5);
+        SetDO D652_10_DO10, 0;
+        
+        MoveL p20, v50, z10, tool0\WObj:=cinta0;
+        
+    ENDPROC
+    
+ENDMODULE
