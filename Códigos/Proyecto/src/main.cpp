@@ -82,7 +82,7 @@ void setup() {
   Serial.begin(9600);
   Serial.print("Servidor en IP ");
 
-  Ethernet.begin(MAC);
+  Ethernet.begin(MAC, IP);
 
   Serial.println(Ethernet.localIP());
 
@@ -515,7 +515,9 @@ bool enviarRobot(char dato){
         recepcion = cliente.readString();
         Serial.println(recepcion);
         if(recepcion == "STATUS"){
-          String envio = (String) dato + ";X=" + String(posicion, 2) + ";Y=" + String(posy, 2);
+          double posic = posicion;
+          posy = medidaCalibre();
+          String envio = (String) dato + ";X=" + String(posic, 2) + ";Y=" + String(posy, 2);
           String fotoele = ";F=" + String(digitalRead(SENSOR_FOTO));
           envio = envio + fotoele;
           cliente.println(envio);
